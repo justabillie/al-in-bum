@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Al-in-Bum | Stacked Quote Cards</title>
+  <style>
+    /* ===== COMPLETE STYLES ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background: linear-gradient(145deg, #0f0f1a 0%, #1a1a2e 100%);
+      min-height: 100vh;
+      padding: 0.75rem;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    .app {
+      max-width: 1300px;
+      margin: 0 auto;
+      background: rgba(10, 10, 25, 0.6);
+      backdrop-filter: blur(10px);
+      border-radius: 2rem;
+      padding: 1rem;
+      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+      border: 1px solid rgba(255,215,0,0.15);
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 2px solid rgba(255,215,0,0.2);
+    }
+
+    .logo h1 {
+      font-size: 1.5rem;
+      background: linear-gradient(135deg, #FFD966, #FFA559, #FF6F61);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.5px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .logo h1 i { background: none; -webkit-background-clip: unset; color: #FFD966; font-size: 1.3rem; }
+    .logo p { color: rgba(255,255,255,0.5); font-size: 0.65rem; margin-top: 0.2rem; }
+
+    /* Buttons */
+    .btn {
+      background: rgba(255,255,255,0.95);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 60px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      touch-action: manipulation;
+      -webkit-touch-callout: none;
+    }
+    .btn-primary { background: linear-gradient(135deg, #FFD966, #FFA559); color: #1e1b2c; font-weight: 700; }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(255,200,100,0.4); }
+    .btn-outline { background: rgba(255,255,255,0.12); backdrop-filter: blur(8px); color: #FFD966; border: 1px solid rgba(255,217,102,0.5); }
+    .btn-outline:hover { background: rgba(255,217,102,0.25); transform: translateY(-2px); }
+    .btn-danger { background: rgba(220, 60, 60, 0.9); color: white; }
+    .btn-danger:hover { background: #dc2626; transform: translateY(-2px); }
+    .btn-small { padding: 0.3rem 0.7rem; font-size: 0.7rem; gap: 0.3rem; }
+
+    .section-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: #FFD966;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Albums Grid */
+    .albums-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    @media (min-width: 480px) { .albums-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.2rem; } }
+    @media (min-width: 768px) { .albums-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; } }
+
+    .album-folder {
+      background: linear-gradient(145deg, #2a2a3e, #1e1e2e);
+      border-radius: 1.2rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      overflow: hidden;
+      border: 1px solid rgba(255,215,0,0.2);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      aspect-ratio: 1 / 1;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+    .album-folder:hover { transform: translateY(-3px); box-shadow: 0 10px 25px rgba(0,0,0,0.4); border-color: rgba(255,215,0,0.5); }
+
+    .folder-preview {
+      flex: 1;
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0.8rem;
+    }
+    .folder-name-large {
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: center;
+      word-break: break-word;
+      text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      margin-bottom: 0.3rem;
+      line-height: 1.3;
+    }
+    @media (min-width: 480px) { .folder-name-large { font-size: 1rem; } }
+    @media (min-width: 768px) { .folder-name-large { font-size: 1.2rem; } }
+
+    .folder-quote-count {
+      font-size: 0.6rem;
+      color: rgba(255,255,255,0.8);
+      background: rgba(0,0,0,0.4);
+      padding: 0.15rem 0.5rem;
+      border-radius: 20px;
+    }
+
+    .folder-info {
+      padding: 0.5rem;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+      border-top: 1px solid rgba(255,215,0,0.2);
+    }
+    .folder-actions { display: flex; justify-content: center; gap: 0.5rem; margin-top: 0.3rem; }
+    .folder-action-btn {
+      background: rgba(255,255,255,0.15);
+      border: none;
+      border-radius: 30px;
+      padding: 0.3rem 0.6rem;
+      font-size: 0.6rem;
+      cursor: pointer;
+      color: white;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      touch-action: manipulation;
+    }
+    @media (min-width: 480px) { .folder-action-btn { padding: 0.35rem 0.7rem; font-size: 0.65rem; } }
+    .folder-action-btn.edit-btn:hover { background: #FFD966; color: #1e1b2c; transform: scale(1.05); }
+    .folder-action-btn.delete-btn:hover { background: #dc2626; color: white; transform: scale(1.05); }
+
+    /* Album Detail */
+    .album-detail-container, .flashcard-container {
+      margin-top: 0.5rem;
+      background: rgba(0,0,0,0.3);
+      border-radius: 1.5rem;
+      padding: 1rem;
+      min-height: 480px;
+    }
+    @media (min-width: 768px) {
+      .album-detail-container, .flashcard-container { padding: 1.5rem; min-height: 550px; }
+    }
+
+    .detail-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .back-btn { background: rgba(255,255,255,0.1); color: #FFD966; border: 1px solid #FFD966; }
+    .back-btn:hover { background: rgba(255,217,102,0.2); }
+
+    .album-detail-title { flex: 1; text-align: center; }
+    .current-cat-title {
+      font-size: 1.2rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #FFE6B0, #FFC857);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    @media (min-width: 768px) { .current-cat-title { font-size: 1.8rem; } }
+
+    .card-actions-group, .flashcard-controls {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .album-type-badge {
+      font-size: 0.6rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 20px;
+      background: rgba(255,217,102,0.2);
+      margin-left: 0.5rem;
+    }
+    .flashcard-badge { background: rgba(76, 175, 80, 0.3); color: #4CAF50; }
+
+    /* Stack Deck */
+    .stack-deck {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 380px;
+      perspective: 1000px;
+    }
+    @media (min-width: 480px) { .stack-deck { min-height: 420px; } }
+    @media (min-width: 768px) { .stack-deck { min-height: 480px; } }
+
+    .card-stack-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 90%;
+      height: 380px;
+      margin: 0 auto;
+    }
+    @media (min-width: 480px) { .card-stack-wrapper { max-width: 420px; height: 420px; } }
+    @media (min-width: 640px) { .card-stack-wrapper { max-width: 500px; height: 460px; } }
+    @media (min-width: 768px) { .card-stack-wrapper { max-width: 560px; height: 500px; } }
+
+    .stack-card {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      transition: all 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
+      cursor: pointer;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5);
+      overflow: hidden;
+      animation: cardFloat 0.6s ease-out;
+    }
+    @media (min-width: 768px) { .stack-card { border-radius: 28px; } }
+
+    @keyframes cardFloat {
+      0% { opacity: 0; transform: translateY(30px) scale(0.95); }
+      100% { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .stack-card.top-card { z-index: 10; transform: translateY(0) rotate(0deg); }
+    .stack-card.next-card { z-index: 5; transform: translateY(10px) translateX(6px) rotate(2deg); filter: brightness(0.9); opacity: 0.92; }
+    .stack-card.prev-card { z-index: 3; transform: translateY(18px) translateX(10px) rotate(-3deg); filter: brightness(0.8); opacity: 0.85; }
+    @media (min-width: 480px) {
+      .stack-card.next-card { transform: translateY(15px) translateX(8px) rotate(2deg); }
+      .stack-card.prev-card { transform: translateY(28px) translateX(15px) rotate(-3deg); }
+    }
+
+    .card-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1.2rem;
+      position: relative;
+      background-repeat: repeat;
+      background-size: 30px 30px;
+    }
+    @media (min-width: 480px) { .card-inner { padding: 1.5rem; background-size: 40px 40px; } }
+    @media (min-width: 768px) { .card-inner { padding: 2rem; } }
+
+    /* Patterns */
+    .pattern-floral {
+      background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.3) 2%, transparent 2.5%),
+                        radial-gradient(circle at 70% 60%, rgba(255,255,255,0.25) 1.5%, transparent 2%),
+                        repeating-linear-gradient(45deg, rgba(255,255,255,0.05) 0px, rgba(255,255,255,0.05) 2px, transparent 2px, transparent 8px);
+    }
+    .pattern-waves {
+      background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.15) 0px, rgba(255,255,255,0.15) 2px, transparent 2px, transparent 10px),
+                        repeating-linear-gradient(135deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 10px);
+    }
+    .pattern-stars {
+      background-image: radial-gradient(circle at 15% 25%, rgba(255,255,255,0.4) 1.5px, transparent 1.5px),
+                        radial-gradient(circle at 75% 65%, rgba(255,255,255,0.3) 1px, transparent 1px),
+                        radial-gradient(circle at 45% 85%, rgba(255,255,255,0.35) 2px, transparent 2px);
+      background-size: 30px 30px, 25px 25px, 35px 35px;
+    }
+    .pattern-mountains {
+      background-image: repeating-linear-gradient(90deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 22px),
+                        repeating-linear-gradient(0deg, transparent, transparent 15px, rgba(255,255,255,0.08) 15px, rgba(255,255,255,0.08) 17px);
+    }
+    .pattern-bubbles {
+      background-image: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.35) 3px, transparent 3px),
+                        radial-gradient(circle at 70% 80%, rgba(255,255,255,0.25) 4px, transparent 4px),
+                        radial-gradient(circle at 50% 20%, rgba(255,255,255,0.3) 2px, transparent 2px);
+      background-size: 50px 50px, 60px 60px, 40px 40px;
+    }
+    .pattern-grid {
+      background-image: linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+      background-size: 25px 25px;
+    }
+    .pattern-diagonal {
+      background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.12) 0px, rgba(255,255,255,0.12) 2px, transparent 2px, transparent 12px);
+    }
+    .pattern-polka {
+      background-image: radial-gradient(circle at 25% 25%, rgba(255,255,255,0.3) 2px, transparent 2px),
+                        radial-gradient(circle at 75% 75%, rgba(255,255,255,0.25) 2.5px, transparent 2.5px);
+      background-size: 35px 35px, 40px 40px;
+    }
+    .pattern-zigzag {
+      background-image: repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 6px),
+                        repeating-linear-gradient(135deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 2px, transparent 2px, transparent 6px);
+    }
+    .pattern-leaf {
+      background-image: radial-gradient(ellipse at 20% 30%, rgba(255,255,255,0.2) 3px, transparent 3px),
+                        radial-gradient(ellipse at 80% 70%, rgba(255,255,255,0.15) 4px, transparent 4px);
+      background-size: 45px 45px, 55px 55px;
+    }
+    .pattern-hearts {
+      background-image: radial-gradient(circle at 20% 40%, rgba(255,200,220,0.4) 2px, transparent 2px),
+                        radial-gradient(circle at 70% 60%, rgba(255,200,220,0.35) 2.5px, transparent 2.5px);
+      background-size: 50px 50px, 45px 45px;
+    }
+    .pattern-snow {
+      background-image: radial-gradient(circle at 10% 20%, rgba(255,255,255,0.4) 1px, transparent 1px),
+                        radial-gradient(circle at 40% 60%, rgba(255,255,255,0.3) 1.5px, transparent 1.5px),
+                        radial-gradient(circle at 80% 30%, rgba(255,255,255,0.35) 1px, transparent 1px);
+      background-size: 40px 40px, 50px 50px, 35px 35px;
+    }
+    .pattern-confetti {
+      background-image: radial-gradient(circle at 15% 35%, rgba(255,255,255,0.35) 2px, transparent 2px),
+                        radial-gradient(circle at 65% 45%, rgba(255,255,255,0.25) 1.5px, transparent 1.5px),
+                        radial-gradient(circle at 85% 75%, rgba(255,255,255,0.3) 2.5px, transparent 2.5px),
+                        radial-gradient(circle at 35% 85%, rgba(255,255,255,0.2) 1px, transparent 1px);
+      background-size: 45px 45px, 55px 55px, 35px 35px, 40px 40px;
+    }
+
+    .quote-text {
+      font-size: inherit;
+      line-height: 1.4;
+      font-weight: 600;
+      max-width: 90%;
+      word-break: break-word;
+      margin-bottom: 0.8rem;
+      position: relative;
+      z-index: 2;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .card-meta {
+      font-size: 0.65rem;
+      opacity: 0.85;
+      margin-top: 0.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    @media (min-width: 768px) { .card-meta { font-size: 0.75rem; } }
+
+    .card-edit-overlay {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      display: flex;
+      gap: 6px;
+      z-index: 20;
+    }
+    @media (min-width: 480px) { .card-edit-overlay { bottom: 12px; right: 12px; gap: 8px; } }
+
+    .float-btn {
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(8px);
+      border: none;
+      border-radius: 30px;
+      padding: 4px 8px;
+      font-size: 0.6rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.2rem;
+      touch-action: manipulation;
+    }
+    @media (min-width: 480px) { .float-btn { padding: 6px 12px; font-size: 0.7rem; gap: 0.3rem; } }
+    .float-btn:hover { background: rgba(0,0,0,0.95); transform: scale(1.05); }
+
+    /* Flashcard Stack */
+    .flashcard-stack-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 90%;
+      height: 380px;
+      margin: 0 auto;
+    }
+    @media (min-width: 480px) { .flashcard-stack-wrapper { max-width: 420px; height: 420px; } }
+    @media (min-width: 640px) { .flashcard-stack-wrapper { max-width: 500px; height: 460px; } }
+    @media (min-width: 768px) { .flashcard-stack-wrapper { max-width: 560px; height: 500px; } }
+
+    .flashcard-stack-card {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border-radius: 24px;
+      transition: all 0.5s cubic-bezier(0.34, 1.2, 0.64, 1);
+      cursor: pointer;
+      box-shadow: 0 20px 35px -12px rgba(0,0,0,0.5);
+      overflow: hidden;
+      animation: cardFloat 0.6s ease-out;
+    }
+    .flashcard-stack-card.top-card { z-index: 10; transform: translateY(0) rotate(0deg); }
+    .flashcard-stack-card.next-card { z-index: 5; transform: translateY(10px) translateX(6px) rotate(2deg); filter: brightness(0.9); opacity: 0.92; }
+    .flashcard-stack-card.prev-card { z-index: 3; transform: translateY(18px) translateX(10px) rotate(-3deg); filter: brightness(0.8); opacity: 0.85; }
+    @media (min-width: 480px) {
+      .flashcard-stack-card.next-card { transform: translateY(15px) translateX(8px) rotate(2deg); }
+      .flashcard-stack-card.prev-card { transform: translateY(28px) translateX(15px) rotate(-3deg); }
+    }
+
+    .flashcard-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      border-radius: 28px;
+    }
+    .flashcard-stack-card.flipped .flashcard-inner { transform: rotateY(180deg); }
+
+    .flashcard-front, .flashcard-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.2rem;
+      background-repeat: repeat;
+      background-size: 30px 30px;
+    }
+    @media (min-width: 480px) { .flashcard-front, .flashcard-back { padding: 1.5rem; background-size: 40px 40px; } }
+    @media (min-width: 768px) { .flashcard-front, .flashcard-back { padding: 2rem; } }
+    .flashcard-front { transform: rotateY(0deg); }
+    .flashcard-back { transform: rotateY(180deg); }
+
+    .flashcard-content {
+      font-size: inherit;
+      line-height: 1.4;
+      max-width: 90%;
+      word-break: break-word;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+      text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    }
+    .flashcard-meta {
+      font-size: 0.65rem;
+      opacity: 0.85;
+      margin-top: 0.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .flashcard-edit-overlay {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      display: flex;
+      gap: 6px;
+      z-index: 20;
+    }
+    @media (min-width: 480px) { .flashcard-edit-overlay { bottom: 12px; right: 12px; gap: 8px; } }
+
+    /* Navigation */
+    .nav-controls, .flashcard-nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+      align-items: center;
+    }
+    @media (min-width: 768px) { .nav-controls, .flashcard-nav { gap: 2rem; margin-top: 2rem; } }
+
+    .nav-btn {
+      background: rgba(255,217,102,0.95);
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 60px;
+      cursor: pointer;
+      color: #1e1b2c;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      touch-action: manipulation;
+    }
+    @media (min-width: 480px) { .nav-btn { width: 48px; height: 48px; font-size: 1.2rem; } }
+    @media (min-width: 768px) { .nav-btn { width: 56px; height: 56px; font-size: 1.4rem; } }
+    .nav-btn:hover { background: #FFD966; transform: scale(1.08); }
+
+    .card-counter, .flashcard-counter {
+      background: rgba(0,0,0,0.7);
+      backdrop-filter: blur(12px);
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-weight: 600;
+      color: #FFD966;
+      font-size: 0.8rem;
+    }
+    @media (min-width: 768px) { .card-counter, .flashcard-counter { padding: 0.5rem 1.2rem; font-size: 0.9rem; } }
+
+    .keyboard-hint {
+      text-align: center;
+      margin-top: 1rem;
+      padding: 0.4rem;
+      font-size: 0.6rem;
+      color: rgba(255,255,255,0.4);
+      background: rgba(0,0,0,0.2);
+      border-radius: 30px;
+      display: inline-block;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Timer & Auto-Play */
+    .timer-controls, .auto-play-settings, .auto-play-active {
+      background: rgba(0,0,0,0.2);
+      border-radius: 1rem;
+      padding: 0.8rem 1rem;
+      margin: 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .timer-setting { display: flex; align-items: center; gap: 0.5rem; color: #FFD966; font-size: 0.8rem; }
+    .timer-setting input {
+      width: 60px;
+      padding: 0.3rem;
+      border-radius: 0.5rem;
+      border: none;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .timer-status { font-size: 0.8rem; color: #FFD966; padding: 0.2rem 0.5rem; background: rgba(0,0,0,0.3); border-radius: 20px; }
+    .auto-play-options { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .auto-play-options label { color: #FFD966; font-size: 0.8rem; display: flex; align-items: center; gap: 0.3rem; cursor: pointer; }
+    .auto-play-actions, .auto-play-buttons { display: flex; gap: 0.8rem; flex-wrap: wrap; }
+
+    /* Flashcard Editor */
+    .flashcard-editor { display: flex; flex-direction: column; gap: 1rem; margin: 1rem 0; }
+    .flashcard-side { display: flex; flex-direction: column; gap: 0.3rem; }
+    .flashcard-side label { color: #FFD966; font-size: 0.85rem; display: flex; align-items: center; gap: 0.4rem; }
+
+    /* Font Size Control */
+    .font-size-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+      color: #FFD966;
+      flex-wrap: wrap;
+      font-size: 0.85rem;
+    }
+    .font-size-control input {
+      flex: 1;
+      min-width: 120px;
+      cursor: pointer;
+      background: #f5f3ff;
+      border-radius: 20px;
+      height: 6px;
+      -webkit-appearance: none;
+    }
+    .font-size-control input::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #FFD966;
+      cursor: pointer;
+      border: none;
+    }
+    .font-size-value {
+      background: rgba(0,0,0,0.3);
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      min-width: 40px;
+      text-align: center;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.95);
+      backdrop-filter: blur(12px);
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+      padding: 0.8rem;
+    }
+    .modal-content {
+      background: linear-gradient(145deg, #2a2a3e, #1e1e2e);
+      max-width: 95%;
+      width: 100%;
+      border-radius: 1.5rem;
+      padding: 1.2rem;
+      animation: fadeUp 0.3s ease;
+      border: 1px solid rgba(255,217,102,0.3);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    @media (min-width: 480px) { .modal-content { max-width: 520px; padding: 1.5rem; } }
+
+    .modal-large { max-width: 95% !important; }
+    @media (min-width: 768px) { .modal-large { max-width: 900px !important; } }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .modal-two-columns {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 0.8rem;
+    }
+    @media (min-width: 768px) { .modal-two-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; } }
+
+    .modal-controls { display: flex; flex-direction: column; gap: 0.5rem; }
+    .modal-preview {
+      background: rgba(0,0,0,0.3);
+      border-radius: 1rem;
+      padding: 0.8rem;
+    }
+    .modal-preview h4 { color: #FFD966; margin-bottom: 0.8rem; font-size: 0.85rem; display: flex; align-items: center; gap: 0.5rem; }
+
+    .preview-card { background: rgba(255,255,255,0.05); border-radius: 0.8rem; padding: 0.8rem; text-align: center; margin-bottom: 0.8rem; }
+    .preview-folder {
+      background: linear-gradient(135deg, #6C5CE7dd, #6C5CE799);
+      border-radius: 0.8rem;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    .preview-folder-name { font-size: 1rem; font-weight: 700; margin-bottom: 0.3rem; }
+    .preview-folder-count { font-size: 0.6rem; opacity: 0.8; }
+    .preview-quote-card {
+      border-radius: 0.8rem;
+      padding: 1rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      min-height: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #6C5CE7;
+    }
+    .preview-quote-text { font-size: 0.8rem; line-height: 1.4; margin-bottom: 0.3rem; }
+    .preview-quote-meta { font-size: 0.6rem; opacity: 0.7; }
+    .preview-label { font-size: 0.6rem; color: rgba(255,255,255,0.5); margin-top: 0.4rem; }
+
+    .modal-content input, .modal-content textarea, .modal-content select {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.7rem;
+      border-radius: 1rem;
+      border: none;
+      background: #f5f3ff;
+      font-size: 0.9rem;
+      font-family: inherit;
+    }
+    @media (min-width: 768px) {
+      .modal-content input, .modal-content textarea, .modal-content select {
+        margin: 0.8rem 0;
+        padding: 0.9rem;
+        font-size: 1rem;
+      }
+    }
+
+    .modal-actions { display: flex; justify-content: flex-end; gap: 0.8rem; margin-top: 1rem; }
+    h3 { color: #FFD966; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; }
+    @media (min-width: 768px) { h3 { font-size: 1.3rem; } }
+
+    .color-preview, .font-preview, .album-type-select {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 8px 0;
+      color: #FFD966;
+      flex-wrap: wrap;
+      font-size: 0.8rem;
+    }
+    @media (min-width: 768px) { .color-preview, .font-preview, .album-type-select { gap: 12px; margin: 12px 0; font-size: 0.9rem; } }
+
+    .info-note {
+      background: rgba(255,217,102,0.15);
+      padding: 0.4rem;
+      border-radius: 0.8rem;
+      font-size: 0.7rem;
+      color: #FFD966;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+
+    /* Custom Dropdown */
+    .font-preview { position: relative; margin-bottom: 0.5rem; }
+    .custom-dropdown { position: relative; width: 100%; margin: 0.5rem 0; }
+    .custom-dropdown-trigger {
+      background: #f5f3ff;
+      border-radius: 1.2rem;
+      padding: 0.7rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .custom-dropdown-trigger:hover { border-color: #FFD966; background: #efe8ff; }
+    .custom-dropdown-list {
+      display: none;
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+      right: 0;
+      background: #2a2a3e;
+      border-radius: 1.2rem;
+      margin-bottom: 0.5rem;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 10001;
+      border: 1px solid #FFD966;
+      box-shadow: 0 -10px 25px rgba(0,0,0,0.3);
+    }
+    .custom-dropdown-list::-webkit-scrollbar { width: 6px; }
+    .custom-dropdown-list::-webkit-scrollbar-track { background: rgba(255,255,255,0.1); border-radius: 10px; }
+    .custom-dropdown-list::-webkit-scrollbar-thumb { background: #FFD966; border-radius: 10px; }
+    .custom-dropdown-option {
+      padding: 0.6rem 1rem;
+      cursor: pointer;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      transition: background 0.2s;
+      font-size: 0.85rem;
+    }
+    .custom-dropdown-option:hover { background: rgba(255,217,102,0.2); }
+    .custom-dropdown-option:last-child { border-bottom: none; }
+    .font-select { display: none; }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #FFD966;
+      color: #1e1b2c;
+      padding: 8px 16px;
+      border-radius: 60px;
+      font-weight: bold;
+      z-index: 2100;
+      animation: slideUpFade 2.5s forwards;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      max-width: 90%;
+    }
+    @media (min-width: 768px) { .toast { padding: 10px 24px; font-size: 0.9rem; } }
+
+    @keyframes slideUpFade {
+      0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+      15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+      85% { opacity: 1; transform: translateX(-50%) translateY(0); }
+      100% { opacity: 0; visibility: hidden; }
+    }
+
+    .empty-message {
+      background: rgba(255,255,255,0.05);
+      border-radius: 1.5rem;
+      padding: 1.5rem;
+      text-align: center;
+      color: rgba(255,255,255,0.6);
+    }
+
+    /* Responsive - Mobile First */
+    @media (max-width: 480px) {
+      .btn { padding: 0.4rem 0.8rem; font-size: 0.7rem; gap: 0.3rem; }
+      .btn-small { padding: 0.2rem 0.5rem; font-size: 0.6rem; }
+      .header .btn .btn-text { display: none; }
+      .header .btn i { margin: 0; }
+      .detail-header .btn .btn-text { display: none; }
+      .detail-header .btn i { margin: 0; }
+      .card-actions-group .btn { padding: 0.4rem 0.6rem; }
+      .flashcard-controls .btn { padding: 0.4rem 0.6rem; }
+      .folder-action-btn { padding: 0.2rem 0.4rem; font-size: 0.55rem; }
+      .folder-action-btn i { font-size: 0.5rem; }
+      .folder-name-large { font-size: 0.75rem; }
+      .current-cat-title { font-size: 1rem; }
+      .modal-content { padding: 1rem; }
+    }
+  </style>
+</head>
+<body>
+<div class="app" id="app">
+  <div class="header">
+    <div class="logo">
+      <h1><i class="fas fa-layer-group"></i> Al-in-Bum</h1>
+      <p>thematic stacks · auto-shuffle · rich designs</p>
+    </div>
+    <button class="btn btn-primary" id="createCategoryBtn"><i class="fas fa-plus"></i> <span class="btn-text">New Album</span></button>
+  </div>
+
+  <div id="albumsView" class="albums-container">
+    <div class="section-title"><i class="fas fa-folder-open"></i> Your Albums</div>
+    <div id="categoriesContainer" class="albums-grid"></div>
+  </div>
+
+  <!-- Quote Card View -->
+  <div id="albumDetailView" class="album-detail-container" style="display: none;">
+    <div class="detail-header">
+      <button class="btn btn-outline back-btn" id="backToAlbumsBtn"><i class="fas fa-arrow-left"></i> <span class="btn-text">Back</span></button>
+      <div class="album-detail-title">
+        <span class="current-cat-title" id="currentCategoryTitle">—</span>
+        <span class="album-type-badge" id="albumTypeBadge"></span>
+      </div>
+      <div class="card-actions-group" id="quoteCardActions">
+        <button class="btn btn-primary" id="addCardBtn"><i class="fas fa-plus"></i> <span class="btn-text">Add</span></button>
+        <button class="btn btn-outline btn-small" id="editCategoryBtn"><i class="fas fa-edit"></i> <span class="btn-text">Edit</span></button>
+        <button class="btn btn-danger btn-small" id="deleteCategoryBtn"><i class="fas fa-trash"></i> <span class="btn-text">Delete</span></button>
+        <button class="btn btn-outline btn-small" id="quoteAutoPlayBtn"><i class="fas fa-play"></i> <span class="btn-text">Auto</span></button>
+        <button class="btn btn-outline btn-small" id="starFilterBtn"><i class="fas fa-star"></i> <span class="btn-text">All</span></button>
+      </div>
+    </div>
+    
+    <div id="quoteAutoPlaySettings" class="auto-play-settings" style="display: none;">
+      <div class="timer-setting">
+        <label><i class="fas fa-hourglass-half"></i> Card duration (sec):</label>
+        <input type="number" id="quoteTimerDelay" min="1" max="60" value="5" step="0.5">
+      </div>
+      <div class="auto-play-actions">
+        <button class="btn btn-primary" id="confirmQuoteAutoPlayBtn"><i class="fas fa-play"></i> Start</button>
+        <button class="btn btn-outline" id="cancelQuoteAutoPlayBtn">Cancel</button>
+      </div>
+    </div>
+    
+    <div id="quoteAutoPlayActiveControls" class="auto-play-active" style="display: none;">
+      <div class="timer-status" id="quoteTimerStatus"><i class="fas fa-clock"></i> Ready</div>
+      <div class="auto-play-buttons">
+        <button class="btn btn-outline btn-small" id="quotePauseAutoBtn"><i class="fas fa-pause"></i> Pause</button>
+        <button class="btn btn-outline btn-small" id="quoteLoopToggleBtn"><i class="fas fa-repeat"></i> Loop</button>
+        <button class="btn btn-danger btn-small" id="quoteStopAutoBtn"><i class="fas fa-stop"></i> Done</button>
+      </div>
+    </div>
+    
+    <div class="stack-deck">
+      <div class="card-stack-wrapper" id="stackWrapper"></div>
+    </div>
+    <div class="nav-controls">
+      <button class="nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+      <span class="card-counter" id="cardCounter">0 / 0</span>
+      <button class="nav-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="keyboard-hint"><i class="fas fa-keyboard"></i> ← → arrows | Enter to save</div>
+  </div>
+
+  <!-- Flashcard View -->
+  <div id="flashcardView" class="flashcard-container" style="display: none;">
+    <div class="detail-header">
+      <button class="btn btn-outline back-btn" id="backToAlbumsBtnFlash"><i class="fas fa-arrow-left"></i> <span class="btn-text">Back</span></button>
+      <div class="album-detail-title">
+        <span class="current-cat-title" id="flashcardTitle">—</span>
+        <span class="album-type-badge flashcard-badge">Flashcards</span>
+      </div>
+      <div class="flashcard-controls" id="flashcardControls">
+        <button class="btn btn-outline btn-small" id="shuffleFlashcardsBtn"><i class="fas fa-random"></i></button>
+        <button class="btn btn-outline btn-small" id="flipAllBtn"><i class="fas fa-exchange-alt"></i></button>
+        <button class="btn btn-outline btn-small" id="loopToggleBtn"><i class="fas fa-repeat"></i></button>
+        <button class="btn btn-primary" id="startAutoPlayBtn"><i class="fas fa-play"></i></button>
+        <button class="btn btn-outline btn-small" id="starFilterBtnFlash"><i class="fas fa-star"></i></button>
+      </div>
+      <div class="card-actions-group" id="cardActionsGroup">
+        <button class="btn btn-primary" id="addFlashcardBtn"><i class="fas fa-plus"></i> <span class="btn-text">Add</span></button>
+        <button class="btn btn-outline btn-small" id="editFlashcardCatBtn"><i class="fas fa-edit"></i> <span class="btn-text">Edit</span></button>
+        <button class="btn btn-danger btn-small" id="deleteFlashcardCatBtn"><i class="fas fa-trash"></i> <span class="btn-text">Delete</span></button>
+      </div>
+    </div>
+    
+    <div id="autoPlaySettings" class="auto-play-settings" style="display: none;">
+      <div class="timer-setting"><label>Front (sec):</label><input type="number" id="frontTimerDelay" min="0.5" max="60" value="3" step="0.5"></div>
+      <div class="timer-setting"><label>Back (sec):</label><input type="number" id="backTimerDelay" min="0.5" max="60" value="2" step="0.5"></div>
+      <div class="auto-play-options">
+        <label><input type="checkbox" id="autoFlipAllCheckbox"> Flip All</label>
+        <label><input type="checkbox" id="autoShuffleCheckbox"> Shuffle</label>
+      </div>
+      <div class="auto-play-actions">
+        <button class="btn btn-primary" id="confirmAutoPlayBtn"><i class="fas fa-play"></i> Start</button>
+        <button class="btn btn-outline" id="cancelAutoPlayBtn">Cancel</button>
+      </div>
+    </div>
+    
+    <div id="autoPlayActiveControls" class="auto-play-active" style="display: none;">
+      <div class="timer-status" id="timerStatus"><i class="fas fa-clock"></i> Ready</div>
+      <div class="auto-play-buttons">
+        <button class="btn btn-outline btn-small" id="pauseAutoBtn"><i class="fas fa-pause"></i> Pause</button>
+        <button class="btn btn-outline btn-small" id="loopToggleBtnAuto"><i class="fas fa-repeat"></i> Loop</button>
+        <button class="btn btn-danger btn-small" id="stopAutoBtn"><i class="fas fa-stop"></i> Done</button>
+      </div>
+    </div>
+    
+    <div class="flashcard-deck">
+      <div class="flashcard-stack-wrapper" id="flashcardStackWrapper"></div>
+    </div>
+    <div class="flashcard-nav">
+      <button class="nav-btn" id="flashPrevBtn"><i class="fas fa-chevron-left"></i></button>
+      <span class="flashcard-counter" id="flashcardCounter">0 / 0</span>
+      <button class="nav-btn" id="flashNextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="keyboard-hint"><i class="fas fa-keyboard"></i> ← → arrows | Space to flip | Enter to save</div>
+  </div>
+</div>
+
+<!-- Category Modal -->
+<div id="categoryModal" class="modal">
+  <div class="modal-content modal-large">
+    <h3 id="catModalTitle"><i class="fas fa-folder-plus"></i> New Album</h3>
+    <div class="modal-two-columns">
+      <div class="modal-controls">
+        <input type="text" id="catName" placeholder="Album name" autocomplete="off">
+        <div class="album-type-select">
+          <span><i class="fas fa-layer-group"></i> Type:</span>
+          <select id="albumType">
+            <option value="quote">Quote Cards</option>
+            <option value="flashcard">Flashcards</option>
+          </select>
+        </div>
+        <div class="color-preview"><span><i class="fas fa-palette"></i> Theme:</span><input type="color" id="themeColor" value="#6C5CE7"></div>
+        <div class="color-preview"><span><i class="fas fa-font"></i> Font Color:</span><input type="color" id="fontColor" value="#FFFFFF"></div>
+        <div class="font-preview">
+          <span><i class="fas fa-font"></i> Font:</span>
+          <select id="categoryFont" class="font-select">
+            <option value="Inter, sans-serif">Inter</option>
+            <option value="Playfair Display, serif">Playfair Display</option>
+            <option value="Poppins, sans-serif">Poppins</option>
+            <option value="Montserrat, sans-serif">Montserrat</option>
+            <option value="Dancing Script, cursive">Dancing Script</option>
+            <option value="Lora, serif">Lora</option>
+            <option value="Raleway, sans-serif">Raleway</option>
+            <option value="Noto Sans Myanmar, sans-serif">Noto Sans Myanmar</option>
+            <option value="Padauk, sans-serif">Padauk</option>
+          </select>
+        </div>
+        <div class="font-size-control">
+          <span><i class="fas fa-text-height"></i> Font Size:</span>
+          <input type="range" id="fontSize" min="12" max="60" value="20" step="1">
+          <span id="fontSizeValue" class="font-size-value">20px</span>
+        </div>
+        <input type="hidden" id="editCatId" value="">
+        <div class="modal-actions">
+          <button class="btn" id="cancelCatBtn">Cancel</button>
+          <button class="btn btn-primary" id="confirmCatBtn">Save</button>
+        </div>
+      </div>
+      <div class="modal-preview">
+        <h4><i class="fas fa-eye"></i> Preview</h4>
+        <div class="preview-card">
+          <div class="preview-folder" id="previewFolder">
+            <div class="preview-folder-name" id="previewFolderName">Album Name</div>
+            <div class="preview-folder-count"><i class="fas fa-quote-left"></i> 0 cards</div>
+          </div>
+          <div class="preview-label">Folder</div>
+        </div>
+        <div class="preview-card">
+          <div class="preview-quote-card" id="previewQuoteCard">
+            <div class="preview-quote-text" id="previewQuoteText">"Your preview here"</div>
+            <div class="preview-quote-meta">1 of 1</div>
+          </div>
+          <div class="preview-label">Card</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quote Card Modal -->
+<div id="cardModal" class="modal">
+  <div class="modal-content">
+    <h3 id="cardModalTitle"><i class="fas fa-quote-left"></i> New Quote</h3>
+    <textarea id="quoteText" rows="3" placeholder="Write your quote..."></textarea>
+    <div class="info-note"><i class="fas fa-magic"></i> Unique artistic pattern automatically</div>
+    <input type="hidden" id="editCardId" value="">
+    <div class="modal-actions">
+      <button class="btn" id="cancelCardBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmCardBtn">Save Card</button>
+    </div>
+  </div>
+</div>
+
+<!-- Flashcard Modal -->
+<div id="flashcardModal" class="modal">
+  <div class="modal-content">
+    <h3 id="flashcardModalTitle"><i class="fas fa-layer-group"></i> New Flashcard</h3>
+    <div class="flashcard-editor">
+      <div class="flashcard-side">
+        <label><i class="fas fa-font"></i> Front:</label>
+        <textarea id="flashcardFrontText" rows="3" placeholder="Question, word, or prompt..."></textarea>
+      </div>
+      <div class="flashcard-side">
+        <label><i class="fas fa-lightbulb"></i> Back:</label>
+        <textarea id="flashcardBackText" rows="3" placeholder="Answer, translation..."></textarea>
+      </div>
+    </div>
+    <input type="hidden" id="editFlashcardId" value="">
+    <div class="modal-actions">
+      <button class="btn" id="cancelFlashcardBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmFlashcardBtn">Save Card</button>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+<script>
+// ====================================================================
+// AL-IN-BUM - Complete Standalone App
+// Uses IndexedDB for persistent storage - No server needed!
+// Works on iOS, Android, macOS, Windows - any modern browser
+// ====================================================================
+
+// ====================================================================
+// INDEXEDDB DATABASE CLASS
+// ====================================================================
+class AlInBumDB {
+  constructor() {
+    this.dbName = 'AlInBumDB';
+    this.storeName = 'categories';
+    this.db = null;
+  }
+
+  async init() {
+    return new Promise((resolve, reject) => {
+      const request = indexedDB.open(this.dbName, 1);
+      request.onerror = () => reject(request.error);
+      request.onsuccess = () => { this.db = request.result; resolve(); };
+      request.onupgradeneeded = (event) => {
+        const db = event.target.result;
+        if (!db.objectStoreNames.contains(this.storeName)) {
+          db.createObjectStore(this.storeName, { keyPath: 'id' });
+        }
+      };
+    });
+  }
+
+  async getAll() {
+    return new Promise((resolve, reject) => {
+      const transaction = this.db.transaction([this.storeName], 'readonly');
+      const store = transaction.objectStore(this.storeName);
+      const request = store.getAll();
+      request.onsuccess = () => resolve(request.result || []);
+      request.onerror = () => reject(request.error);
+    });
+  }
+
+  async saveAll(data) {
+    return new Promise((resolve, reject) => {
+      const transaction = this.db.transaction([this.storeName], 'readwrite');
+      const store = transaction.objectStore(this.storeName);
+      const clearRequest = store.clear();
+      clearRequest.onsuccess = () => {
+        if (data.length === 0) { resolve(); return; }
+        let completed = 0;
+        data.forEach(item => {
+          const addRequest = store.add(item);
+          addRequest.onsuccess = () => { completed++; if (completed === data.length) resolve(); };
+          addRequest.onerror = () => reject(addRequest.error);
+        });
+      };
+      clearRequest.onerror = () => reject(clearRequest.error);
+    });
+  }
+}
+
+// ====================================================================
+// GLOBAL STATE
+// ====================================================================
+const db = new AlInBumDB();
+let dbReady = false;
+let categories = [];
+let selectedCategoryId = null;
+let currentCardIdx = 0;
+let currentOrder = [];
+
+// Flashcard variables
+let flashcardCategory = null;
+let currentFlashcardIdx = 0;
+let flashcardOrder = [];
+let isFlipped = false;
+let autoPlayTimer = null;
+let countdownInterval = null;
+let isAutoPlaying = false;
+let isLoopEnabled = false;
+let autoPlayStage = 'front';
+let currentCountdown = 0;
+
+// Quote Card Auto-Play variables
+let quoteAutoPlayTimer = null;
+let quoteCountdownInterval = null;
+let isQuoteAutoPlaying = false;
+let isQuoteLoopEnabled = false;
+let quoteCurrentCountdown = 0;
+
+// Star filter
+let showStarredOnly = false;
+
+// ====================================================================
+// DEFAULT DATA
+// ====================================================================
+function getDefaultData() {
+  return [
+    {
+      id: 'cat_wisdom',
+      name: 'Wisdom Grove',
+      themeColor: '#2E7D64',
+      fontColor: '#FFFFFF',
+      font: 'Playfair Display, serif',
+      type: 'quote',
+      fontSize: 20,
+      cards: [
+        { id: 'c1', text: 'The mind is everything. What you think you become. – Buddha', starred: false },
+        { id: 'c2', text: 'Knowing yourself is the beginning of all wisdom. – Aristotle', starred: false },
+        { id: 'c3', text: 'Simplicity is the ultimate sophistication. – Leonardo da Vinci', starred: false }
+      ]
+    },
+    {
+      id: 'cat_love',
+      name: 'Heartfelt',
+      themeColor: '#D45A7A',
+      fontColor: '#FFFFFF',
+      font: 'Dancing Script, cursive',
+      type: 'quote',
+      fontSize: 20,
+      cards: [
+        { id: 'c4', text: 'Where there is love, there is life. – Gandhi', starred: false },
+        { id: 'c5', text: 'Love all, trust a few. – Shakespeare', starred: false }
+      ]
+    },
+    {
+      id: 'cat_flash',
+      name: 'Japanese Vocabulary',
+      themeColor: '#98bef1',
+      fontColor: '#2f3a42',
+      font: 'Noto Sans JP, sans-serif',
+      type: 'flashcard',
+      fontSize: 24,
+      cards: [
+        { id: 'f1', front: 'こんにちは', back: 'Hello', starred: false },
+        { id: 'f2', front: 'ありがとう', back: 'Thank you', starred: false },
+        { id: 'f3', front: 'さようなら', back: 'Goodbye', starred: false }
+      ]
+    }
+  ];
+}
+
+// ====================================================================
+// UTILITY FUNCTIONS
+// ====================================================================
+function escapeHtml(str) {
+  if (!str) return '';
+  return str.replace(/[&<>]/g, function(m) {
+    if (m === '&') return '&amp;';
+    if (m === '<') return '&lt;';
+    if (m === '>') return '&gt;';
+    return m;
+  });
+}
+
+function showToast(msg) {
+  var t = document.createElement('div');
+  t.className = 'toast';
+  t.innerHTML = '<i class="fas fa-check-circle"></i> ' + msg;
+  document.body.appendChild(t);
+  setTimeout(function() { t.remove(); }, 2500);
+}
+
+function hideModal(id) {
+  var modal = document.getElementById(id);
+  if (modal) modal.style.display = 'none';
+}
+
+function showModal(id) {
+  var modal = document.getElementById(id);
+  if (modal) modal.style.display = 'flex';
+}
+
+function shuffleArray(arr) {
+  for (var i = arr.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+  }
+  return arr;
+}
+
+function getPatternClass() {
+  var patterns = [
+    'pattern-floral', 'pattern-waves', 'pattern-stars', 'pattern-mountains',
+    'pattern-bubbles', 'pattern-grid', 'pattern-diagonal', 'pattern-polka',
+    'pattern-zigzag', 'pattern-leaf', 'pattern-hearts', 'pattern-snow', 'pattern-confetti'
+  ];
+  return patterns[Math.floor(Math.random() * patterns.length)];
+}
+
+// ====================================================================
+// DATABASE OPERATIONS
+// ====================================================================
+function migrateCategories(data) {
+  var changed = false;
+  for (var i = 0; i < data.length; i++) {
+    if (!data[i].fontSize) { data[i].fontSize = 20; changed = true; }
+    if (!data[i].type) { data[i].type = 'quote'; changed = true; }
+    for (var j = 0; j < data[i].cards.length; j++) {
+      if (data[i].cards[j].starred === undefined) { data[i].cards[j].starred = false; changed = true; }
+    }
+  }
+  return { data: data, changed: changed };
+}
+
+async function loadCategories() {
+  try {
+    await db.init();
+    dbReady = true;
+    categories = await db.getAll();
+    if (!categories || categories.length === 0) {
+      categories = getDefaultData();
+      await saveCategories();
+    } else {
+      var result = migrateCategories(categories);
+      categories = result.data;
+      if (result.changed) { await saveCategories(); }
+    }
+    renderAllUI();
+  } catch (error) {
+    console.error('Error loading:', error);
+    categories = getDefaultData();
+    renderAllUI();
+    showToast('Using default data');
+  }
+}
+
+async function saveCategories() {
+  try {
+    if (!dbReady) { await db.init(); dbReady = true; }
+    await db.saveAll(categories);
+  } catch (error) {
+    console.error('Error saving:', error);
+    showToast('Failed to save');
+  }
+}
+
+// ====================================================================
+// LIVE PREVIEW
+// ====================================================================
+function updateLivePreview() {
+  var name = document.getElementById('catName').value.trim();
+  if (name === "") name = "Album Name";
+  var color = document.getElementById('themeColor').value;
+  var fontColor = document.getElementById('fontColor').value;
+  var fontSelect = document.getElementById('categoryFont');
+  var font = fontSelect ? fontSelect.value : 'Inter, sans-serif';
+  var fontSizeSlider = document.getElementById('fontSize');
+  var fontSize = fontSizeSlider ? fontSizeSlider.value + 'px' : '20px';
+  
+  var previewFolder = document.getElementById('previewFolder');
+  var previewFolderName = document.getElementById('previewFolderName');
+  
+  if (previewFolder) {
+    previewFolder.style.background = 'linear-gradient(135deg, ' + color + 'dd, ' + color + '99)';
+  }
+  if (previewFolderName) {
+    previewFolderName.style.fontFamily = font;
+    previewFolderName.style.color = fontColor;
+    previewFolderName.innerText = name;
+  }
+  
+  var previewQuoteCard = document.getElementById('previewQuoteCard');
+  var previewQuoteText = document.getElementById('previewQuoteText');
+  
+  if (previewQuoteCard) {
+    previewQuoteCard.style.backgroundColor = color;
+    previewQuoteCard.style.color = fontColor;
+  }
+  if (previewQuoteText) {
+    previewQuoteText.style.fontFamily = font;
+    previewQuoteText.style.color = fontColor;
+    previewQuoteText.style.fontSize = fontSize;
+  }
+  
+  var fontSizeValue = document.getElementById('fontSizeValue');
+  if (fontSizeValue && fontSizeSlider) {
+    fontSizeValue.innerText = fontSizeSlider.value + 'px';
+  }
+}
+
+// ====================================================================
+// STAR FUNCTIONALITY
+// ====================================================================
+function toggleStar(cardId, type) {
+  var category = null;
+  var card = null;
+  for (var i = 0; i < categories.length; i++) {
+    for (var j = 0; j < categories[i].cards.length; j++) {
+      if (categories[i].cards[j].id === cardId) {
+        category = categories[i];
+        card = categories[i].cards[j];
+        break;
+      }
+    }
+    if (card) break;
+  }
+  if (!card) return;
+  
+  card.starred = !card.starred;
+  saveCategories();
+  showToast(card.starred ? '⭐ Starred' : '☆ Unstarred');
+  
+  if (showStarredOnly) {
+    var starredCount = 0;
+    for (var i = 0; i < category.cards.length; i++) {
+      if (category.cards[i].starred) starredCount++;
+    }
+    if (starredCount === 0) { showStarredOnly = false; }
+  }
+  
+  updateStarFilterButtons();
+  if (type === 'quote') { renderStackedDeckSilent(); }
+  else if (type === 'flashcard') { renderFlashcardStackSilent(); }
+}
+
+function updateStarFilterButtons() {
+  var category = null;
+  var detailView = document.getElementById('albumDetailView');
+  var flashcardView = document.getElementById('flashcardView');
+  
+  if (detailView && detailView.style.display === 'block') {
+    for (var i = 0; i < categories.length; i++) {
+      if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+    }
+  } else if (flashcardView && flashcardView.style.display === 'block') {
+    category = flashcardCategory;
+  }
+  
+  var starFilterBtn = document.getElementById('starFilterBtn');
+  var starFilterBtnFlash = document.getElementById('starFilterBtnFlash');
+  
+  var hasStarred = false;
+  if (category) {
+    for (var i = 0; i < category.cards.length; i++) {
+      if (category.cards[i].starred) { hasStarred = true; break; }
+    }
+  }
+  
+  if (!hasStarred) {
+    if (starFilterBtn) starFilterBtn.style.display = 'none';
+    if (starFilterBtnFlash) starFilterBtnFlash.style.display = 'none';
+    if (showStarredOnly) { showStarredOnly = false; }
+    return;
+  }
+  
+  if (starFilterBtn) starFilterBtn.style.display = 'inline-flex';
+  if (starFilterBtnFlash) starFilterBtnFlash.style.display = 'inline-flex';
+  
+  var btnText = showStarredOnly ? '<i class="fas fa-star"></i> All' : '<i class="fas fa-star"></i> Star';
+  if (starFilterBtn) {
+    starFilterBtn.innerHTML = btnText;
+    starFilterBtn.style.background = showStarredOnly ? '#FFD966' : '';
+    starFilterBtn.style.color = showStarredOnly ? '#1e1b2c' : '';
+  }
+  if (starFilterBtnFlash) {
+    starFilterBtnFlash.innerHTML = btnText;
+    starFilterBtnFlash.style.background = showStarredOnly ? '#FFD966' : '';
+    starFilterBtnFlash.style.color = showStarredOnly ? '#1e1b2c' : '';
+  }
+}
+
+function toggleShowStarred() {
+  var category = null;
+  var detailView = document.getElementById('albumDetailView');
+  var flashcardView = document.getElementById('flashcardView');
+  
+  if (detailView && detailView.style.display === 'block') {
+    for (var i = 0; i < categories.length; i++) {
+      if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+    }
+  } else if (flashcardView && flashcardView.style.display === 'block') {
+    category = flashcardCategory;
+  }
+  
+  if (!category) return;
+  showStarredOnly = !showStarredOnly;
+  
+  if (showStarredOnly) {
+    var hasStarred = false;
+    for (var i = 0; i < category.cards.length; i++) {
+      if (category.cards[i].starred) { hasStarred = true; break; }
+    }
+    if (!hasStarred) {
+      showStarredOnly = false;
+      showToast('No starred cards');
+      updateStarFilterButtons();
+      return;
+    }
+  }
+  
+  updateStarFilterButtons();
+  
+  if (detailView && detailView.style.display === 'block') {
+    var indices = [];
+    for (var j = 0; j < category.cards.length; j++) {
+      if (!showStarredOnly || category.cards[j].starred) { indices.push(j); }
+    }
+    currentOrder = shuffleArray(indices);
+    currentCardIdx = 0;
+    renderStackedDeckSilent();
+  } else if (flashcardView && flashcardView.style.display === 'block') {
+    var indices = [];
+    for (var j = 0; j < category.cards.length; j++) {
+      if (!showStarredOnly || category.cards[j].starred) { indices.push(j); }
+    }
+    flashcardOrder = shuffleArray(indices);
+    currentFlashcardIdx = 0;
+    isFlipped = false;
+    renderFlashcardStackSilent();
+  }
+  
+  showToast(showStarredOnly ? '⭐ Starred only' : '📚 All cards');
+}
+
+// ====================================================================
+// CARD RENDER FUNCTIONS
+// ====================================================================
+function getCardInner(card, displayIndex, total, category) {
+  var patternClass = getPatternClass();
+  var fontSizeNum = category.fontSize || 20;
+  var fontSize = fontSizeNum + 'px';
+  var style = 'font-family: ' + (category.font || 'Inter, sans-serif') + '; color: ' + (category.fontColor || '#FFFFFF') + '; background-color: ' + category.themeColor + '; font-size: ' + fontSize + ';';
+  var starIcon = card.starred ? 'fas fa-star' : 'far fa-star';
+  var starColor = card.starred ? 'color: #FFD700;' : 'color: rgba(255,255,255,0.5);';
+  
+  return '<div class="card-inner ' + patternClass + '" style="' + style + '">' +
+    '<div class="quote-text">' + escapeHtml(card.text) + '</div>' +
+    '<div class="card-meta">' + displayIndex + ' of ' + total + '</div>' +
+    '<div class="card-edit-overlay">' +
+      '<button class="float-btn star-btn" data-id="' + card.id + '" data-type="quote" style="' + starColor + '"><i class="' + starIcon + '"></i></button>' +
+      '<button class="float-btn edit-card-btn" data-id="' + card.id + '"><i class="fas fa-edit"></i></button>' +
+      '<button class="float-btn delete-card-btn" data-id="' + card.id + '"><i class="fas fa-trash"></i></button>' +
+    '</div>' +
+  '</div>';
+}
+
+function getFlashcardInner(card, position, total, category, isFlippedState) {
+  var patternClass = getPatternClass();
+  var frontContent = escapeHtml(card.front);
+  var backContent = escapeHtml(card.back);
+  var fontSizeNum = category.fontSize || 20;
+  var fontSize = fontSizeNum + 'px';
+  var style = 'font-family: ' + (category.font || 'Inter, sans-serif') + '; color: ' + (category.fontColor || '#FFFFFF') + '; background-color: ' + category.themeColor + '; font-size: ' + fontSize + ';';
+  var starIcon = card.starred ? 'fas fa-star' : 'far fa-star';
+  var starColor = card.starred ? 'color: #FFD700;' : 'color: rgba(255,255,255,0.5);';
+  
+  return '<div class="flashcard-stack-card ' + (isFlippedState ? 'flipped' : '') + '">' +
+    '<div class="flashcard-inner">' +
+      '<div class="flashcard-front ' + patternClass + '" style="' + style + '">' +
+        '<div class="flashcard-content">' + frontContent + '</div>' +
+        '<div class="flashcard-meta">' + position + ' of ' + total + '</div>' +
+      '</div>' +
+      '<div class="flashcard-back ' + patternClass + '" style="' + style + '">' +
+        '<div class="flashcard-content">' + backContent + '</div>' +
+        '<div class="flashcard-meta">' + position + ' of ' + total + '</div>' +
+      '</div>' +
+    '</div>' +
+    '<div class="flashcard-edit-overlay">' +
+      '<button class="float-btn star-btn" data-id="' + card.id + '" data-type="flashcard" style="' + starColor + '"><i class="' + starIcon + '"></i></button>' +
+      '<button class="float-btn edit-flashcard-btn" data-id="' + card.id + '"><i class="fas fa-edit"></i></button>' +
+      '<button class="float-btn delete-flashcard-btn" data-id="' + card.id + '"><i class="fas fa-trash"></i></button>' +
+    '</div>' +
+  '</div>';
+}
+
+// ====================================================================
+// RENDER ALBUMS
+// ====================================================================
+function renderAlbums() {
+  var container = document.getElementById('categoriesContainer');
+  if (!container) return;
+  
+  if (categories.length === 0) {
+    container.innerHTML = '<div class="empty-message"><i class="fas fa-folder-open"></i> No albums — click "New Album"</div>';
+    return;
+  }
+
+  var html = '';
+  for (var i = 0; i < categories.length; i++) {
+    var cat = categories[i];
+    var typeIcon = cat.type === 'flashcard' ? '<i class="fas fa-layer-group"></i>' : '<i class="fas fa-quote-left"></i>';
+    var bgStyle = 'background: linear-gradient(135deg, ' + cat.themeColor + 'dd, ' + cat.themeColor + '99);';
+    html += '<div class="album-folder" data-id="' + cat.id + '">' +
+      '<div class="folder-preview" style="' + bgStyle + '">' +
+        '<div class="folder-name-large" style="font-family: ' + (cat.font || 'Inter, sans-serif') + '; color: ' + (cat.fontColor || '#FFFFFF') + ';">' + escapeHtml(cat.name) + '</div>' +
+        '<div class="folder-quote-count">' + typeIcon + ' ' + cat.cards.length + ' cards</div>' +
+      '</div>' +
+      '<div class="folder-info">' +
+        '<div class="folder-actions">' +
+          '<button class="folder-action-btn edit-btn" data-id="' + cat.id + '" data-name="' + escapeHtml(cat.name) + '" data-color="' + cat.themeColor + '" data-font="' + (cat.font || 'Inter, sans-serif') + '" data-fontcolor="' + (cat.fontColor || '#FFFFFF') + '" data-type="' + (cat.type || 'quote') + '"><i class="fas fa-edit"></i> Edit</button>' +
+          '<button class="folder-action-btn delete-btn" data-id="' + cat.id + '"><i class="fas fa-trash"></i> Delete</button>' +
+        '</div>' +
+      '</div>' +
+    '</div>';
+  }
+  container.innerHTML = html;
+
+  var folders = document.querySelectorAll('.album-folder');
+  for (var j = 0; j < folders.length; j++) {
+    var folder = folders[j];
+    folder.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('edit-btn') && !e.target.classList.contains('delete-btn')) {
+        selectCategory(this.dataset.id);
+      }
+    });
+  }
+
+  var editBtns = document.querySelectorAll('.edit-btn');
+  for (var k = 0; k < editBtns.length; k++) {
+    var btn = editBtns[k];
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      openEditCategory(this.dataset.id, this.dataset.name, this.dataset.color, this.dataset.font, this.dataset.fontcolor, this.dataset.type);
+    });
+  }
+
+  var deleteBtns = document.querySelectorAll('.delete-btn');
+  for (var m = 0; m < deleteBtns.length; m++) {
+    var delBtn = deleteBtns[m];
+    delBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      deleteCategoryById(this.dataset.id);
+    });
+  }
+}
+
+// ====================================================================
+// SELECT CATEGORY / VIEWS
+// ====================================================================
+function selectCategory(id) {
+  selectedCategoryId = id;
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === id) { category = categories[i]; break; }
+  }
+  showStarredOnly = false;
+  if (category.type === 'flashcard') { openFlashcardView(category); }
+  else { openQuoteCardView(category); }
+  setTimeout(function() { updateStarFilterButtons(); }, 100);
+}
+
+function openQuoteCardView(category) {
+  stopQuoteAutoPlay();
+  document.getElementById('albumsView').style.display = 'none';
+  document.getElementById('albumDetailView').style.display = 'block';
+  document.getElementById('flashcardView').style.display = 'none';
+  document.getElementById('currentCategoryTitle').innerHTML = escapeHtml(category.name);
+  document.getElementById('albumTypeBadge').innerHTML = '<i class="fas fa-quote-left"></i> Quote Cards';
+  
+  document.getElementById('quoteAutoPlaySettings').style.display = 'none';
+  document.getElementById('quoteAutoPlayActiveControls').style.display = 'none';
+  document.getElementById('quoteCardActions').style.display = 'flex';
+  isQuoteAutoPlaying = false;
+  isQuoteLoopEnabled = false;
+  var loopBtn = document.getElementById('quoteLoopToggleBtn');
+  if (loopBtn) { loopBtn.style.background = ''; loopBtn.style.color = ''; }
+  
+  if (category.cards.length > 0) {
+    var indices = [];
+    for (var j = 0; j < category.cards.length; j++) { indices.push(j); }
+    currentOrder = shuffleArray(indices);
+  } else { currentOrder = []; }
+  currentCardIdx = 0;
+  renderStackedDeck();
+}
+
+function openFlashcardView(category) {
+  flashcardCategory = category;
+  document.getElementById('albumsView').style.display = 'none';
+  document.getElementById('albumDetailView').style.display = 'none';
+  document.getElementById('flashcardView').style.display = 'block';
+  document.getElementById('flashcardTitle').innerHTML = escapeHtml(category.name);
+  
+  flashcardOrder = [];
+  for (var i = 0; i < category.cards.length; i++) { flashcardOrder.push(i); }
+  currentFlashcardIdx = 0;
+  isFlipped = false;
+  autoPlayStage = 'front';
+  stopAutoPlay();
+  document.getElementById('autoPlaySettings').style.display = 'none';
+  document.getElementById('autoPlayActiveControls').style.display = 'none';
+  document.getElementById('flashcardControls').style.display = 'flex';
+  document.getElementById('cardActionsGroup').style.display = 'flex';
+  renderFlashcardStack();
+}
+
+// ====================================================================
+// RENDER STACKED DECK (Quote Cards)
+// ====================================================================
+function renderStackedDeckSilent() { renderStackedDeckInternal(true); }
+function renderStackedDeck() { renderStackedDeckInternal(false); }
+
+function renderStackedDeckInternal(silent) {
+  var wrapper = document.getElementById('stackWrapper');
+  var counterSpan = document.getElementById('cardCounter');
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (!wrapper || !counterSpan) return;
+
+  if (!category || category.cards.length === 0) {
+    wrapper.innerHTML = '<div class="stack-card top-card"><div class="card-inner" style="background-color: ' + (category ? category.themeColor : '#6C5CE7') + '; color: ' + (category ? (category.fontColor || '#FFFFFF') : '#FFFFFF') + ';"><i class="fas fa-quote-left" style="font-size: 2rem; margin-bottom: 1rem; opacity: 0.7;"></i><br>No cards yet.<br>Add your first quote!</div></div>';
+    counterSpan.innerText = '0 / 0';
+    return;
+  }
+
+  var displayOrder = currentOrder;
+  if (showStarredOnly) {
+    var starredIndices = [];
+    for (var j = 0; j < category.cards.length; j++) {
+      if (category.cards[j].starred) { starredIndices.push(j); }
+    }
+    displayOrder = shuffleArray(starredIndices);
+    if (displayOrder.length === 0) {
+      wrapper.innerHTML = '<div class="stack-card top-card"><div class="card-inner" style="background-color: ' + category.themeColor + '; color: ' + (category.fontColor || '#FFFFFF') + ';"><i class="fas fa-star"></i><br>No starred cards</div></div>';
+      counterSpan.innerText = '0 / 0';
+      return;
+    }
+  } else {
+    if (currentOrder.length !== category.cards.length) {
+      var indices = [];
+      for (var j = 0; j < category.cards.length; j++) { indices.push(j); }
+      currentOrder = shuffleArray(indices);
+    }
+    displayOrder = currentOrder;
+  }
+
+  if (currentCardIdx >= displayOrder.length) currentCardIdx = displayOrder.length - 1;
+  if (currentCardIdx < 0) currentCardIdx = 0;
+
+  var total = displayOrder.length;
+  var currCard = category.cards[displayOrder[currentCardIdx]];
+  var nextCard = (currentCardIdx + 1 < total) ? category.cards[displayOrder[currentCardIdx + 1]] : null;
+  var prevCard = (currentCardIdx - 1 >= 0) ? category.cards[displayOrder[currentCardIdx - 1]] : null;
+
+  var html = '';
+  if (prevCard) { html += '<div class="stack-card prev-card">' + getCardInner(prevCard, currentCardIdx, total, category) + '</div>'; }
+  if (nextCard) { html += '<div class="stack-card next-card">' + getCardInner(nextCard, currentCardIdx + 2, total, category) + '</div>'; }
+  html += '<div class="stack-card top-card">' + getCardInner(currCard, currentCardIdx + 1, total, category) + '</div>';
+
+  if (silent) {
+    wrapper.innerHTML = html;
+    var cards = wrapper.querySelectorAll('.stack-card');
+    for (var i = 0; i < cards.length; i++) { cards[i].style.animation = 'none'; }
+  } else { wrapper.innerHTML = html; }
+  counterSpan.innerText = (currentCardIdx + 1) + ' / ' + total;
+
+  document.querySelectorAll('.star-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); toggleStar(this.dataset.id, this.dataset.type); });
+  });
+  document.querySelectorAll('.edit-card-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); openEditCard(this.dataset.id); });
+  });
+  document.querySelectorAll('.delete-card-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); deleteCardById(this.dataset.id); });
+  });
+}
+
+// ====================================================================
+// RENDER FLASHCARD STACK
+// ====================================================================
+function renderFlashcardStackSilent() { renderFlashcardStackInternal(true); }
+function renderFlashcardStack() { renderFlashcardStackInternal(false); }
+
+function renderFlashcardStackInternal(silent) {
+  var wrapper = document.getElementById('flashcardStackWrapper');
+  var counterSpan = document.getElementById('flashcardCounter');
+  if (!wrapper || !counterSpan) return;
+  
+  if (!flashcardCategory || flashcardCategory.cards.length === 0) {
+    wrapper.innerHTML = '<div class="flashcard-stack-card top-card"><div class="flashcard-inner"><div class="flashcard-front" style="background-color: ' + (flashcardCategory ? flashcardCategory.themeColor : '#6C5CE7') + '; color: #FFFFFF;"><div class="flashcard-content"><i class="fas fa-plus-circle"></i><br>No cards yet.</div></div></div></div>';
+    counterSpan.innerText = '0 / 0';
+    return;
+  }
+
+  var displayOrder = flashcardOrder;
+  if (showStarredOnly) {
+    var starredIndices = [];
+    for (var j = 0; j < flashcardCategory.cards.length; j++) {
+      if (flashcardCategory.cards[j].starred) { starredIndices.push(j); }
+    }
+    displayOrder = shuffleArray(starredIndices);
+    if (displayOrder.length === 0) {
+      wrapper.innerHTML = '<div class="flashcard-stack-card top-card"><div class="flashcard-inner"><div class="flashcard-front" style="background-color: ' + flashcardCategory.themeColor + '; color: ' + (flashcardCategory.fontColor || '#FFFFFF') + ';"><div class="flashcard-content"><i class="fas fa-star"></i><br>No starred cards</div></div></div></div>';
+      counterSpan.innerText = '0 / 0';
+      return;
+    }
+  } else {
+    if (flashcardOrder.length !== flashcardCategory.cards.length) {
+      var indices = [];
+      for (var j = 0; j < flashcardCategory.cards.length; j++) { indices.push(j); }
+      flashcardOrder = shuffleArray(indices);
+    }
+    displayOrder = flashcardOrder;
+  }
+
+  if (currentFlashcardIdx >= displayOrder.length) currentFlashcardIdx = displayOrder.length - 1;
+  if (currentFlashcardIdx < 0) currentFlashcardIdx = 0;
+
+  var total = displayOrder.length;
+  var currCard = flashcardCategory.cards[displayOrder[currentFlashcardIdx]];
+  var nextCard = (currentFlashcardIdx + 1 < total) ? flashcardCategory.cards[displayOrder[currentFlashcardIdx + 1]] : null;
+  var prevCard = (currentFlashcardIdx - 1 >= 0) ? flashcardCategory.cards[displayOrder[currentFlashcardIdx - 1]] : null;
+
+  var html = '';
+  if (prevCard) { html += '<div class="flashcard-stack-card prev-card">' + getFlashcardInner(prevCard, currentFlashcardIdx, total, flashcardCategory, false) + '</div>'; }
+  if (nextCard) { html += '<div class="flashcard-stack-card next-card">' + getFlashcardInner(nextCard, currentFlashcardIdx + 2, total, flashcardCategory, false) + '</div>'; }
+  html += '<div class="flashcard-stack-card top-card">' + getFlashcardInner(currCard, currentFlashcardIdx + 1, total, flashcardCategory, isFlipped) + '</div>';
+
+  if (silent) {
+    wrapper.innerHTML = html;
+    var cards = wrapper.querySelectorAll('.flashcard-stack-card');
+    for (var i = 0; i < cards.length; i++) { cards[i].style.animation = 'none'; }
+  } else { wrapper.innerHTML = html; }
+  counterSpan.innerText = (currentFlashcardIdx + 1) + ' / ' + total;
+
+  document.querySelectorAll('.star-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); toggleStar(this.dataset.id, this.dataset.type); });
+  });
+  document.querySelectorAll('.edit-flashcard-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); openEditFlashcard(this.dataset.id); });
+  });
+  document.querySelectorAll('.delete-flashcard-btn').forEach(function(btn) {
+    btn.addEventListener('click', function(e) { e.stopPropagation(); deleteFlashcardById(this.dataset.id); });
+  });
+  var topCard = wrapper.querySelector('.top-card');
+  if (topCard) {
+    topCard.addEventListener('click', function(e) {
+      if (!e.target.classList.contains('star-btn') && !e.target.classList.contains('edit-flashcard-btn') && !e.target.classList.contains('delete-flashcard-btn')) {
+        flipCurrentCard();
+      }
+    });
+  }
+}
+
+// ====================================================================
+// NAVIGATION
+// ====================================================================
+function nextCard() {
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (category && currentCardIdx + 1 < currentOrder.length) {
+    currentCardIdx++;
+    renderStackedDeck();
+    if (isQuoteAutoPlaying) { resetQuoteAutoPlayTimer(); }
+  } else if (isQuoteLoopEnabled && category && category.cards.length > 0) {
+    currentCardIdx = 0;
+    renderStackedDeck();
+    if (isQuoteAutoPlaying) { resetQuoteAutoPlayTimer(); }
+    showToast('Looping');
+  }
+}
+
+function prevCard() {
+  if (currentCardIdx - 1 >= 0) {
+    currentCardIdx--;
+    renderStackedDeck();
+    if (isQuoteAutoPlaying) { resetQuoteAutoPlayTimer(); }
+  } else if (isQuoteLoopEnabled) {
+    var category = null;
+    for (var i = 0; i < categories.length; i++) {
+      if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+    }
+    if (category && category.cards.length > 0) {
+      currentCardIdx = currentOrder.length - 1;
+      renderStackedDeck();
+      if (isQuoteAutoPlaying) { resetQuoteAutoPlayTimer(); }
+    }
+  }
+}
+
+function backToAlbums() {
+  stopAutoPlay();
+  stopQuoteAutoPlay();
+  document.getElementById('albumsView').style.display = 'block';
+  document.getElementById('albumDetailView').style.display = 'none';
+  document.getElementById('flashcardView').style.display = 'none';
+  selectedCategoryId = null;
+  showStarredOnly = false;
+  renderAlbums();
+}
+
+// ====================================================================
+// FLASHCARD FUNCTIONS
+// ====================================================================
+function flipCurrentCard() {
+  isFlipped = !isFlipped;
+  if (isAutoPlaying) {
+    autoPlayStage = isFlipped ? 'back' : 'front';
+    resetAutoPlayTimer();
+  }
+  renderFlashcardStack();
+}
+
+function nextFlashcard() {
+  var displayOrder = flashcardOrder;
+  if (showStarredOnly) {
+    var starredIndices = [];
+    for (var j = 0; j < flashcardCategory.cards.length; j++) {
+      if (flashcardCategory.cards[j].starred) { starredIndices.push(j); }
+    }
+    displayOrder = shuffleArray(starredIndices);
+    if (displayOrder.length === 0) { showToast('No starred cards'); return; }
+  } else {
+    if (flashcardOrder.length !== flashcardCategory.cards.length) {
+      var indices = [];
+      for (var j = 0; j < flashcardCategory.cards.length; j++) { indices.push(j); }
+      flashcardOrder = shuffleArray(indices);
+    }
+    displayOrder = flashcardOrder;
+  }
+  
+  if (currentFlashcardIdx + 1 < displayOrder.length) {
+    currentFlashcardIdx++;
+    isFlipped = false;
+    autoPlayStage = 'front';
+    renderFlashcardStack();
+    if (isAutoPlaying) { resetAutoPlayTimer(); }
+  } else if (isLoopEnabled && displayOrder.length > 0) {
+    currentFlashcardIdx = 0;
+    isFlipped = false;
+    autoPlayStage = 'front';
+    renderFlashcardStack();
+    if (isAutoPlaying) { resetAutoPlayTimer(); }
+    showToast('Looping');
+  }
+}
+
+function prevFlashcard() {
+  if (currentFlashcardIdx - 1 >= 0) {
+    currentFlashcardIdx--;
+    isFlipped = false;
+    autoPlayStage = 'front';
+    renderFlashcardStack();
+    if (isAutoPlaying) { resetAutoPlayTimer(); }
+  } else if (isLoopEnabled && flashcardCategory.cards.length > 0) {
+    var displayOrder = flashcardOrder;
+    if (showStarredOnly) {
+      var starredIndices = [];
+      for (var j = 0; j < flashcardCategory.cards.length; j++) {
+        if (flashcardCategory.cards[j].starred) { starredIndices.push(j); }
+      }
+      displayOrder = shuffleArray(starredIndices);
+      if (displayOrder.length === 0) { showToast('No starred cards'); return; }
+    }
+    currentFlashcardIdx = displayOrder.length - 1;
+    isFlipped = false;
+    autoPlayStage = 'front';
+    renderFlashcardStack();
+    if (isAutoPlaying) { resetAutoPlayTimer(); }
+  }
+}
+
+function flipAllCards() {
+  if (!flashcardCategory) return;
+  for (var i = 0; i < flashcardCategory.cards.length; i++) {
+    var card = flashcardCategory.cards[i];
+    var temp = card.front;
+    card.front = card.back;
+    card.back = temp;
+  }
+  isFlipped = false;
+  autoPlayStage = 'front';
+  saveCategories();
+  renderFlashcardStack();
+  showToast('All cards flipped');
+}
+
+function shuffleFlashcards() {
+  flashcardOrder = shuffleArray([...flashcardOrder]);
+  currentFlashcardIdx = 0;
+  isFlipped = false;
+  autoPlayStage = 'front';
+  renderFlashcardStack();
+  if (isAutoPlaying) { resetAutoPlayTimer(); }
+  showToast('Shuffled');
+}
+
+// ====================================================================
+// AUTO-PLAY - FLASHCARDS
+// ====================================================================
+function startAutoPlayWithOptions() {
+  document.getElementById('flashcardControls').style.display = 'none';
+  document.getElementById('cardActionsGroup').style.display = 'none';
+  document.getElementById('autoPlaySettings').style.display = 'block';
+  document.getElementById('autoPlayActiveControls').style.display = 'none';
+}
+
+function confirmAutoPlay() {
+  var frontDelay = parseFloat(document.getElementById('frontTimerDelay').value);
+  var backDelay = parseFloat(document.getElementById('backTimerDelay').value);
+  var shouldFlipAll = document.getElementById('autoFlipAllCheckbox').checked;
+  var shouldShuffle = document.getElementById('autoShuffleCheckbox').checked;
+  if (isNaN(frontDelay) || frontDelay < 0.5) frontDelay = 3;
+  if (isNaN(backDelay) || backDelay < 0.5) backDelay = 2;
+  
+  if (shouldFlipAll) {
+    for (var i = 0; i < flashcardCategory.cards.length; i++) {
+      var card = flashcardCategory.cards[i];
+      var temp = card.front;
+      card.front = card.back;
+      card.back = temp;
+    }
+    saveCategories();
+    showToast('Flipped all');
+  }
+  if (shouldShuffle) {
+    flashcardOrder = shuffleArray([...flashcardOrder]);
+    currentFlashcardIdx = 0;
+    showToast('Shuffled');
+  }
+  isFlipped = false;
+  autoPlayStage = 'front';
+  renderFlashcardStack();
+  document.getElementById('autoPlaySettings').style.display = 'none';
+  document.getElementById('autoPlayActiveControls').style.display = 'flex';
+  startAutoPlay();
+}
+
+function cancelAutoPlaySetup() {
+  document.getElementById('autoPlaySettings').style.display = 'none';
+  document.getElementById('flashcardControls').style.display = 'flex';
+  document.getElementById('cardActionsGroup').style.display = 'flex';
+}
+
+function startAutoPlay() {
+  if (isAutoPlaying) return;
+  if (!flashcardCategory || flashcardCategory.cards.length === 0) {
+    showToast('No cards');
+    return;
+  }
+  isAutoPlaying = true;
+  autoPlayStage = isFlipped ? 'back' : 'front';
+  renderFlashcardStack();
+  startTimer();
+}
+
+function pauseAutoPlay() {
+  isAutoPlaying = false;
+  if (autoPlayTimer) { clearTimeout(autoPlayTimer); autoPlayTimer = null; }
+  stopCountdown();
+  document.getElementById('timerStatus').innerHTML = '<i class="fas fa-pause"></i> Paused';
+}
+
+function stopAutoPlay() {
+  isAutoPlaying = false;
+  if (autoPlayTimer) { clearTimeout(autoPlayTimer); autoPlayTimer = null; }
+  stopCountdown();
+  document.getElementById('autoPlayActiveControls').style.display = 'none';
+  document.getElementById('flashcardControls').style.display = 'flex';
+  document.getElementById('cardActionsGroup').style.display = 'flex';
+  document.getElementById('timerStatus').innerHTML = '<i class="fas fa-clock"></i> Ready';
+}
+
+function startCountdown(delay, onComplete) {
+  if (countdownInterval) { clearInterval(countdownInterval); }
+  currentCountdown = Math.ceil(delay);
+  updateTimerDisplay(currentCountdown);
+  countdownInterval = setInterval(function() {
+    currentCountdown--;
+    updateTimerDisplay(currentCountdown);
+    if (currentCountdown <= 0) {
+      clearInterval(countdownInterval);
+      countdownInterval = null;
+      if (onComplete) onComplete();
+    }
+  }, 1000);
+}
+
+function updateTimerDisplay(seconds) {
+  var timerStatus = document.getElementById('timerStatus');
+  if (timerStatus) {
+    var stageText = autoPlayStage === 'front' ? 'Front' : 'Back';
+    timerStatus.innerHTML = '<i class="fas fa-hourglass-half"></i> ' + stageText + ': ' + seconds + 's';
+  }
+}
+
+function stopCountdown() {
+  if (countdownInterval) { clearInterval(countdownInterval); countdownInterval = null; }
+}
+
+function startTimer() {
+  if (!isAutoPlaying) return;
+  var frontDelay = parseFloat(document.getElementById('frontTimerDelay').value);
+  var backDelay = parseFloat(document.getElementById('backTimerDelay').value);
+  if (isNaN(frontDelay) || frontDelay < 0.5) frontDelay = 3;
+  if (isNaN(backDelay) || backDelay < 0.5) backDelay = 2;
+  var currentDelay = autoPlayStage === 'front' ? frontDelay : backDelay;
+  
+  startCountdown(currentDelay, function() {
+    if (autoPlayStage === 'front') {
+      isFlipped = true;
+      autoPlayStage = 'back';
+      renderFlashcardStack();
+      startTimer();
+    } else {
+      var displayOrder = flashcardOrder;
+      if (showStarredOnly) {
+        var starredIndices = [];
+        for (var j = 0; j < flashcardCategory.cards.length; j++) {
+          if (flashcardCategory.cards[j].starred) { starredIndices.push(j); }
+        }
+        displayOrder = shuffleArray(starredIndices);
+        if (displayOrder.length === 0) { stopAutoPlay(); showToast('No starred cards'); return; }
+      }
+      if (currentFlashcardIdx + 1 < displayOrder.length) {
+        currentFlashcardIdx++;
+        isFlipped = false;
+        autoPlayStage = 'front';
+        renderFlashcardStack();
+        startTimer();
+      } else if (isLoopEnabled && displayOrder.length > 0) {
+        currentFlashcardIdx = 0;
+        isFlipped = false;
+        autoPlayStage = 'front';
+        renderFlashcardStack();
+        startTimer();
+        showToast('Looping');
+      } else {
+        stopAutoPlay();
+        showToast('End of cards');
+      }
+    }
+  });
+}
+
+function resetAutoPlayTimer() {
+  if (isAutoPlaying) {
+    if (autoPlayTimer) { clearTimeout(autoPlayTimer); autoPlayTimer = null; }
+    stopCountdown();
+    startTimer();
+  }
+}
+
+function toggleLoop() {
+  isLoopEnabled = !isLoopEnabled;
+  var loopBtn = document.getElementById('loopToggleBtn');
+  var loopBtnAuto = document.getElementById('loopToggleBtnAuto');
+  var color = isLoopEnabled ? '#FFD966' : '';
+  var textColor = isLoopEnabled ? '#1e1b2c' : '';
+  if (loopBtn) { loopBtn.style.background = color; loopBtn.style.color = textColor; }
+  if (loopBtnAuto) { loopBtnAuto.style.background = color; loopBtnAuto.style.color = textColor; }
+  showToast(isLoopEnabled ? 'Loop ON' : 'Loop OFF');
+}
+
+// ====================================================================
+// AUTO-PLAY - QUOTE CARDS
+// ====================================================================
+function startQuoteAutoPlayWithOptions() {
+  document.getElementById('quoteCardActions').style.display = 'none';
+  document.getElementById('quoteAutoPlaySettings').style.display = 'block';
+  document.getElementById('quoteAutoPlayActiveControls').style.display = 'none';
+}
+
+function confirmQuoteAutoPlay() {
+  var delay = parseFloat(document.getElementById('quoteTimerDelay').value);
+  if (isNaN(delay) || delay < 1) delay = 5;
+  document.getElementById('quoteAutoPlaySettings').style.display = 'none';
+  document.getElementById('quoteAutoPlayActiveControls').style.display = 'flex';
+  startQuoteAutoPlay();
+}
+
+function cancelQuoteAutoPlaySetup() {
+  document.getElementById('quoteAutoPlaySettings').style.display = 'none';
+  document.getElementById('quoteCardActions').style.display = 'flex';
+}
+
+function startQuoteAutoPlay() {
+  if (isQuoteAutoPlaying) return;
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (!category || category.cards.length === 0) { showToast('No cards'); return; }
+  isQuoteAutoPlaying = true;
+  startQuoteTimer();
+}
+
+function pauseQuoteAutoPlay() {
+  isQuoteAutoPlaying = false;
+  if (quoteAutoPlayTimer) { clearTimeout(quoteAutoPlayTimer); quoteAutoPlayTimer = null; }
+  if (quoteCountdownInterval) { clearInterval(quoteCountdownInterval); quoteCountdownInterval = null; }
+  document.getElementById('quoteTimerStatus').innerHTML = '<i class="fas fa-pause"></i> Paused';
+}
+
+function stopQuoteAutoPlay() {
+  isQuoteAutoPlaying = false;
+  if (quoteAutoPlayTimer) { clearTimeout(quoteAutoPlayTimer); quoteAutoPlayTimer = null; }
+  if (quoteCountdownInterval) { clearInterval(quoteCountdownInterval); quoteCountdownInterval = null; }
+  document.getElementById('quoteAutoPlayActiveControls').style.display = 'none';
+  document.getElementById('quoteCardActions').style.display = 'flex';
+  document.getElementById('quoteTimerStatus').innerHTML = '<i class="fas fa-clock"></i> Ready';
+}
+
+function startQuoteCountdown(delay, onComplete) {
+  if (quoteCountdownInterval) { clearInterval(quoteCountdownInterval); }
+  quoteCurrentCountdown = Math.ceil(delay);
+  document.getElementById('quoteTimerStatus').innerHTML = '<i class="fas fa-hourglass-half"></i> Next: ' + quoteCurrentCountdown + 's';
+  quoteCountdownInterval = setInterval(function() {
+    quoteCurrentCountdown--;
+    document.getElementById('quoteTimerStatus').innerHTML = '<i class="fas fa-hourglass-half"></i> Next: ' + quoteCurrentCountdown + 's';
+    if (quoteCurrentCountdown <= 0) {
+      clearInterval(quoteCountdownInterval);
+      quoteCountdownInterval = null;
+      if (onComplete) onComplete();
+    }
+  }, 1000);
+}
+
+function startQuoteTimer() {
+  if (!isQuoteAutoPlaying) return;
+  var delay = parseFloat(document.getElementById('quoteTimerDelay').value);
+  if (isNaN(delay) || delay < 1) delay = 5;
+  
+  startQuoteCountdown(delay, function() {
+    var category = null;
+    for (var i = 0; i < categories.length; i++) {
+      if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+    }
+    var displayOrder = currentOrder;
+    if (showStarredOnly) {
+      var starredIndices = [];
+      for (var j = 0; j < category.cards.length; j++) {
+        if (category.cards[j].starred) { starredIndices.push(j); }
+      }
+      displayOrder = shuffleArray(starredIndices);
+      if (displayOrder.length === 0) { stopQuoteAutoPlay(); showToast('No starred cards'); return; }
+    }
+    if (currentCardIdx + 1 < displayOrder.length) {
+      currentCardIdx++;
+      renderStackedDeck();
+      startQuoteTimer();
+    } else if (isQuoteLoopEnabled && displayOrder.length > 0) {
+      currentCardIdx = 0;
+      renderStackedDeck();
+      startQuoteTimer();
+      showToast('Looping');
+    } else {
+      stopQuoteAutoPlay();
+      showToast('End of cards');
+    }
+  });
+}
+
+function resetQuoteAutoPlayTimer() {
+  if (isQuoteAutoPlaying) {
+    if (quoteAutoPlayTimer) { clearTimeout(quoteAutoPlayTimer); quoteAutoPlayTimer = null; }
+    if (quoteCountdownInterval) { clearInterval(quoteCountdownInterval); quoteCountdownInterval = null; }
+    startQuoteTimer();
+  }
+}
+
+function toggleQuoteLoop() {
+  isQuoteLoopEnabled = !isQuoteLoopEnabled;
+  var loopBtn = document.getElementById('quoteLoopToggleBtn');
+  if (isQuoteLoopEnabled) {
+    loopBtn.style.background = '#FFD966';
+    loopBtn.style.color = '#1e1b2c';
+    showToast('Loop ON');
+  } else {
+    loopBtn.style.background = '';
+    loopBtn.style.color = '';
+    showToast('Loop OFF');
+  }
+}
+
+// ====================================================================
+// CRUD OPERATIONS
+// ====================================================================
+async function createOrUpdateCategory() {
+  var nameInput = document.getElementById('catName');
+  var colorInput = document.getElementById('themeColor');
+  var fontColorInput = document.getElementById('fontColor');
+  var fontSelect = document.getElementById('categoryFont');
+  var editIdInput = document.getElementById('editCatId');
+  var typeSelect = document.getElementById('albumType');
+  var fontSizeInput = document.getElementById('fontSize');
+  
+  if (!nameInput || !colorInput || !fontSelect || !editIdInput) return;
+  
+  var name = nameInput.value.trim() || "Untitled";
+  var color = colorInput.value;
+  var fontColor = fontColorInput.value;
+  var font = fontSelect.value;
+  var type = typeSelect ? typeSelect.value : 'quote';
+  var editId = editIdInput.value;
+  var fontSize = fontSizeInput ? parseInt(fontSizeInput.value) : 20;
+
+  if (editId) {
+    var idx = -1;
+    for (var i = 0; i < categories.length; i++) {
+      if (categories[i].id === editId) { idx = i; break; }
+    }
+    if (idx !== -1) {
+      categories[idx].name = name;
+      categories[idx].themeColor = color;
+      categories[idx].fontColor = fontColor;
+      categories[idx].font = font;
+      categories[idx].type = type;
+      categories[idx].fontSize = fontSize;
+      showToast("Album updated");
+      if (selectedCategoryId === editId) {
+        var category = categories[idx];
+        if (category.type === 'flashcard') { flashcardCategory = category; renderFlashcardStack(); }
+        else { renderStackedDeck(); }
+      }
+    }
+  } else {
+    var newId = 'cat_' + Date.now() + '_' + Math.random().toString(36).substr(2, 6);
+    categories.push({
+      id: newId,
+      name: name,
+      themeColor: color,
+      fontColor: fontColor,
+      font: font,
+      type: type,
+      fontSize: fontSize,
+      cards: []
+    });
+    showToast("Album created");
+  }
+
+  await saveCategories();
+  hideModal('categoryModal');
+  renderAlbums();
+  if (selectedCategoryId) {
+    var exists = false;
+    for (var j = 0; j < categories.length; j++) {
+      if (categories[j].id === selectedCategoryId) { exists = true; break; }
+    }
+    if (!exists) selectedCategoryId = null;
+  }
+  editIdInput.value = '';
+}
+
+function openEditCategory(id, name, color, font, fontColor, type) {
+  var titleEl = document.getElementById('catModalTitle');
+  var nameInput = document.getElementById('catName');
+  var colorInput = document.getElementById('themeColor');
+  var fontColorInput = document.getElementById('fontColor');
+  var fontSelect = document.getElementById('categoryFont');
+  var editIdInput = document.getElementById('editCatId');
+  var typeSelect = document.getElementById('albumType');
+  var fontSizeSlider = document.getElementById('fontSize');
+  var fontSizeValue = document.getElementById('fontSizeValue');
+  
+  if (titleEl) titleEl.innerHTML = '<i class="fas fa-edit"></i> Edit Album';
+  if (nameInput) nameInput.value = name;
+  if (colorInput) colorInput.value = color;
+  if (fontColorInput) fontColorInput.value = fontColor || '#FFFFFF';
+  if (fontSelect) fontSelect.value = font;
+  if (editIdInput) editIdInput.value = id;
+  if (typeSelect) typeSelect.value = type || 'quote';
+  
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === id) { category = categories[i]; break; }
+  }
+  var fontSize = (category && category.fontSize) ? category.fontSize : 20;
+  if (fontSizeSlider) fontSizeSlider.value = fontSize;
+  if (fontSizeValue) fontSizeValue.innerText = fontSize + 'px';
+  updateLivePreview();
+  showModal('categoryModal');
+}
+
+async function deleteCategoryById(id) {
+  if (!confirm("Delete this album and all its cards?")) return;
+  var newCategories = [];
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id !== id) { newCategories.push(categories[i]); }
+  }
+  categories = newCategories;
+  if (selectedCategoryId === id) { selectedCategoryId = null; backToAlbums(); }
+  currentCardIdx = 0; currentOrder = [];
+  await saveCategories();
+  renderAlbums();
+  showToast("Album deleted");
+}
+
+function editCurrentCategory() {
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (category) {
+    openEditCategory(category.id, category.name, category.themeColor, category.font, category.fontColor, category.type);
+  } else { alert("Select an album first"); }
+}
+
+async function deleteCurrentCategory() {
+  if (selectedCategoryId) { await deleteCategoryById(selectedCategoryId); }
+  else { alert("No album selected"); }
+}
+
+async function addOrUpdateQuoteCard() {
+  var quoteTextarea = document.getElementById('quoteText');
+  var editCardIdInput = document.getElementById('editCardId');
+  if (!quoteTextarea || !editCardIdInput) return;
+  var quote = quoteTextarea.value.trim();
+  if (quote === "") { alert("Please enter a quote"); return; }
+
+  var editCardId = editCardIdInput.value;
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (!category) { alert("No category selected"); return; }
+
+  if (editCardId) {
+    var idx = -1;
+    for (var j = 0; j < category.cards.length; j++) {
+      if (category.cards[j].id === editCardId) { idx = j; break; }
+    }
+    if (idx !== -1) {
+      category.cards[idx].text = quote;
+      showToast("Card updated");
+      for (var k = 0; k < currentOrder.length; k++) {
+        if (currentOrder[k] === idx) { currentCardIdx = k; break; }
+      }
+    }
+  } else {
+    var newId = 'card_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5);
+    category.cards.push({ id: newId, text: quote, starred: false });
+    var indices = [];
+    for (var k = 0; k < category.cards.length; k++) { indices.push(k); }
+    currentOrder = shuffleArray(indices);
+    var newCardIndex = category.cards.length - 1;
+    for (var m = 0; m < currentOrder.length; m++) {
+      if (currentOrder[m] === newCardIndex) { currentCardIdx = m; break; }
+    }
+    showToast("Card added");
+  }
+  await saveCategories();
+  hideModal('cardModal');
+  renderAlbums();
+  renderStackedDeck();
+  updateStarFilterButtons();
+  editCardIdInput.value = '';
+  quoteTextarea.value = '';
+}
+
+async function addOrUpdateFlashcard() {
+  var frontTextarea = document.getElementById('flashcardFrontText');
+  var backTextarea = document.getElementById('flashcardBackText');
+  var editCardIdInput = document.getElementById('editFlashcardId');
+  if (!frontTextarea || !backTextarea || !editCardIdInput) return;
+  var front = frontTextarea.value.trim();
+  var back = backTextarea.value.trim();
+  if (front === "" || back === "") { alert("Enter both front and back"); return; }
+
+  var editCardId = editCardIdInput.value;
+  var category = flashcardCategory;
+  if (!category) { alert("No category selected"); return; }
+
+  if (editCardId) {
+    var idx = -1;
+    for (var j = 0; j < category.cards.length; j++) {
+      if (category.cards[j].id === editCardId) { idx = j; break; }
+    }
+    if (idx !== -1) {
+      category.cards[idx] = { ...category.cards[idx], front: front, back: back };
+      showToast("Card updated");
+    }
+  } else {
+    var newId = 'flash_' + Date.now() + '_' + Math.random().toString(36).substr(2, 5);
+    category.cards.push({ id: newId, front: front, back: back, starred: false });
+    flashcardOrder = [];
+    for (var k = 0; k < category.cards.length; k++) { flashcardOrder.push(k); }
+    currentFlashcardIdx = category.cards.length - 1;
+    showToast("Flashcard added");
+  }
+  await saveCategories();
+  hideModal('flashcardModal');
+  renderAlbums();
+  if (flashcardCategory) { renderFlashcardStack(); }
+  updateStarFilterButtons();
+  editCardIdInput.value = '';
+  frontTextarea.value = '';
+  backTextarea.value = '';
+}
+
+function openEditCard(cardId) {
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (!category) return;
+  var card = null;
+  for (var j = 0; j < category.cards.length; j++) {
+    if (category.cards[j].id === cardId) { card = category.cards[j]; break; }
+  }
+  if (!card) return;
+  document.getElementById('cardModalTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Quote';
+  document.getElementById('quoteText').value = card.text;
+  document.getElementById('editCardId').value = card.id;
+  showModal('cardModal');
+}
+
+function openEditFlashcard(cardId) {
+  if (!flashcardCategory) return;
+  var card = null;
+  for (var j = 0; j < flashcardCategory.cards.length; j++) {
+    if (flashcardCategory.cards[j].id === cardId) { card = flashcardCategory.cards[j]; break; }
+  }
+  if (!card) return;
+  document.getElementById('flashcardModalTitle').innerHTML = '<i class="fas fa-edit"></i> Edit Flashcard';
+  document.getElementById('flashcardFrontText').value = card.front;
+  document.getElementById('flashcardBackText').value = card.back;
+  document.getElementById('editFlashcardId').value = card.id;
+  showModal('flashcardModal');
+}
+
+async function deleteCardById(cardId) {
+  var category = null;
+  for (var i = 0; i < categories.length; i++) {
+    if (categories[i].id === selectedCategoryId) { category = categories[i]; break; }
+  }
+  if (!category) return;
+  if (!confirm("Delete this card?")) return;
+  var cardIndex = -1;
+  for (var j = 0; j < category.cards.length; j++) {
+    if (category.cards[j].id === cardId) { cardIndex = j; break; }
+  }
+  if (cardIndex !== -1) {
+    category.cards.splice(cardIndex, 1);
+    var newOrder = [];
+    for (var k = 0; k < currentOrder.length; k++) {
+      if (currentOrder[k] !== cardIndex) {
+        if (currentOrder[k] > cardIndex) { newOrder.push(currentOrder[k] - 1); }
+        else { newOrder.push(currentOrder[k]); }
+      }
+    }
+    currentOrder = newOrder;
+    if (currentCardIdx >= currentOrder.length) {
+      currentCardIdx = currentOrder.length - 1;
+      if (currentCardIdx < 0) currentCardIdx = 0;
+    }
+    await saveCategories();
+    renderStackedDeck();
+    renderAlbums();
+    updateStarFilterButtons();
+    showToast("Card deleted");
+  }
+}
+
+async function deleteFlashcardById(cardId) {
+  if (!flashcardCategory) return;
+  if (!confirm("Delete this flashcard?")) return;
+  var cardIndex = -1;
+  for (var j = 0; j < flashcardCategory.cards.length; j++) {
+    if (flashcardCategory.cards[j].id === cardId) { cardIndex = j; break; }
+  }
+  if (cardIndex !== -1) {
+    flashcardCategory.cards.splice(cardIndex, 1);
+    flashcardOrder = [];
+    for (var k = 0; k < flashcardCategory.cards.length; k++) { flashcardOrder.push(k); }
+    if (currentFlashcardIdx >= flashcardOrder.length) {
+      currentFlashcardIdx = flashcardOrder.length - 1;
+      if (currentFlashcardIdx < 0) currentFlashcardIdx = 0;
+    }
+    await saveCategories();
+    renderAlbums();
+    if (flashcardCategory) { renderFlashcardStack(); }
+    updateStarFilterButtons();
+    showToast("Flashcard deleted");
+  }
+}
+
+// ====================================================================
+// CUSTOM DROPDOWN
+// ====================================================================
+function createCustomDropdown() {
+  var select = document.getElementById('categoryFont');
+  if (!select || select.parentNode.querySelector('.custom-dropdown')) return;
+  select.style.display = 'none';
+  var container = select.parentNode;
+  var dropdown = document.createElement('div');
+  dropdown.className = 'custom-dropdown';
+  
+  var trigger = document.createElement('div');
+  trigger.className = 'custom-dropdown-trigger';
+  var selectedOption = select.options[select.selectedIndex];
+  trigger.innerHTML = (selectedOption ? selectedOption.textContent : 'Select Font') + ' <i class="fas fa-chevron-up"></i>';
+  trigger.style.fontFamily = select.value;
+  
+  var list = document.createElement('div');
+  list.className = 'custom-dropdown-list';
+  
+  for (var i = 0; i < select.options.length; i++) {
+    var opt = select.options[i];
+    var optDiv = document.createElement('div');
+    optDiv.className = 'custom-dropdown-option';
+    optDiv.textContent = opt.textContent;
+    optDiv.style.fontFamily = opt.value;
+    optDiv.setAttribute('data-value', opt.value);
+    optDiv.addEventListener('click', function(e) {
+      var value = this.getAttribute('data-value');
+      var text = this.textContent;
+      select.value = value;
+      trigger.innerHTML = text + ' <i class="fas fa-chevron-up"></i>';
+      trigger.style.fontFamily = value;
+      list.style.display = 'none';
+      var event = new Event('change');
+      select.dispatchEvent(event);
+      updateLivePreview();
+    });
+    list.appendChild(optDiv);
+  }
+  
+  dropdown.appendChild(trigger);
+  dropdown.appendChild(list);
+  container.appendChild(dropdown);
+  
+  trigger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var isOpen = list.style.display === 'block';
+    document.querySelectorAll('.custom-dropdown-list').forEach(function(el) { el.style.display = 'none'; });
+    list.style.display = isOpen ? 'none' : 'block';
+  });
+  
+  document.addEventListener('click', function(e) {
+    if (!dropdown.contains(e.target)) { list.style.display = 'none'; }
+  });
+  
+  select.addEventListener('change', function() {
+    var selected = select.options[select.selectedIndex];
+    if (selected) {
+      trigger.innerHTML = selected.textContent + ' <i class="fas fa-chevron-up"></i>';
+      trigger.style.fontFamily = select.value;
+    }
+  });
+}
+
+// ====================================================================
+// MODAL OPENERS
+// ====================================================================
+function openNewCategoryModal() {
+  document.getElementById('catModalTitle').innerHTML = '<i class="fas fa-folder-plus"></i> New Album';
+  document.getElementById('catName').value = '';
+  document.getElementById('themeColor').value = '#6C5CE7';
+  document.getElementById('fontColor').value = '#FFFFFF';
+  document.getElementById('categoryFont').value = 'Inter, sans-serif';
+  document.getElementById('editCatId').value = '';
+  document.getElementById('albumType').value = 'quote';
+  document.getElementById('fontSize').value = 20;
+  document.getElementById('fontSizeValue').innerText = '20px';
+  
+  var customTrigger = document.querySelector('.custom-dropdown-trigger');
+  if (customTrigger) {
+    customTrigger.innerHTML = 'Inter, sans-serif <i class="fas fa-chevron-up"></i>';
+    customTrigger.style.fontFamily = 'Inter, sans-serif';
+  }
+  updateLivePreview();
+  showModal('categoryModal');
+  setTimeout(function() { document.getElementById('catName').focus(); }, 100);
+}
+
+function openNewQuoteCardModal() {
+  if (!selectedCategoryId) { alert("Select an album first"); return; }
+  document.getElementById('cardModalTitle').innerHTML = '<i class="fas fa-quote-left"></i> New Quote';
+  document.getElementById('quoteText').value = '';
+  document.getElementById('editCardId').value = '';
+  showModal('cardModal');
+  setTimeout(function() { document.getElementById('quoteText').focus(); }, 100);
+}
+
+function openNewFlashcardModal() {
+  if (!flashcardCategory) { alert("Select a flashcard album first"); return; }
+  document.getElementById('flashcardModalTitle').innerHTML = '<i class="fas fa-layer-group"></i> New Flashcard';
+  document.getElementById('flashcardFrontText').value = '';
+  document.getElementById('flashcardBackText').value = '';
+  document.getElementById('editFlashcardId').value = '';
+  showModal('flashcardModal');
+  setTimeout(function() { document.getElementById('flashcardFrontText').focus(); }, 100);
+}
+
+function editCurrentFlashcardCategory() {
+  if (flashcardCategory) {
+    openEditCategory(flashcardCategory.id, flashcardCategory.name, flashcardCategory.themeColor, flashcardCategory.font, flashcardCategory.fontColor, flashcardCategory.type);
+  } else { alert("No album selected"); }
+}
+
+async function deleteCurrentFlashcardCategory() {
+  if (flashcardCategory) { await deleteCategoryById(flashcardCategory.id); }
+  else { alert("No album selected"); }
+}
+
+function renderAllUI() {
+  renderAlbums();
+}
+
+// ====================================================================
+// KEYBOARD SHORTCUTS
+// ====================================================================
+function handleKeyPress(e) {
+  var detailView = document.getElementById('albumDetailView');
+  var flashcardView = document.getElementById('flashcardView');
+  var isInQuoteAlbum = detailView && detailView.style.display === 'block';
+  var isInFlashcard = flashcardView && flashcardView.style.display === 'block';
+  
+  if (isInQuoteAlbum) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); prevCard(); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); nextCard(); }
+  }
+  if (isInFlashcard) {
+    if (e.key === 'ArrowLeft') { e.preventDefault(); prevFlashcard(); }
+    else if (e.key === 'ArrowRight') { e.preventDefault(); nextFlashcard(); }
+    else if (e.key === ' ' || e.key === 'Space') { e.preventDefault(); flipCurrentCard(); }
+  }
+  if (e.key === 'Enter') {
+    if (document.getElementById('categoryModal').style.display === 'flex') { e.preventDefault(); createOrUpdateCategory(); }
+    else if (document.getElementById('cardModal').style.display === 'flex') { e.preventDefault(); addOrUpdateQuoteCard(); }
+    else if (document.getElementById('flashcardModal').style.display === 'flex') { e.preventDefault(); addOrUpdateFlashcard(); }
+  }
+  if (e.key === 'Escape') {
+    hideModal('categoryModal');
+    hideModal('cardModal');
+    hideModal('flashcardModal');
+  }
+}
+
+// ====================================================================
+// INITIALIZATION
+// ====================================================================
+document.addEventListener('DOMContentLoaded', function() {
+  // Button listeners
+  document.getElementById('createCategoryBtn').onclick = openNewCategoryModal;
+  document.getElementById('addCardBtn').onclick = openNewQuoteCardModal;
+  document.getElementById('editCategoryBtn').onclick = editCurrentCategory;
+  document.getElementById('deleteCategoryBtn').onclick = deleteCurrentCategory;
+  document.getElementById('prevBtn').onclick = prevCard;
+  document.getElementById('nextBtn').onclick = nextCard;
+  document.getElementById('backToAlbumsBtn').onclick = backToAlbums;
+  
+  document.getElementById('confirmCatBtn').onclick = createOrUpdateCategory;
+  document.getElementById('cancelCatBtn').onclick = function() { hideModal('categoryModal'); };
+  document.getElementById('confirmCardBtn').onclick = addOrUpdateQuoteCard;
+  document.getElementById('cancelCardBtn').onclick = function() { hideModal('cardModal'); };
+  
+  // Flashcard listeners
+  document.getElementById('backToAlbumsBtnFlash').onclick = backToAlbums;
+  document.getElementById('addFlashcardBtn').onclick = openNewFlashcardModal;
+  document.getElementById('editFlashcardCatBtn').onclick = editCurrentFlashcardCategory;
+  document.getElementById('deleteFlashcardCatBtn').onclick = deleteCurrentFlashcardCategory;
+  document.getElementById('confirmFlashcardBtn').onclick = addOrUpdateFlashcard;
+  document.getElementById('cancelFlashcardBtn').onclick = function() { hideModal('flashcardModal'); };
+  document.getElementById('flashPrevBtn').onclick = prevFlashcard;
+  document.getElementById('flashNextBtn').onclick = nextFlashcard;
+  document.getElementById('shuffleFlashcardsBtn').onclick = shuffleFlashcards;
+  document.getElementById('flipAllBtn').onclick = flipAllCards;
+  document.getElementById('loopToggleBtn').onclick = toggleLoop;
+  document.getElementById('startAutoPlayBtn').onclick = startAutoPlayWithOptions;
+  document.getElementById('confirmAutoPlayBtn').onclick = confirmAutoPlay;
+  document.getElementById('cancelAutoPlayBtn').onclick = cancelAutoPlaySetup;
+  document.getElementById('pauseAutoBtn').onclick = pauseAutoPlay;
+  document.getElementById('stopAutoBtn').onclick = stopAutoPlay;
+  document.getElementById('loopToggleBtnAuto').onclick = toggleLoop;
+  
+  // Quote Auto-Play listeners
+  document.getElementById('quoteAutoPlayBtn').onclick = startQuoteAutoPlayWithOptions;
+  document.getElementById('confirmQuoteAutoPlayBtn').onclick = confirmQuoteAutoPlay;
+  document.getElementById('cancelQuoteAutoPlayBtn').onclick = cancelQuoteAutoPlaySetup;
+  document.getElementById('quotePauseAutoBtn').onclick = pauseQuoteAutoPlay;
+  document.getElementById('quoteStopAutoBtn').onclick = stopQuoteAutoPlay;
+  document.getElementById('quoteLoopToggleBtn').onclick = toggleQuoteLoop;
+  
+  // Star filter
+  document.getElementById('starFilterBtn').onclick = toggleShowStarred;
+  document.getElementById('starFilterBtnFlash').onclick = toggleShowStarred;
+  
+  // Live preview listeners
+  document.getElementById('catName').addEventListener('input', updateLivePreview);
+  document.getElementById('themeColor').addEventListener('input', updateLivePreview);
+  document.getElementById('fontColor').addEventListener('input', updateLivePreview);
+  document.getElementById('categoryFont').addEventListener('change', updateLivePreview);
+  document.getElementById('fontSize').addEventListener('input', updateLivePreview);
+  
+  document.addEventListener('keydown', handleKeyPress);
+  
+  createCustomDropdown();
+  loadCategories();
+});
+</script>
+</body>
+</html>

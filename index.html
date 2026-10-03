@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover">
+  <title>Al-in-Bum | Stacked Quote Cards</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Playfair+Display:wght@400;500;600;700;800;900&family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&family=Merriweather:wght@300;400;700;900&family=Lora:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Great+Vibes&family=Satisfy&family=Amatic+SC:wght@400;700&family=Noto+Sans+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Padauk:wght@400;700&family=Pyidaungsu:wght@400;500;600;700&family=Myanmar+Sans+Pro:wght@400;500;600;700&family=Yarigyi:wght@400;500;600;700&family=Zawgyi+One:wght@400;500;600;700&family=Noto+Serif+Myanmar:wght@400;500;600;700&family=Masterpiece:wght@400;500;600;700&family=Pacifico&family=Lobster&family=Shadows+Into+Light&family=Permanent+Marker&family=Indie+Flower&family=Fredoka+One&family=Righteous&family=Bangers&family=Orbitron:wght@400;500;600;700;800;900&family=Abril+Fatface&family=Anton&family=Bebas+Neue&family=Comfortaa:wght@300;400;500;600;700&family=DM+Serif+Display&family=Josefin+Sans:wght@300;400;500;600;700&family=Kanit:wght@300;400;500;600;700&family=Libre+Baskerville&family=Nanum+Gothic&family=Open+Sans:wght@300;400;500;600;700;800&family=Oswald:wght@300;400;500;600;700&family=Quattrocento&family=Rubik:wght@300;400;500;600;700&family=Teko:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600;700&family=Zilla+Slab:wght@300;400;500;600;700&family=Allura&family=Bad+Script&family=Berkshire+Swash&family=Bilbo+Swash+Caps&family=Bonbon&family=Bungee&family=Chelsea+Market&family=Clicker+Script&family=Coming+Soon&family=Delius&family=Dr+Sugiyama&family=Eagle+Lake&family=Emblema+One&family=Fascinate&family=Fjalla+One&family=Gloria+Hallelujah&family=Hanalei+Fill&family=Italianno&family=Jacques+Francois+Shadow&family=Kaushan+Script&family=Laila:wght@300;400;500;600;700&family=Megrim&family=Monoton&family=Mr+De+Haviland&family=Nothing+You+Could+Do&family=Oregano&family=Petit+Formal+Script&family=Qwigley&family=Rancho&family=Rouge+Script&family=Sacramento&family=Shrikhand&family=Smythe&family=Tangerine:wght@400;700&family=UnifrakturCook:wght@700&family=VT323&family=Yellowtail&family=Zeyada&family=Archivo+Narrow&family=Cabin&family=DM+Sans&family=Figtree&family=Hind&family=League+Spartan&family=Manrope&family=Nunito&family=Plus+Jakarta+Sans&family=Space+Grotesk&family=Albert+Sans&family=Young+Serif&family=Roboto+Flex&family=Anek+Devanagari&family=Noto+Sans+JP&family=Noto+Sans+KR&family=Noto+Sans+SC&family=M+PLUS+Rounded+1c&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <div class="header">
+    <div class="logo">
+      <h1><i class="fas fa-layer-group"></i> Al-in-Bum</h1>
+      <p>thematic stacks · auto-shuffle · rich designs · keyboard shortcuts</p>
+    </div>
+    <button class="btn btn-primary" id="createCategoryBtn"><i class="fas fa-plus"></i> New Album</button>
+  </div>
+
+  <div id="albumsView" class="albums-container">
+    <div class="section-title"><i class="fas fa-folder-open"></i> Your Albums</div>
+    <div id="categoriesContainer" class="albums-grid"></div>
+  </div>
+
+  <!-- Quote Card View -->
+  <div id="albumDetailView" class="album-detail-container" style="display: none;">
+    <div class="detail-header">
+      <button class="btn btn-outline back-btn" id="backToAlbumsBtn"><i class="fas fa-arrow-left"></i> Back to Albums</button>
+      <div class="album-detail-title">
+        <span class="current-cat-title" id="currentCategoryTitle">—</span>
+        <span class="album-type-badge" id="albumTypeBadge"></span>
+      </div>
+      <div class="card-actions-group" id="quoteCardActions">
+        <button class="btn btn-primary" id="addCardBtn"><i class="fas fa-plus"></i> Add Card</button>
+        <button class="btn btn-outline btn-small" id="editCategoryBtn"><i class="fas fa-edit"></i> Edit Album</button>
+        <button class="btn btn-danger btn-small" id="deleteCategoryBtn"><i class="fas fa-trash"></i> Delete Album</button>
+        <button class="btn btn-outline btn-small" id="quoteAutoPlayBtn"><i class="fas fa-play"></i> Auto-Play</button>
+        <button class="btn btn-outline btn-small" id="starFilterBtn"><i class="fas fa-star"></i> All Cards</button>
+      </div>
+    </div>
+    
+    <div id="quoteAutoPlaySettings" class="auto-play-settings" style="display: none;">
+      <div class="timer-setting">
+        <label><i class="fas fa-hourglass-half"></i> Card display duration (seconds):</label>
+        <input type="number" id="quoteTimerDelay" min="1" max="60" value="5" step="0.5">
+      </div>
+      <div class="auto-play-actions">
+        <button class="btn btn-primary" id="confirmQuoteAutoPlayBtn"><i class="fas fa-play"></i> Start Auto-Play</button>
+        <button class="btn btn-outline" id="cancelQuoteAutoPlayBtn">Cancel</button>
+      </div>
+    </div>
+    
+    <div id="quoteAutoPlayActiveControls" class="auto-play-active" style="display: none;">
+      <div class="timer-status" id="quoteTimerStatus">
+        <i class="fas fa-clock"></i> Ready
+      </div>
+      <div class="auto-play-buttons">
+        <button class="btn btn-outline btn-small" id="quotePauseAutoBtn"><i class="fas fa-pause"></i> Pause</button>
+        <button class="btn btn-outline btn-small" id="quoteLoopToggleBtn"><i class="fas fa-repeat"></i> Loop</button>
+        <button class="btn btn-danger btn-small" id="quoteStopAutoBtn"><i class="fas fa-stop"></i> Done</button>
+      </div>
+    </div>
+    
+    <div class="stack-deck">
+      <div class="card-stack-wrapper" id="stackWrapper"></div>
+    </div>
+    <div class="nav-controls">
+      <button class="nav-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+      <span class="card-counter" id="cardCounter">0 / 0</span>
+      <button class="nav-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <div class="keyboard-hint">
+      <i class="fas fa-keyboard"></i> Keyboard: ← → arrows to navigate | Enter to save
+    </div>
+  </div>
+
+  <!-- Flashcard View -->
+  <div id="flashcardView" class="flashcard-container" style="display: none;">
+    <div class="detail-header">
+      <button class="btn btn-outline back-btn" id="backToAlbumsBtnFlash"><i class="fas fa-arrow-left"></i> Back to Albums</button>
+      <div class="album-detail-title">
+        <span class="current-cat-title" id="flashcardTitle">—</span>
+        <span class="album-type-badge flashcard-badge">Flashcards</span>
+      </div>
+      <div class="flashcard-controls" id="flashcardControls">
+        <button class="btn btn-outline btn-small" id="shuffleFlashcardsBtn"><i class="fas fa-random"></i> Shuffle</button>
+        <button class="btn btn-outline btn-small" id="flipAllBtn"><i class="fas fa-exchange-alt"></i> Flip All</button>
+        <button class="btn btn-outline btn-small" id="loopToggleBtn"><i class="fas fa-repeat"></i> Loop</button>
+        <button class="btn btn-primary" id="startAutoPlayBtn"><i class="fas fa-play"></i> Auto-Play</button>
+        <button class="btn btn-outline btn-small" id="starFilterBtnFlash"><i class="fas fa-star"></i> All Cards</button>
+      </div>
+      <div class="card-actions-group" id="cardActionsGroup">
+        <button class="btn btn-primary" id="addFlashcardBtn"><i class="fas fa-plus"></i> Add Card</button>
+        <button class="btn btn-outline btn-small" id="editFlashcardCatBtn"><i class="fas fa-edit"></i> Edit Album</button>
+        <button class="btn btn-danger btn-small" id="deleteFlashcardCatBtn"><i class="fas fa-trash"></i> Delete Album</button>
+      </div>
+    </div>
+    
+    <div id="autoPlaySettings" class="auto-play-settings" style="display: none;">
+      <div class="timer-setting">
+        <label><i class="fas fa-hourglass-start"></i> Front display (seconds):</label>
+        <input type="number" id="frontTimerDelay" min="0.5" max="60" value="3" step="0.5">
+      </div>
+      <div class="timer-setting">
+        <label><i class="fas fa-hourglass-end"></i> Back display (seconds):</label>
+        <input type="number" id="backTimerDelay" min="0.5" max="60" value="2" step="0.5">
+      </div>
+      <div class="auto-play-options">
+        <label><input type="checkbox" id="autoFlipAllCheckbox"> Flip all cards before starting</label>
+        <label><input type="checkbox" id="autoShuffleCheckbox"> Shuffle cards before starting</label>
+      </div>
+      <div class="auto-play-actions">
+        <button class="btn btn-primary" id="confirmAutoPlayBtn"><i class="fas fa-play"></i> Start Auto-Play</button>
+        <button class="btn btn-outline" id="cancelAutoPlayBtn">Cancel</button>
+      </div>
+    </div>
+    
+    <div id="autoPlayActiveControls" class="auto-play-active" style="display: none;">
+      <div class="timer-status" id="timerStatus">
+        <i class="fas fa-clock"></i> Ready
+      </div>
+      <div class="auto-play-buttons">
+        <button class="btn btn-outline btn-small" id="pauseAutoBtn"><i class="fas fa-pause"></i> Pause</button>
+        <button class="btn btn-outline btn-small" id="loopToggleBtnAuto"><i class="fas fa-repeat"></i> Loop</button>
+        <button class="btn btn-danger btn-small" id="stopAutoBtn"><i class="fas fa-stop"></i> Done</button>
+      </div>
+    </div>
+    
+    <div class="flashcard-deck">
+      <div class="flashcard-stack-wrapper" id="flashcardStackWrapper"></div>
+    </div>
+    
+    <div class="flashcard-nav">
+      <button class="nav-btn" id="flashPrevBtn"><i class="fas fa-chevron-left"></i></button>
+      <span class="flashcard-counter" id="flashcardCounter">0 / 0</span>
+      <button class="nav-btn" id="flashNextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    
+    <div class="keyboard-hint">
+      <i class="fas fa-keyboard"></i> Keyboard: ← → arrows | Space to flip | Enter to save
+    </div>
+  </div>
+</div>
+
+<!-- Category Modal with Live Preview -->
+<div id="categoryModal" class="modal">
+  <div class="modal-content modal-large">
+    <h3 id="catModalTitle"><i class="fas fa-folder-plus"></i> New Album</h3>
+    
+    <div class="modal-two-columns">
+      <div class="modal-controls">
+        <input type="text" id="catName" placeholder="Album name" autocomplete="off">
+        
+        <div class="album-type-select">
+          <span><i class="fas fa-layer-group"></i> Album Type:</span>
+          <select id="albumType">
+            <option value="quote">Quote Cards (stacked deck)</option>
+            <option value="flashcard">Flashcards (two-sided learning)</option>
+          </select>
+        </div>
+        
+        <div class="color-preview">
+          <span><i class="fas fa-palette"></i> Theme Color:</span>
+          <input type="color" id="themeColor" value="#6C5CE7">
+        </div>
+        
+        <div class="color-preview">
+          <span><i class="fas fa-font"></i> Font Color:</span>
+          <input type="color" id="fontColor" value="#FFFFFF">
+        </div>
+        
+        <div class="font-preview">
+          <span><i class="fas fa-font"></i> Album Font:</span>
+          <select id="categoryFont" class="font-select">
+            <optgroup label="━ Elegant Serif Fonts ━">
+              <option value="Playfair Display, serif">Playfair Display - Elegant Serif</option>
+              <option value="Cormorant Garamond, serif">Cormorant Garamond - Classic</option>
+              <option value="Merriweather, serif">Merriweather - Readable</option>
+              <option value="Lora, serif">Lora - Balanced</option>
+              <option value="Abril Fatface, serif">Abril Fatface - Dramatic</option>
+              <option value="DM Serif Display, serif">DM Serif Display - Clean</option>
+              <option value="Libre Baskerville, serif">Libre Baskerville - Traditional</option>
+              <option value="Zilla Slab, serif">Zilla Slab - Modern Slab</option>
+              <option value="Roboto Slab, serif">Roboto Slab - Strong</option>
+              <option value="Quattrocento, serif">Quattrocento - Renaissance</option>
+              <option value="Young Serif, serif">Young Serif - Contemporary</option>
+              <option value="Bodoni Moda, serif">Bodoni Moda - High Contrast</option>
+              <option value="Cormorant Infant, serif">Cormorant Infant - Delicate</option>
+            </optgroup>
+            <optgroup label="━ Modern Sans Serif Fonts ━">
+              <option value="Inter, sans-serif">Inter - Modern Sans</option>
+              <option value="Poppins, sans-serif">Poppins - Geometric</option>
+              <option value="Montserrat, sans-serif">Montserrat - Bold</option>
+              <option value="Raleway, sans-serif">Raleway - Elegant</option>
+              <option value="Quicksand, sans-serif">Quicksand - Friendly</option>
+              <option value="Open Sans, sans-serif">Open Sans - Clean</option>
+              <option value="Ubuntu, sans-serif">Ubuntu - Unique</option>
+              <option value="Work Sans, sans-serif">Work Sans - Professional</option>
+              <option value="Josefin Sans, sans-serif">Josefin Sans - Stylish</option>
+              <option value="Kanit, sans-serif">Kanit - Modern Thai</option>
+              <option value="Rubik, sans-serif">Rubik - Rounded</option>
+              <option value="Nanum Gothic, sans-serif">Nanum Gothic - Korean</option>
+              <option value="Oswald, sans-serif">Oswald - Condensed</option>
+              <option value="Fjalla One, sans-serif">Fjalla One - Compact</option>
+              <option value="Archivo Narrow, sans-serif">Archivo Narrow - Condensed</option>
+              <option value="Cabin, sans-serif">Cabin - Friendly Sans</option>
+              <option value="DM Sans, sans-serif">DM Sans - Low Contrast</option>
+              <option value="Figtree, sans-serif">Figtree - Modern Grotesk</option>
+              <option value="Hind, sans-serif">Hind - Open Sans</option>
+              <option value="League Spartan, sans-serif">League Spartan - Bold Geometric</option>
+              <option value="Manrope, sans-serif">Manrope - Modern Grotesque</option>
+              <option value="Nunito, sans-serif">Nunito - Rounded Sans</option>
+              <option value="Plus Jakarta Sans, sans-serif">Plus Jakarta Sans - Contemporary</option>
+              <option value="Space Grotesk, sans-serif">Space Grotesk - Modern</option>
+              <option value="Albert Sans, sans-serif">Albert Sans - Geometric</option>
+              <option value="Roboto Flex, sans-serif">Roboto Flex - Variable Sans</option>
+            </optgroup>
+            <optgroup label="━ Futuristic & Display Fonts ━">
+              <option value="Orbitron, sans-serif">Orbitron - Futuristic</option>
+              <option value="Bebas Neue, sans-serif">Bebas Neue - Bold Display</option>
+              <option value="Anton, sans-serif">Anton - Impactful</option>
+              <option value="Righteous, sans-serif">Righteous - Strong Display</option>
+              <option value="Monoton, sans-serif">Monoton - Retro Futuristic</option>
+              <option value="Fascinate, sans-serif">Fascinate - Unique Display</option>
+              <option value="Emblema One, sans-serif">Emblema One - Emblem Style</option>
+              <option value="Shrikhand, sans-serif">Shrikhand - Bold Indian</option>
+              <option value="Bungee, sans-serif">Bungee - Bold Urban</option>
+              <option value="Megrim, sans-serif">Megrim - Futuristic</option>
+              <option value="Audiowide, sans-serif">Audiowide - Techno</option>
+              <option value="Black Ops One, sans-serif">Black Ops One - Stencil</option>
+              <option value="Press Start 2P, monospace">Press Start 2P - Pixel Retro</option>
+            </optgroup>
+            <optgroup label="━ Script & Handwriting Fonts ━">
+              <option value="Dancing Script, cursive">Dancing Script - Flowing</option>
+              <option value="Caveat, cursive">Caveat - Casual Handwriting</option>
+              <option value="Great Vibes, cursive">Great Vibes - Calligraphy</option>
+              <option value="Satisfy, cursive">Satisfy - Smooth Script</option>
+              <option value="Pacifico, cursive">Pacifico - Fun Script</option>
+              <option value="Lobster, cursive">Lobster - Bold Script</option>
+              <option value="Shadows Into Light, cursive">Shadows Into Light - Playful</option>
+              <option value="Indie Flower, cursive">Indie Flower - Casual</option>
+              <option value="Permanent Marker, cursive">Permanent Marker - Marker Style</option>
+              <option value="Kaushan Script, cursive">Kaushan Script - Stylish Script</option>
+              <option value="Sacramento, cursive">Sacramento - Elegant Script</option>
+              <option value="Tangerine, cursive">Tangerine - Bold Script</option>
+              <option value="Allura, cursive">Allura - Flowing Script</option>
+              <option value="Bad Script, cursive">Bad Script - Authentic Handwriting</option>
+              <option value="Zeyada, cursive">Zeyada - Whimsical Script</option>
+            </optgroup>
+            <optgroup label="━ Decorative & Fun Fonts ━">
+              <option value="Amatic SC, cursive">Amatic SC - Bold Handwriting</option>
+              <option value="Fredoka One, sans-serif">Fredoka One - Fun Display</option>
+              <option value="Bangers, cursive">Bangers - Comic Style</option>
+              <option value="Comfortaa, sans-serif">Comfortaa - Rounded</option>
+              <option value="Teko, sans-serif">Teko - Sporty</option>
+              <option value="Chelsea Market, sans-serif">Chelsea Market - Fun Display</option>
+              <option value="Coming Soon, cursive">Coming Soon - Friendly Handwriting</option>
+              <option value="Delius, cursive">Delius - Relaxed Handwriting</option>
+              <option value="Eagle Lake, serif">Eagle Lake - Natural Handwriting</option>
+              <option value="Gloria Hallelujah, cursive">Gloria Hallelujah - Playful</option>
+              <option value="M PLUS Rounded 1c, sans-serif">M PLUS Rounded 1c - Rounded Japanese</option>
+              <option value="Zen Maru Gothic, sans-serif">Zen Maru Gothic - Rounded Japanese</option>
+            </optgroup>
+            <optgroup label="━ Japanese/Korean/Chinese Fonts ━">
+              <option value="Noto Sans JP, sans-serif">Noto Sans JP - Japanese</option>
+              <option value="Noto Sans KR, sans-serif">Noto Sans KR - Korean</option>
+              <option value="Noto Sans SC, sans-serif">Noto Sans SC - Simplified Chinese</option>
+              <option value="M PLUS Rounded 1c, sans-serif">M PLUS Rounded 1c - Friendly Japanese</option>
+              <option value="Zen Maru Gothic, sans-serif">Zen Maru Gothic - Soft Japanese</option>
+            </optgroup>
+            <optgroup label="━ Burmese Fonts ━">
+              <option value="Noto Sans Myanmar, sans-serif">Noto Sans Myanmar - Burmese Modern</option>
+              <option value="Padauk, sans-serif">Padauk - Burmese Classic</option>
+              <option value="Pyidaungsu, sans-serif">Pyidaungsu - Burmese Standard</option>
+              <option value="Myanmar Sans Pro, sans-serif">Myanmar Sans Pro - Burmese Clean</option>
+              <option value="Yarigyi, sans-serif">Yarigyi - Burmese Handwriting</option>
+              <option value="Zawgyi One, sans-serif">Zawgyi One - Burmese Traditional</option>
+              <option value="Noto Serif Myanmar, serif">Noto Serif Myanmar - Burmese Serif</option>
+              <option value="Masterpiece, cursive">Masterpiece - Burmese Artistic</option>
+            </optgroup>
+            <optgroup label="━ Devanagari/Indic Fonts ━">
+              <option value="Laila, sans-serif">Laila - Devanagari Style</option>
+              <option value="Anek Devanagari, sans-serif">Anek Devanagari - Variable Indic</option>
+              <option value="Poppins, sans-serif">Poppins - Universal Sans</option>
+            </optgroup>
+          </select>
+        </div>
+        
+        <div class="font-size-control">
+          <span><i class="fas fa-text-height"></i> Card Font Size:</span>
+          <input type="range" id="fontSize" min="12" max="60" value="20" step="1">
+          <span id="fontSizeValue" class="font-size-value">20px</span>
+        </div>
+        
+        <input type="hidden" id="editCatId" value="">
+        
+        <div class="modal-actions">
+          <button class="btn" id="cancelCatBtn">Cancel</button>
+          <button class="btn btn-primary" id="confirmCatBtn">Save</button>
+        </div>
+      </div>
+      
+      <div class="modal-preview">
+        <h4><i class="fas fa-eye"></i> Live Preview</h4>
+        <div class="preview-card">
+          <div class="preview-folder" id="previewFolder">
+            <div class="preview-folder-name" id="previewFolderName">Album Name</div>
+            <div class="preview-folder-count"><i class="fas fa-quote-left"></i> 0 cards</div>
+          </div>
+          <div class="preview-label">Folder Preview</div>
+        </div>
+        <div class="preview-card" style="margin-top: 1rem;">
+          <div class="preview-quote-card" id="previewQuoteCard">
+            <div class="preview-quote-text" id="previewQuoteText">"Your beautiful quote will appear here with the selected styles"</div>
+            <div class="preview-quote-meta">1 of 1</div>
+          </div>
+          <div class="preview-label">Card Preview</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Quote Card Modal -->
+<div id="cardModal" class="modal">
+  <div class="modal-content">
+    <h3 id="cardModalTitle"><i class="fas fa-quote-left"></i> New Quote</h3>
+    <textarea id="quoteText" rows="3" placeholder="Write your quote..."></textarea>
+    <div class="info-note">
+      <i class="fas fa-magic"></i> Each card gets a unique artistic pattern automatically
+    </div>
+    <input type="hidden" id="editCardId" value="">
+    <div class="modal-actions">
+      <button class="btn" id="cancelCardBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmCardBtn">Save Card</button>
+    </div>
+  </div>
+</div>
+
+<!-- Flashcard Modal -->
+<div id="flashcardModal" class="modal">
+  <div class="modal-content">
+    <h3 id="flashcardModalTitle"><i class="fas fa-layer-group"></i> New Flashcard</h3>
+    <div class="flashcard-editor">
+      <div class="flashcard-side">
+        <label><i class="fas fa-font"></i> Front Side:</label>
+        <textarea id="flashcardFrontText" rows="3" placeholder="Question, word, or prompt..."></textarea>
+      </div>
+      <div class="flashcard-side">
+        <label><i class="fas fa-lightbulb"></i> Back Side:</label>
+        <textarea id="flashcardBackText" rows="3" placeholder="Answer, translation, or definition..."></textarea>
+      </div>
+    </div>
+    <input type="hidden" id="editFlashcardId" value="">
+    <div class="modal-actions">
+      <button class="btn" id="cancelFlashcardBtn">Cancel</button>
+      <button class="btn btn-primary" id="confirmFlashcardBtn">Save Card</button>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

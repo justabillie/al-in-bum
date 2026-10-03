@@ -1,0 +1,2715 @@
+[
+  {
+    "id": "cat_wisdom",
+    "name": "Wisdom Grove",
+    "themeColor": "#2E7D64",
+    "fontColor": "#FFFFFF",
+    "font": "'Playfair Display', serif",
+    "cards": [
+      {
+        "id": "c1",
+        "text": "The mind is everything. What you think you become. – Buddha",
+        "starred": false
+      },
+      {
+        "id": "c2",
+        "text": "Knowing yourself is the beginning of all wisdom. – Aristotle",
+        "starred": false
+      },
+      {
+        "id": "c3",
+        "text": "The only true wisdom is in knowing you know nothing. – Socrates",
+        "starred": false
+      },
+      {
+        "id": "c4",
+        "text": "Simplicity is the ultimate sophistication. – Leonardo da Vinci",
+        "starred": false
+      },
+      {
+        "id": "c5",
+        "text": "The journey of a thousand miles begins with one step. – Lao Tzu",
+        "starred": false
+      },
+      {
+        "id": "c6",
+        "text": "We are what we repeatedly do. Excellence, then, is not an act, but a habit. – Aristotle",
+        "starred": false
+      },
+      {
+        "id": "c7",
+        "text": "It does not matter how slowly you go as long as you do not stop. – Confucius",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_love",
+    "name": "Crush",
+    "themeColor": "#e198ac",
+    "fontColor": "#5f3207",
+    "font": "Laila, sans-serif",
+    "cards": [
+      {
+        "id": "c8",
+        "text": "Just a slight of your smile and the whole world collide.",
+        "starred": false
+      },
+      {
+        "id": "c9",
+        "text": "Can I spell love with your name?",
+        "starred": false
+      },
+      {
+        "id": "c10",
+        "text": "Let me love you through song lyrics since words ain't coming out of my mouth",
+        "starred": false
+      },
+      {
+        "id": "c11",
+        "text": "Your are the parent to the butterflies in my stomach.",
+        "starred": false
+      },
+      {
+        "id": "c12",
+        "text": "Whenever I listen to \"Those Eyes\", I see yours.",
+        "starred": false
+      },
+      {
+        "id": "c13",
+        "text": "I wish I could keep your everything to myself.",
+        "starred": false
+      },
+      {
+        "id": "card_1781022354321_qocov",
+        "text": "I'm so in love, I can't see anything but you.",
+        "starred": false
+      },
+      {
+        "id": "card_1781024676220_ldb1g",
+        "text": "This is yours",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_courage",
+    "name": "Courage and Strength",
+    "themeColor": "#E67E22",
+    "fontColor": "#FFFFFF",
+    "font": "'Montserrat', sans-serif",
+    "cards": [
+      {
+        "id": "c14",
+        "text": "Courage is not the absence of fear, but the triumph over it. – Nelson Mandela",
+        "starred": false
+      },
+      {
+        "id": "c15",
+        "text": "You gain strength, courage, and confidence by every experience. – Eleanor Roosevelt",
+        "starred": false
+      },
+      {
+        "id": "c16",
+        "text": "Be strong and courageous. Do not be afraid. – Joshua 1:9",
+        "starred": false
+      },
+      {
+        "id": "c17",
+        "text": "Fortitude is the guard and support of the other virtues. – John Locke",
+        "starred": false
+      },
+      {
+        "id": "c18",
+        "text": "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+        "starred": false
+      },
+      {
+        "id": "c19",
+        "text": "Believe you can and you're halfway there. – Theodore Roosevelt",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_dreams",
+    "name": "Dreams and Ambition",
+    "themeColor": "#3498DB",
+    "fontColor": "#FFFFFF",
+    "font": "'Poppins', sans-serif",
+    "cards": [
+      {
+        "id": "c20",
+        "text": "All our dreams can come true if we have the courage to pursue them. – Walt Disney",
+        "starred": false
+      },
+      {
+        "id": "c21",
+        "text": "Don't watch the clock; do what it does. Keep going. – Sam Levenson",
+        "starred": false
+      },
+      {
+        "id": "c22",
+        "text": "The future belongs to those who believe in the beauty of their dreams. – Eleanor Roosevelt",
+        "starred": false
+      },
+      {
+        "id": "c23",
+        "text": "Dream big and dare to fail. – Norman Vaughan",
+        "starred": false
+      },
+      {
+        "id": "c24",
+        "text": "The only limit to our realization of tomorrow is our doubts of today. – Franklin D. Roosevelt",
+        "starred": false
+      },
+      {
+        "id": "c25",
+        "text": "Everything you've ever wanted is on the other side of fear. – George Addair",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_creativity",
+    "name": "Creativity",
+    "themeColor": "#9B59B6",
+    "fontColor": "#FFFFFF",
+    "font": "'Raleway', sans-serif",
+    "cards": [
+      {
+        "id": "c31",
+        "text": "Every child is an artist. The problem is how to remain an artist once we grow up. – Pablo Picasso",
+        "starred": false
+      },
+      {
+        "id": "c32",
+        "text": "Creativity takes courage. – Henri Matisse",
+        "starred": false
+      },
+      {
+        "id": "c33",
+        "text": "Art washes away from the soul the dust of everyday life. – Pablo Picasso",
+        "starred": false
+      },
+      {
+        "id": "c34",
+        "text": "The creative adult is the child who survived. – Ursula K. Le Guin",
+        "starred": false
+      },
+      {
+        "id": "c35",
+        "text": "You can't use up creativity. The more you use, the more you have. – Maya Angelou",
+        "starred": false
+      },
+      {
+        "id": "c36",
+        "text": "Creativity is intelligence having fun. – Albert Einstein",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_peace",
+    "name": "Inner Peace",
+    "themeColor": "#1ABC9C",
+    "fontColor": "#FFFFFF",
+    "font": "'Lora', serif",
+    "cards": [
+      {
+        "id": "c37",
+        "text": "Peace begins with a smile. – Mother Teresa",
+        "starred": false
+      },
+      {
+        "id": "c38",
+        "text": "Do not let the behavior of others destroy your inner peace. – Dalai Lama",
+        "starred": false
+      },
+      {
+        "id": "c39",
+        "text": "Nobody can bring you peace but yourself. – Ralph Waldo Emerson",
+        "starred": false
+      },
+      {
+        "id": "c40",
+        "text": "The mind is everything. What you think you become. – Buddha",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_success",
+    "name": "Success",
+    "themeColor": "#F39C12",
+    "fontColor": "#FFFFFF",
+    "font": "'Montserrat', sans-serif",
+    "cards": [
+      {
+        "id": "c41",
+        "text": "Success is not final, failure is not fatal: it is the courage to continue that counts. – Winston Churchill",
+        "starred": false
+      },
+      {
+        "id": "c42",
+        "text": "The only place where success comes before work is in the dictionary. – Vidal Sassoon",
+        "starred": false
+      },
+      {
+        "id": "c43",
+        "text": "Success usually comes to those who are too busy to be looking for it. – Henry David Thoreau",
+        "starred": false
+      },
+      {
+        "id": "c44",
+        "text": "Don't be afraid to give up the good to go for the great. – John D. Rockefeller",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_1781075255195_4k7fbl",
+    "name": "N3 Kanji",
+    "themeColor": "#98bef1",
+    "fontColor": "#2f3a42",
+    "font": "Lora, serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_1781075426461_pvpg1",
+        "front": "駐",
+        "back": "チュウ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075464710_628ao",
+        "front": "無",
+        "back": "ない・ム",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075507537_x18z1",
+        "front": "満",
+        "back": "マン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075578150_97pzz",
+        "front": "向",
+        "back": "コウ。む",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075697437_l5o47",
+        "front": "禁",
+        "back": "キン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075766441_udkrt",
+        "front": "関",
+        "back": "カン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075792639_xka9v",
+        "front": "係",
+        "back": "ケイ。かかり",
+        "starred": false
+      },
+      {
+        "id": "flash_1781075837216_ikuwz",
+        "front": "断",
+        "back": "ダン。ことわ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078536_5theq",
+        "front": "横",
+        "back": "オウ・よこ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079079110_ase78",
+        "front": "押",
+        "back": "お",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078917_o4omr",
+        "front": "式",
+        "back": "シキ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079079090_ucjr3",
+        "front": "信",
+        "back": "シン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078455_0ww26",
+        "front": "号",
+        "back": "ゴウ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078775_0elrl",
+        "front": "確",
+        "back": "カク・たし",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078442_zhxnv",
+        "front": "認",
+        "back": "ニン・みと",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079078436_8fqk9",
+        "front": "飛",
+        "back": "ヒ・と",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215001_a9b2c",
+        "front": "非",
+        "back": "ヒ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215002_d4e5f",
+        "front": "常",
+        "back": "ジョウ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215003_g7h8i",
+        "front": "階",
+        "back": "カイ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215004_j1k2l",
+        "front": "段",
+        "back": "タン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215005_m3n4o",
+        "front": "箱",
+        "back": "はこ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215006_p5q6r",
+        "front": "危",
+        "back": "キ・あぶ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215007_s7t8u",
+        "front": "険",
+        "back": "ケン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079215008_v9w0x",
+        "front": "捨",
+        "back": "す",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426001_b1c2d",
+        "front": "線",
+        "back": "セン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426002_e3f4g",
+        "front": "面",
+        "back": "メン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426003_h5i6j",
+        "front": "普",
+        "back": "フ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426004_k7l8m",
+        "front": "各",
+        "back": "カク",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426005_n9o0p",
+        "front": "次",
+        "back": "ジ・つぎ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426006_q1r2s",
+        "front": "快",
+        "back": "カイ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426007_t3u4v",
+        "front": "速",
+        "back": "ソク・はや",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426008_w5x6y",
+        "front": "過",
+        "back": "カ・す",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079426009_z7a8b",
+        "front": "鉄",
+        "back": "テツ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520001_c4d3e",
+        "front": "指",
+        "back": "シ・ゆび",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520002_f6g5h",
+        "front": "定",
+        "back": "テイ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520003_i9j8k",
+        "front": "席",
+        "back": "セキ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520004_l2m3n",
+        "front": "由",
+        "back": "ユウ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520005_o5p6q",
+        "front": "番",
+        "back": "バン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520006_r8s9t",
+        "front": "窓",
+        "back": "まど",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520007_u1v2w",
+        "front": "側",
+        "back": "かわ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079520008_x4y5z",
+        "front": "路",
+        "back": "ロ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580001_a2b3c",
+        "front": "停",
+        "back": "テイ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580002_d4e5f",
+        "front": "整",
+        "back": "セイ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580003_g6h7i",
+        "front": "券",
+        "back": "ケン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580004_j8k9l",
+        "front": "現",
+        "back": "ケン・あらわ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580005_m0n1o",
+        "front": "両",
+        "back": "リョウ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580006_p2q3r",
+        "front": "替",
+        "back": "か",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580007_s4t5u",
+        "front": "優",
+        "back": "ユウ・やさ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580008_v6w7x",
+        "front": "座",
+        "back": "ザ・す",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079580009_y8z9a",
+        "front": "降",
+        "back": "コウ・お・ふ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640001_b2c3d",
+        "front": "未",
+        "back": "ミ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640002_e5f6g",
+        "front": "末",
+        "back": "マツ",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640003_h8i9j",
+        "front": "若",
+        "back": "わか",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640004_k1l2m",
+        "front": "晩",
+        "back": "バン",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640005_n4o5p",
+        "front": "島",
+        "back": "トウ・しま",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640006_q7r8s",
+        "front": "皿",
+        "back": "さら",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640007_t0u1v",
+        "front": "血",
+        "back": "ケツ・ち",
+        "starred": false
+      },
+      {
+        "id": "flash_1781079640008_w3x4y",
+        "front": "助",
+        "back": "ジョ・たす",
+        "starred": false
+      }
+    ],
+    "fontSize": 20
+  },
+  {
+    "id": "cat_1781075255195_4k7fcl",
+    "name": "あ to そ Vocabulary",
+    "themeColor": "#d6bc85",
+    "fontColor": "#724608",
+    "font": "Inter, sans-serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_1781081000021_v21",
+        "front": "ここ",
+        "back": "koko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000008_v8",
+        "front": "いけ",
+        "back": "ike",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000015_v15",
+        "front": "かお",
+        "back": "kao",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000003_v3",
+        "front": "あき",
+        "back": "aki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000029_v29",
+        "front": "そこ",
+        "back": "soko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000010_v10",
+        "front": "うそ",
+        "back": "uso",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000025_v25",
+        "front": "しお",
+        "back": "shio",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000001_v1",
+        "front": "あか",
+        "back": "aka",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000018_v18",
+        "front": "きく",
+        "back": "kiku",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000006_v6",
+        "front": "いえ",
+        "back": "ie",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000013_v13",
+        "front": "おい",
+        "back": "oi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000026_v26",
+        "front": "すし",
+        "back": "sushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000005_v5",
+        "front": "あそこ",
+        "back": "asoko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000016_v16",
+        "front": "かさ",
+        "back": "kasa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000009_v9",
+        "front": "うし",
+        "back": "ushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000023_v23",
+        "front": "さけ",
+        "back": "sake",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000019_v19",
+        "front": "けさ",
+        "back": "kesa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000014_v14",
+        "front": "おかし",
+        "back": "okashi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000002_v2",
+        "front": "あお",
+        "back": "ao",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000022_v22",
+        "front": "さか",
+        "back": "saka",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000007_v7",
+        "front": "いす",
+        "back": "isu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000020_v20",
+        "front": "こえ",
+        "back": "koe",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000017_v17",
+        "front": "かし",
+        "back": "kashi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000004_v4",
+        "front": "あさ",
+        "back": "asa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000030_v30",
+        "front": "きそ",
+        "back": "kiso",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000024_v24",
+        "front": "しか",
+        "back": "shika",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000012_v12",
+        "front": "えき",
+        "back": "eki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000027_v27",
+        "front": "こけ",
+        "back": "koke",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000028_v28",
+        "front": "せき",
+        "back": "seki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781081000011_v11",
+        "front": "そく",
+        "back": "soku",
+        "starred": false
+      }
+    ],
+    "fontSize": 60
+  },
+  {
+    "id": "cat_1781075255195_4k7ddl",
+    "name": "あ to ほ Vocabulary",
+    "themeColor": "#0bc16c",
+    "fontColor": "#000000",
+    "font": "Inter, sans-serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_1781086000001_f1",
+        "front": "いぬ",
+        "back": "inu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000002_f2",
+        "front": "はな",
+        "back": "hana",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000003_f3",
+        "front": "くつ",
+        "back": "kutsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000004_f4",
+        "front": "ひと",
+        "back": "hito",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000005_f5",
+        "front": "ぬの",
+        "back": "nuno",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000006_f6",
+        "front": "つき",
+        "back": "tsuki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000007_f7",
+        "front": "ほし",
+        "back": "hoshi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000008_f8",
+        "front": "ねこ",
+        "back": "neko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000009_f9",
+        "front": "はし",
+        "back": "hashi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000010_f10",
+        "front": "なつ",
+        "back": "natsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000011_f11",
+        "front": "にく",
+        "back": "niku",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000012_f12",
+        "front": "ほね",
+        "back": "hone",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000013_f13",
+        "front": "ふね",
+        "back": "fune",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000014_f14",
+        "front": "はこ",
+        "back": "hako",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000015_f15",
+        "front": "ひそひそ",
+        "back": "hisohiso",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000016_f16",
+        "front": "その",
+        "back": "sono",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000017_f17",
+        "front": "へそ",
+        "back": "heso",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000018_f18",
+        "front": "はた",
+        "back": "hata",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000019_f19",
+        "front": "うた",
+        "back": "uta",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000020_f20",
+        "front": "おと",
+        "back": "oto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000021_f21",
+        "front": "きた",
+        "back": "kita",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000022_f22",
+        "front": "くち",
+        "back": "kuchi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000023_f23",
+        "front": "こと",
+        "back": "koto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000024_f24",
+        "front": "てつ",
+        "back": "tetsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000025_f25",
+        "front": "つち",
+        "back": "tsuchi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000026_f26",
+        "front": "なにか",
+        "back": "nanika",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000027_f27",
+        "front": "にし",
+        "back": "nishi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000028_f28",
+        "front": "ぬし",
+        "back": "nushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000029_f29",
+        "front": "ねつ",
+        "back": "netsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000030_f30",
+        "front": "はの",
+        "back": "hano",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000031_f31",
+        "front": "ひてい",
+        "back": "hitei",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000032_f32",
+        "front": "ふたつ",
+        "back": "futatsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000033_f33",
+        "front": "へいた",
+        "back": "heita",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000034_f34",
+        "front": "ちち",
+        "back": "chichi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000035_f35",
+        "front": "てて",
+        "back": "tete",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000036_f36",
+        "front": "たこ",
+        "back": "tako",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000037_f37",
+        "front": "そてい",
+        "back": "sotei",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000038_f38",
+        "front": "ねて",
+        "back": "nete",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000039_f39",
+        "front": "ちてい",
+        "back": "chitei",
+        "starred": false
+      },
+      {
+        "id": "flash_1781086000040_f40",
+        "front": "ひとこと",
+        "back": "hitokoto",
+        "starred": false
+      }
+    ],
+    "fontSize": 60
+  },
+  {
+    "id": "cat_1781075255195_4kddsl",
+    "name": "あ to ん Vocabulary",
+    "themeColor": "#686cb1",
+    "fontColor": "#1b1c41",
+    "font": "Inter, sans-serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_1781092000001_s1",
+        "front": "くも",
+        "back": "kumo",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000002_s2",
+        "front": "あお",
+        "back": "ao",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000003_s3",
+        "front": "みち",
+        "back": "michi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000004_s4",
+        "front": "いぬ",
+        "back": "inu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000005_s5",
+        "front": "すいか",
+        "back": "suika",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000006_s6",
+        "front": "かわ",
+        "back": "kawa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000007_s7",
+        "front": "はる",
+        "back": "haru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000008_s8",
+        "front": "くつ",
+        "back": "kutsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000009_s9",
+        "front": "ゆめ",
+        "back": "yume",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000010_s10",
+        "front": "ねつ",
+        "back": "netsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000011_s11",
+        "front": "かみ",
+        "back": "kami",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000012_s12",
+        "front": "しろ",
+        "back": "shiro",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000013_s13",
+        "front": "あめ",
+        "back": "ame",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000014_s14",
+        "front": "ひる",
+        "back": "hiru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000015_s15",
+        "front": "うま",
+        "back": "uma",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000016_s16",
+        "front": "おと",
+        "back": "oto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000017_s17",
+        "front": "きもの",
+        "back": "kimono",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000018_s18",
+        "front": "さくら",
+        "back": "sakura",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000019_s19",
+        "front": "ねこ",
+        "back": "neko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000020_s20",
+        "front": "ほん",
+        "back": "hon",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000021_s21",
+        "front": "ゆかた",
+        "back": "yukata",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000022_s22",
+        "front": "あさ",
+        "back": "asa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000023_s23",
+        "front": "もり",
+        "back": "mori",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000024_s24",
+        "front": "へや",
+        "back": "heya",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000025_s25",
+        "front": "うみ",
+        "back": "umi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000026_s26",
+        "front": "くろ",
+        "back": "kuro",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000027_s27",
+        "front": "いと",
+        "back": "ito",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000028_s28",
+        "front": "みみ",
+        "back": "mimi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000029_s29",
+        "front": "うた",
+        "back": "uta",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000030_s30",
+        "front": "くるま",
+        "back": "kuruma",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000031_s31",
+        "front": "やま",
+        "back": "yama",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000032_s32",
+        "front": "くち",
+        "back": "kuchi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000033_s33",
+        "front": "ひと",
+        "back": "hito",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000034_s34",
+        "front": "あか",
+        "back": "aka",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000035_s35",
+        "front": "よる",
+        "back": "yoru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000036_s36",
+        "front": "はし",
+        "back": "hashi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000037_s37",
+        "front": "こころ",
+        "back": "kokoro",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000038_s38",
+        "front": "ゆき",
+        "back": "yuki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000039_s39",
+        "front": "うし",
+        "back": "ushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000040_s40",
+        "front": "さる",
+        "back": "saru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000041_s41",
+        "front": "むし",
+        "back": "mushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000042_s42",
+        "front": "みかん",
+        "back": "mikan",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000043_s43",
+        "front": "あし",
+        "back": "ashi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000044_s44",
+        "front": "とり",
+        "back": "tori",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000045_s45",
+        "front": "つくえ",
+        "back": "tsukue",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000046_s46",
+        "front": "かさ",
+        "back": "kasa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000047_s47",
+        "front": "ふゆ",
+        "back": "fuyu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000048_s48",
+        "front": "まち",
+        "back": "machi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000049_s49",
+        "front": "いえ",
+        "back": "ie",
+        "starred": false
+      },
+      {
+        "id": "flash_1781092000050_s50",
+        "front": "くま",
+        "back": "kuma",
+        "starred": false
+      }
+    ],
+    "fontSize": 60
+  },
+  {
+    "id": "cat_1781075255196_custom",
+    "name": "Hiragana Check",
+    "themeColor": "#543030",
+    "fontColor": "#c8cabf",
+    "font": "Noto Sans JP, sans-serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_custom_001",
+        "front": "しゅくだい",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_002",
+        "front": "びょういん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_003",
+        "front": "じょしゅ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_004",
+        "front": "きゅうり",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_005",
+        "front": "しょうゆ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_006",
+        "front": "ちょうちょ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_007",
+        "front": "ちゅうしゃ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_008",
+        "front": "ひゃくえん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_009",
+        "front": "みゃくはく",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_010",
+        "front": "りょかん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_011",
+        "front": "ぎゅうにゅう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_012",
+        "front": "じゃがいも",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_013",
+        "front": "びじゅつかん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_014",
+        "front": "ぎょうざ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_015",
+        "front": "かっき",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_016",
+        "front": "きって",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_017",
+        "front": "ざっし",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_018",
+        "front": "おととい",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_019",
+        "front": "しゅっぱつ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_020",
+        "front": "びっくり",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_021",
+        "front": "はっぱ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_022",
+        "front": "けっちゃく",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_023",
+        "front": "そっちょく",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_024",
+        "front": "じゅっくり",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_025",
+        "front": "ひゃっかてん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_026",
+        "front": "がっこう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_027",
+        "front": "にんぎょう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_028",
+        "front": "ひじょうぐち",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_029",
+        "front": "りゅうがくせい",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_030",
+        "front": "ちゅうしゃじょう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_031",
+        "front": "じしょ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_032",
+        "front": "しゃしん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_033",
+        "front": "おちゃ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_034",
+        "front": "きゅうじつ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_035",
+        "front": "じゅうどう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_036",
+        "front": "しゅみ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_037",
+        "front": "しょうがっこう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_038",
+        "front": "ちゅうがっこう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_039",
+        "front": "びょうき",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_040",
+        "front": "きょねん",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_041",
+        "front": "きょうとも",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_042",
+        "front": "しゃちょう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_043",
+        "front": "うきうき",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_044",
+        "front": "おうじょ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_045",
+        "front": "じゅうしょ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_046",
+        "front": "しゅじゅつ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_047",
+        "front": "りょこう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_048",
+        "front": "じゅぎょう",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_049",
+        "front": "きょうかしょ",
+        "starred": false
+      },
+      {
+        "id": "flash_custom_050",
+        "front": "しょうらい",
+        "starred": false
+      }
+    ],
+    "fontSize": 60
+  },
+  {
+    "id": "cat_n5_kanji",
+    "name": "N5 Kanji",
+    "themeColor": "#2A4B7C",
+    "fontColor": "#FFFFFF",
+    "font": "Noto Sans JP, sans-serif",
+    "type": "flashcard",
+    "fontSize": 24,
+    "cards": [
+      {"id": "flash_custom_001", "front": "山", "back": "やま (တောင်)", "starred": false},
+      {"id": "flash_custom_002", "front": "富士山", "back": "ふじさん (ဖူဂျီတောင်)", "starred": false},
+      {"id": "flash_custom_003", "front": "登山", "back": "とざん (တောင်တက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_004", "front": "川", "back": "かわ (မြစ်)", "starred": false},
+      {"id": "flash_custom_005", "front": "ナイン川", "back": "ないんがわ (နိုင်းမြစ်)", "starred": false},
+      {"id": "flash_custom_006", "front": "田", "back": "た (လယ်ကွင်း၊ လယ်ကွက်)", "starred": false},
+      {"id": "flash_custom_007", "front": "山田さん", "back": "やまださん (လူနာမည်)", "starred": false},
+      {"id": "flash_custom_008", "front": "水田", "back": "すいでん (စပါးခင်း)", "starred": false},
+      {"id": "flash_custom_009", "front": "油田", "back": "ゆでん (ရေနံမြေ)", "starred": false},
+      {"id": "flash_custom_010", "front": "日", "back": "ひ (နေ / နေ့ရက်)", "starred": false},
+      {"id": "flash_custom_011", "front": "月曜日", "back": "げつようび (တနင်္လာနေ့)", "starred": false},
+      {"id": "flash_custom_012", "front": "日曜日", "back": "にちようび (တနင်္ဂနွေနေ့)", "starred": false},
+      {"id": "flash_custom_013", "front": "日本", "back": "にほん (ဂျပန်)", "starred": false},
+      {"id": "flash_custom_014", "front": "休日", "back": "きゅうじつ (အားလပ်ရက်)", "starred": false},
+      {"id": "flash_custom_015", "front": "月", "back": "つき (လ)", "starred": false},
+      {"id": "flash_custom_016", "front": "今月", "back": "こんげつ (ယခုလ)", "starred": false},
+      {"id": "flash_custom_017", "front": "1月", "back": "いちがつ (ဇန်နဝါရီလ)", "starred": false},
+      {"id": "flash_custom_018", "front": "火", "back": "ひ (မီး)", "starred": false},
+      {"id": "flash_custom_019", "front": "火山", "back": "かざん (မီးတောင်)", "starred": false},
+      {"id": "flash_custom_020", "front": "火曜日", "back": "かようび (အင်္ဂါနေ့)", "starred": false},
+      {"id": "flash_custom_021", "front": "火事", "back": "かじ (မီးလောင်မှု)", "starred": false},
+      {"id": "flash_custom_022", "front": "水", "back": "みず (ရေ)", "starred": false},
+      {"id": "flash_custom_023", "front": "水曜日", "back": "すいようび (ဗုဒ္ဓဟူးနေ့)", "starred": false},
+      {"id": "flash_custom_024", "front": "水田", "back": "すいでん (စပါးခင်း)", "starred": false},
+      {"id": "flash_custom_025", "front": "水道", "back": "すいどう (ရေပိုက်/ရေပေးဝေရေး)", "starred": false},
+      {"id": "flash_custom_026", "front": "木", "back": "き (သစ်ပင်/သစ်သား)", "starred": false},
+      {"id": "flash_custom_027", "front": "木曜日", "back": "もくようび (ကြာသပတေးနေ့)", "starred": false},
+      {"id": "flash_custom_028", "front": "お金", "back": "おかね (ပိုက်ဆံ)", "starred": false},
+      {"id": "flash_custom_029", "front": "金", "back": "きん (ရွှေ)", "starred": false},
+      {"id": "flash_custom_030", "front": "金曜日", "back": "きんようび (သောကြာနေ့)", "starred": false},
+      {"id": "flash_custom_031", "front": "土", "back": "つち (မြေကြီး)", "starred": false},
+      {"id": "flash_custom_032", "front": "土曜日", "back": "どようび (စနေနေ့)", "starred": false},
+      {"id": "flash_custom_033", "front": "土地", "back": "とち (မြေကွက်/မြေကြီး)", "starred": false},
+      {"id": "flash_custom_034", "front": "一つ", "back": "ひとつ (တစ်ခု)", "starred": false},
+      {"id": "flash_custom_035", "front": "一", "back": "いち (တစ်)", "starred": false},
+      {"id": "flash_custom_036", "front": "一月", "back": "いちがつ (ဇန်နဝါရီလ)", "starred": false},
+      {"id": "flash_custom_037", "front": "一日", "back": "いちにち (တစ်နေ့/တစ်ရက်တာ)", "starred": false},
+      {"id": "flash_custom_038", "front": "一日", "back": "ついたち (တရက်နေ့ (လတစ်လရဲ့ ပထမဆုံးနေ့))", "starred": false},
+      {"id": "flash_custom_039", "front": "一人", "back": "ひとり (တစ်ယောက်)", "starred": false},
+      {"id": "flash_custom_040", "front": "二つ", "back": "ふたつ (နှစ်ခု)", "starred": false},
+      {"id": "flash_custom_041", "front": "二", "back": "に (နှစ်)", "starred": false},
+      {"id": "flash_custom_042", "front": "二月", "back": "にがつ (ဖေဖော်ဝါရီလ)", "starred": false},
+      {"id": "flash_custom_043", "front": "二日", "back": "ふつか (နှစ်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_044", "front": "二人", "back": "ふたり (နှစ်ယောက်)", "starred": false},
+      {"id": "flash_custom_045", "front": "三つ", "back": "みっつ (သုံးခု)", "starred": false},
+      {"id": "flash_custom_046", "front": "三", "back": "さん (သုံး)", "starred": false},
+      {"id": "flash_custom_047", "front": "三月", "back": "さんがつ (မတ်လ)", "starred": false},
+      {"id": "flash_custom_048", "front": "三角", "back": "さんかく (တြိဂံ)", "starred": false},
+      {"id": "flash_custom_049", "front": "三日", "back": "みっか (သုံးရက်နေ့)", "starred": false},
+      {"id": "flash_custom_050", "front": "四つ", "back": "よっつ (လေးခု)", "starred": false},
+      {"id": "flash_custom_051", "front": "四", "back": "よん/よ (လေး)", "starred": false},
+      {"id": "flash_custom_052", "front": "四月", "back": "しがつ (ဧပြီလ)", "starred": false},
+      {"id": "flash_custom_053", "front": "五つ", "back": "いつつ (ငါးခု)", "starred": false},
+      {"id": "flash_custom_054", "front": "五", "back": "ご (ငါး)", "starred": false},
+      {"id": "flash_custom_055", "front": "五月", "back": "ごがつ (မေလ)", "starred": false},
+      {"id": "flash_custom_056", "front": "五円", "back": "ごえん (ငါးယန်း)", "starred": false},
+      {"id": "flash_custom_057", "front": "五日", "back": "いつか (ငါးရက်နေ့)", "starred": false},
+      {"id": "flash_custom_058", "front": "六つ", "back": "むっつ (ခြောက်ခု)", "starred": false},
+      {"id": "flash_custom_059", "front": "六", "back": "ろく (ခြောက်)", "starred": false},
+      {"id": "flash_custom_060", "front": "六月", "back": "ろくがつ (ဇွန်လ)", "starred": false},
+      {"id": "flash_custom_061", "front": "六百", "back": "ろっぴゃく (ခြောက်ရာ)", "starred": false},
+      {"id": "flash_custom_062", "front": "六本木", "back": "ろっぽんぎ (နေရာနာမည်)", "starred": false},
+      {"id": "flash_custom_063", "front": "六日", "back": "むいか (ခြောက်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_064", "front": "七つ", "back": "ななつ (ခုနစ်ခု)", "starred": false},
+      {"id": "flash_custom_065", "front": "七", "back": "なな / しち (ခုနစ်)", "starred": false},
+      {"id": "flash_custom_066", "front": "七月", "back": "しちがつ (ဇူလိုင်လ)", "starred": false},
+      {"id": "flash_custom_067", "front": "七日", "back": "なのか (ခုနစ်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_068", "front": "八つ", "back": "やっつ (ရှစ်ခု)", "starred": false},
+      {"id": "flash_custom_069", "front": "八", "back": "はち (ရှစ်)", "starred": false},
+      {"id": "flash_custom_070", "front": "八百", "back": "はっぴゃく (ရှစ်ရာ)", "starred": false},
+      {"id": "flash_custom_071", "front": "八日", "back": "ようか (ရှစ်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_072", "front": "八百屋", "back": "やおや (ဟင်းသီးဟင်းရွက်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_073", "front": "九つ", "back": "ここのつ (ကိုးခု)", "starred": false},
+      {"id": "flash_custom_074", "front": "九日", "back": "ここのか (ကိုးရက်နေ့)", "starred": false},
+      {"id": "flash_custom_075", "front": "九", "back": "きゅう / く (ကိုး)", "starred": false},
+      {"id": "flash_custom_076", "front": "九月", "back": "くがつ (ကိုးလပိုင်း)", "starred": false},
+      {"id": "flash_custom_077", "front": "十日", "back": "とおか (ဆယ်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_078", "front": "十", "back": "じゅう (တစ်ဆယ်)", "starred": false},
+      {"id": "flash_custom_079", "front": "十月", "back": "じゅうがつ (ဆယ်လပိုင်း)", "starred": false},
+      {"id": "flash_custom_080", "front": "十分な", "back": "じゅうぶんな (လုံလောက်သော)", "starred": false},
+      {"id": "flash_custom_081", "front": "百", "back": "ひゃく (တစ်ရာ/ရာ)", "starred": false},
+      {"id": "flash_custom_082", "front": "三百", "back": "さんびゃく (သုံးရာ)", "starred": false},
+      {"id": "flash_custom_083", "front": "六百", "back": "ろっぴゃく (ခြောက်ရာ)", "starred": false},
+      {"id": "flash_custom_084", "front": "百科事典", "back": "ひゃっかじてん (စွယ်စုံကျမ်း)", "starred": false},
+      {"id": "flash_custom_085", "front": "千", "back": "せん (ထောင်)", "starred": false},
+      {"id": "flash_custom_086", "front": "二千", "back": "にせん (နှစ်ထောင်)", "starred": false},
+      {"id": "flash_custom_087", "front": "三千", "back": "さんぜん (သုံးထောင်)", "starred": false},
+      {"id": "flash_custom_088", "front": "千葉県", "back": "ちばけん (ချီဘခရိုင်)", "starred": false},
+      {"id": "flash_custom_089", "front": "万", "back": "まん (သောင်း)", "starred": false},
+      {"id": "flash_custom_090", "front": "一万", "back": "いちまん (တစ်သောင်း)", "starred": false},
+      {"id": "flash_custom_091", "front": "万年筆", "back": "まんねんひつ (ဖောင်တိန်)", "starred": false},
+      {"id": "flash_custom_092", "front": "万国", "back": "ばんこく (ကမ္ဘာ့နိုင်ငံအသီးသီး)", "starred": false},
+      {"id": "flash_custom_093", "front": "円", "back": "えん (ယန်းငွေ)", "starred": false},
+      {"id": "flash_custom_094", "front": "四万円", "back": "よんまんえん (လေးသောင်းယန်း)", "starred": false},
+      {"id": "flash_custom_095", "front": "円高", "back": "えんだか (ယန်းငွေတန်ဖိုးမြင့်တက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_096", "front": "年", "back": "とし (နှစ်/အသက်)", "starred": false},
+      {"id": "flash_custom_097", "front": "二千年", "back": "にせんねん (2000ခုနှစ်)", "starred": false},
+      {"id": "flash_custom_098", "front": "来年", "back": "らいねん (လာမည့်နှစ်)", "starred": false},
+      {"id": "flash_custom_099", "front": "年金", "back": "ねんきん (ပင်စင်ငွေ)", "starred": false},
+      {"id": "flash_custom_100", "front": "上がる", "back": "あがる (မြင့်တက်သည်/မြောက်တက်သည်)", "starred": false},
+      {"id": "flash_custom_101", "front": "上げる", "back": "あげる (မြှင့်သည်/မြှောက်သည်)", "starred": false},
+      {"id": "flash_custom_102", "front": "上", "back": "うえ (အပေါ်)", "starred": false},
+      {"id": "flash_custom_103", "front": "上着", "back": "うわぎ (အပေါ်ဝတ်အင်္ကျီ)", "starred": false},
+      {"id": "flash_custom_104", "front": "水上スキー", "back": "すいじょうすきー (ရေပေါ်ရှိတ်ပြေးစီးခြင်း)", "starred": false},
+      {"id": "flash_custom_105", "front": "下がる", "back": "さがる (ကျဆင်းသည်)", "starred": false},
+      {"id": "flash_custom_106", "front": "下げると", "back": "さげる (လျှော့ချသည်/နိမ့်သည်)", "starred": false},
+      {"id": "flash_custom_107", "front": "下", "back": "した (အောက်)", "starred": false},
+      {"id": "flash_custom_108", "front": "下着", "back": "したぎ (အောက်ခံအဝတ်အစား)", "starred": false},
+      {"id": "flash_custom_109", "front": "地下鉄", "back": "ちかてつ (မြေအောက်ရထား)", "starred": false},
+      {"id": "flash_custom_110", "front": "上下", "back": "じょうげ (အပေါ်အောက်)", "starred": false},
+      {"id": "flash_custom_111", "front": "中", "back": "なか (အတွင်း/အလယ်အလတ်)", "starred": false},
+      {"id": "flash_custom_112", "front": "中学", "back": "ちゅうがく (အလယ်တန်း)", "starred": false},
+      {"id": "flash_custom_113", "front": "中心", "back": "ちゅうしん (အလယ်ဗဟို)", "starred": false},
+      {"id": "flash_custom_114", "front": "一日中", "back": "いちにちじゅう (တစ်နေ့လုံး)", "starred": false},
+      {"id": "flash_custom_115", "front": "半分", "back": "はんぶん (တစ်ဝက်)", "starred": false},
+      {"id": "flash_custom_116", "front": "半年", "back": "はんねん (နှစ်ဝက်)", "starred": false},
+      {"id": "flash_custom_117", "front": "半日", "back": "はんにち (နေ့တစ်ဝက်)", "starred": false},
+      {"id": "flash_custom_118", "front": "四時半", "back": "よじはん (လေးနာရီခွဲ)", "starred": false},
+      {"id": "flash_custom_119", "front": "分かる", "back": "わかる (နားလည်သည်)", "starred": false},
+      {"id": "flash_custom_120", "front": "分ける", "back": "わける (ခွဲခြမ်းသည်)", "starred": false},
+      {"id": "flash_custom_121", "front": "2分", "back": "にふん (2မိနစ်)", "starred": false},
+      {"id": "flash_custom_122", "front": "10分", "back": "じゅっぷん / じっぷん (10မိနစ်)", "starred": false},
+      {"id": "flash_custom_123", "front": "十分な", "back": "じゅうぶんな (လုံလောက်သော)", "starred": false},
+      {"id": "flash_custom_124", "front": "人", "back": "ひと (လူ)", "starred": false},
+      {"id": "flash_custom_125", "front": "日本人", "back": "にほんじん (ဂျပန်လူမျိုး)", "starred": false},
+      {"id": "flash_custom_126", "front": "三人", "back": "さんにん (3ယောက်)", "starred": false},
+      {"id": "flash_custom_127", "front": "一人", "back": "ひとり (1ယောက်)", "starred": false},
+      {"id": "flash_custom_128", "front": "二人", "back": "ふたり (2ယောက်)", "starred": false},
+      {"id": "flash_custom_129", "front": "子ども", "back": "こども (ကလေး)", "starred": false},
+      {"id": "flash_custom_130", "front": "親子", "back": "おやこ (မိဘနှင့်သားသမီး)", "starred": false},
+      {"id": "flash_custom_131", "front": "女子", "back": "じょし (အမျိုးသမီး)", "starred": false},
+      {"id": "flash_custom_132", "front": "調子", "back": "ちょうし (အခြေအနေ)", "starred": false},
+      {"id": "flash_custom_133", "front": "女", "back": "おんな (မိန်းမ/မိန်းကလေး)", "starred": false},
+      {"id": "flash_custom_134", "front": "女の人", "back": "おんなのひと (မိန်းမကြီး/အမျိုးသမီးကြီး)", "starred": false},
+      {"id": "flash_custom_135", "front": "女の子", "back": "おんなのこ (မိန်းကလေး/ကောင်မလေး)", "starred": false},
+      {"id": "flash_custom_136", "front": "女子", "back": "じょし (အမျိုးသမီး)", "starred": false},
+      {"id": "flash_custom_137", "front": "男", "back": "おとこ (ယောက်ျားလေး)", "starred": false},
+      {"id": "flash_custom_138", "front": "男の人", "back": "おとこのひと (ယောက်ျားကြီး/အမျိုးသားကြီး)", "starred": false},
+      {"id": "flash_custom_139", "front": "男の子", "back": "おとこのこ (ယောက်ျားလေး/ကောင်လေး)", "starred": false},
+      {"id": "flash_custom_140", "front": "男性", "back": "だんせい (အမျိုးသား)", "starred": false},
+      {"id": "flash_custom_141", "front": "男女", "back": "だんじょ (ယောက်ျားလေးနှင့်မိန်းကလေး)", "starred": false},
+      {"id": "flash_custom_142", "front": "目", "back": "め (မျက်လုံး)", "starred": false},
+      {"id": "flash_custom_143", "front": "一日目", "back": "いちにちめ (တရက်မြောက်)", "starred": false},
+      {"id": "flash_custom_144", "front": "目薬", "back": "めぐすり (မျက်စဉ်း)", "starred": false},
+      {"id": "flash_custom_145", "front": "目的", "back": "もくてき (ရည်ရွယ်ချက်)", "starred": false},
+      {"id": "flash_custom_146", "front": "口", "back": "くち (ပါးစပ်)", "starred": false},
+      {"id": "flash_custom_147", "front": "入口", "back": "いりぐち (ဝင်ပေါက်)", "starred": false},
+      {"id": "flash_custom_148", "front": "出口", "back": "でぐち (ထွက်ပေါက်)", "starred": false},
+      {"id": "flash_custom_149", "front": "非常口", "back": "ひじょうぐち (အရေးပေါ်ထွက်ပေါက်)", "starred": false},
+      {"id": "flash_custom_150", "front": "人口", "back": "じんこう (လူဦးရေ)", "starred": false},
+      {"id": "flash_custom_151", "front": "耳", "back": "みみ (နားရွက်)", "starred": false},
+      {"id": "flash_custom_152", "front": "耳鼻科", "back": "じびか (နား၊နှာခေါင်း၊လည်ချောင်းဌာန)", "starred": false},
+      {"id": "flash_custom_153", "front": "手", "back": "て (လက်)", "starred": false},
+      {"id": "flash_custom_154", "front": "手紙", "back": "てがみ (စာ)", "starred": false},
+      {"id": "flash_custom_155", "front": "歌手", "back": "かしゅ (အဆိုတော်)", "starred": false},
+      {"id": "flash_custom_156", "front": "上手な", "back": "じょうずな (တော်သော)", "starred": false},
+      {"id": "flash_custom_157", "front": "下手な", "back": "へたな (ညံ့သော)", "starred": false},
+      {"id": "flash_custom_158", "front": "足", "back": "あし (ခြေထောက်)", "starred": false},
+      {"id": "flash_custom_159", "front": "足りる", "back": "たりる (လုံလောက်သည်)", "starred": false},
+      {"id": "flash_custom_160", "front": "一足", "back": "いっそく (တစ်စုံ/တစ်ရံ)", "starred": false},
+      {"id": "flash_custom_161", "front": "遠足", "back": "えんそく (ပျော်ပွဲစားထွက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_162", "front": "力", "back": "ちから (ခွန်အား)", "starred": false},
+      {"id": "flash_custom_163", "front": "水力", "back": "すいりょく (ရေအား)", "starred": false},
+      {"id": "flash_custom_164", "front": "体力", "back": "たいりょく (ကိုယ်ခံအား/ခွန်အား)", "starred": false},
+      {"id": "flash_custom_165", "front": "父", "back": "ちち (ဖေဖေ)", "starred": false},
+      {"id": "flash_custom_166", "front": "父親", "back": "ちちおや (ဖခင်)", "starred": false},
+      {"id": "flash_custom_167", "front": "祖父", "back": "そふ (အဖိုး)", "starred": false},
+      {"id": "flash_custom_168", "front": "お父さん", "back": "おとうさん (အဖေ (သူများမိဘ))", "starred": false},
+      {"id": "flash_custom_169", "front": "母", "back": "はは (မေမေ)", "starred": false},
+      {"id": "flash_custom_170", "front": "母親", "back": "ははおや (မိခင်)", "starred": false},
+      {"id": "flash_custom_171", "front": "祖母", "back": "そぼ (အဖွား)", "starred": false},
+      {"id": "flash_custom_172", "front": "母国", "back": "ぼこく (အမိနိုင်ငံတော်)", "starred": false},
+      {"id": "flash_custom_173", "front": "お母さん", "back": "おかあさん (အမေ (သူများမိဘ))", "starred": false},
+      {"id": "flash_custom_174", "front": "先", "back": "さき (အရင်ဦးစွာ)", "starred": false},
+      {"id": "flash_custom_175", "front": "先輩", "back": "せんぱい (စီနီယာ)", "starred": false},
+      {"id": "flash_custom_176", "front": "先月", "back": "せんげつ (ပြီးခဲ့တဲ့လ)", "starred": false},
+      {"id": "flash_custom_177", "front": "生まれる", "back": "うまれる (မွေးဖွားသည်)", "starred": false},
+      {"id": "flash_custom_178", "front": "生きる", "back": "いきる (ရှင်သန်သည်)", "starred": false},
+      {"id": "flash_custom_179", "front": "先生", "back": "せんせい (ဆရာ)", "starred": false},
+      {"id": "flash_custom_180", "front": "生活", "back": "せいかつ (နေထိုင်စားသောက်မှုဘဝ)", "starred": false},
+      {"id": "flash_custom_181", "front": "学ぶ", "back": "まなぶ (သင်ယူလေ့လာသည်)", "starred": false},
+      {"id": "flash_custom_182", "front": "大学", "back": "だいがく (တက္ကသိုလ်)", "starred": false},
+      {"id": "flash_custom_183", "front": "科学", "back": "かがく (သိပ္ပံပညာ)", "starred": false},
+      {"id": "flash_custom_184", "front": "留学する", "back": "りゅうがくする (ပညာတော်သင်သွားသည်)", "starred": false},
+      {"id": "flash_custom_185", "front": "学校", "back": "がっこう (ကျောင်း)", "starred": false},
+      {"id": "flash_custom_186", "front": "校長", "back": "こうちょう (ကျောင်းအုပ်)", "starred": false},
+      {"id": "flash_custom_187", "front": "小学校", "back": "しょうがっこう (မူလတန်းကျောင်း)", "starred": false},
+      {"id": "flash_custom_188", "front": "母校", "back": "ぼこう (အမိကျောင်းတော်)", "starred": false},
+      {"id": "flash_custom_189", "front": "友だち", "back": "ともだち (သူငယ်ချင်း)", "starred": false},
+      {"id": "flash_custom_190", "front": "友人", "back": "ゆうじん (သူငယ်ချင်း)", "starred": false},
+      {"id": "flash_custom_191", "front": "親友", "back": "しんゆう (အရမ်းခင်ရတဲ့သူငယ်ချင်း)", "starred": false},
+      {"id": "flash_custom_192", "front": "山本", "back": "やまもと (လူနာမည်)", "starred": false},
+      {"id": "flash_custom_193", "front": "本", "back": "ほん (စာအုပ်)", "starred": false},
+      {"id": "flash_custom_194", "front": "本屋", "back": "ほんや (စာအုပ်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_195", "front": "日本", "back": "にほん / にっぽん (ဂျပန်)", "starred": false},
+      {"id": "flash_custom_196", "front": "毎日", "back": "まいにち (နေ့တိုင်း)", "starred": false},
+      {"id": "flash_custom_197", "front": "毎月", "back": "まいつき (လတိုင်း)", "starred": false},
+      {"id": "flash_custom_198", "front": "毎年", "back": "まいとし / まいねん (နှစ်တိုင်း)", "starred": false},
+      {"id": "flash_custom_199", "front": "何", "back": "なん / なに (ဘာ/ဘာလဲ)", "starred": false},
+      {"id": "flash_custom_200", "front": "何人", "back": "なんにん (ဘယ်နှစ်ယောက်)", "starred": false},
+      {"id": "flash_custom_201", "front": "何月", "back": "なんがつ (ဘယ်နှစ်လပိုင်းလဲ)", "starred": false},
+      {"id": "flash_custom_202", "front": "何時", "back": "なんじ (ဘယ်နှစ်နာရီ)", "starred": false},
+      {"id": "flash_custom_203", "front": "前", "back": "まえ (အရှေ့)", "starred": false},
+      {"id": "flash_custom_204", "front": "三日前", "back": "みっかまえ (၃ရက်မတိုင်ခင်)", "starred": false},
+      {"id": "flash_custom_205", "front": "前半", "back": "ぜんはん (အရှေ့ပိုင်း)", "starred": false},
+      {"id": "flash_custom_206", "front": "後", "back": "あと (နောက်မှ/နောက်ထပ်)", "starred": false},
+      {"id": "flash_custom_207", "front": "後ろ", "back": "うしろ (အနောက်ဘက်)", "starred": false},
+      {"id": "flash_custom_208", "front": "前後", "back": "ぜんご (အရှေ့နောက်)", "starred": false},
+      {"id": "flash_custom_209", "front": "最後", "back": "さいご (နောက်ဆုံး)", "starred": false},
+      {"id": "flash_custom_210", "front": "後半", "back": "こうはん (နောက်ပိုင်း (ဒုတိယပိုင်း))", "starred": false},
+      {"id": "flash_custom_211", "front": "外", "back": "そと (အပြင်ဘက်)", "starred": false},
+      {"id": "flash_custom_212", "front": "外国", "back": "がいこく (နိုင်ငံခြား)", "starred": false},
+      {"id": "flash_custom_213", "front": "外国人", "back": "がいこくじん (နိုင်ငံခြားသား)", "starred": false},
+      {"id": "flash_custom_214", "front": "左", "back": "ひだり (ဘယ်ဘက်)", "starred": false},
+      {"id": "flash_custom_215", "front": "左手", "back": "ひだりて (ဘယ်ဘက်လက်)", "starred": false},
+      {"id": "flash_custom_216", "front": "左側", "back": "ひだりがわ (ဘယ်ဘက်ခြမ်း)", "starred": false},
+      {"id": "flash_custom_217", "front": "左右", "back": "さゆう (ဘယ်ညာ)", "starred": false},
+      {"id": "flash_custom_218", "front": "右", "back": "みぎ (ညာ)", "starred": false},
+      {"id": "flash_custom_219", "front": "右手", "back": "みぎて (ညာလက်)", "starred": false},
+      {"id": "flash_custom_220", "front": "右側", "back": "みぎがわ (ညာဘက်ခြမ်း)", "starred": false},
+      {"id": "flash_custom_221", "front": "東", "back": "ひがし (အရှေ့ဘက်အရပ်)", "starred": false},
+      {"id": "flash_custom_222", "front": "東口", "back": "ひがしぐち (အရှေ့ဘက်အပေါက်)", "starred": false},
+      {"id": "flash_custom_223", "front": "東京", "back": "とうきょう (တိုကျို)", "starred": false},
+      {"id": "flash_custom_224", "front": "東洋", "back": "とうよう (အရှေ့တိုင်း)", "starred": false},
+      {"id": "flash_custom_225", "front": "西", "back": "にし (အနောက်ဘက်အရပ်)", "starred": false},
+      {"id": "flash_custom_226", "front": "西口", "back": "にしぐち (အနောက်ဘက်အပေါက်)", "starred": false},
+      {"id": "flash_custom_227", "front": "東西", "back": "とうざい (အရှေ့နောက်အရပ်)", "starred": false},
+      {"id": "flash_custom_228", "front": "西洋", "back": "せいよう (အနောက်တိုင်း)", "starred": false},
+      {"id": "flash_custom_229", "front": "南", "back": "みなみ (တောင်ဘက်အရပ်)", "starred": false},
+      {"id": "flash_custom_230", "front": "南口", "back": "みなみぐち (တောင်ဘက်အပေါက်)", "starred": false},
+      {"id": "flash_custom_231", "front": "東南アジア", "back": "とうなんアジア (အရှေ့တောင်အာရှ)", "starred": false},
+      {"id": "flash_custom_232", "front": "南極", "back": "なんきょく (တောင်ဝန်ရိုးစွန်း)", "starred": false},
+      {"id": "flash_custom_233", "front": "北", "back": "きた (မြောက်အရပ်)", "starred": false},
+      {"id": "flash_custom_234", "front": "北口", "back": "きたぐち (မြောက်ဘက်အပေါက်)", "starred": false},
+      {"id": "flash_custom_235", "front": "南北", "back": "なんぼく (တောင်မြောက်အရပ်)", "starred": false},
+      {"id": "flash_custom_236", "front": "東西南北", "back": "とうざいなんぼく (အရှေ့အနောက်တောင်မြောက်)", "starred": false},
+      {"id": "flash_custom_237", "front": "北海道", "back": "ほっかいどう (ဟော့ကိုင်းဒိုးကျွန်း)", "starred": false},
+      {"id": "flash_custom_238", "front": "名前", "back": "なまえ (နာမည်)", "starred": false},
+      {"id": "flash_custom_239", "front": "有名な", "back": "ゆうめいな (နာမည်ကြီးသော)", "starred": false},
+      {"id": "flash_custom_240", "front": "人名", "back": "じんめい (လူအမည်)", "starred": false},
+      {"id": "flash_custom_241", "front": "十名", "back": "じゅうめい (လူဆယ်ယောက်)", "starred": false},
+      {"id": "flash_custom_242", "front": "牛", "back": "うし (နွား)", "starred": false},
+      {"id": "flash_custom_243", "front": "水牛", "back": "すいぎゅう (ကျွဲ)", "starred": false},
+      {"id": "flash_custom_244", "front": "牛肉", "back": "ぎゅうにく (အမဲသား)", "starred": false},
+      {"id": "flash_custom_245", "front": "牛乳", "back": "ぎゅうにゅう (နွားနို့)", "starred": false},
+      {"id": "flash_custom_246", "front": "馬", "back": "うま (မြင်း)", "starred": false},
+      {"id": "flash_custom_247", "front": "馬車", "back": "ばしゃ (မြင်းလှည်း)", "starred": false},
+      {"id": "flash_custom_248", "front": "乗馬", "back": "じょうば (မြင်းစီးခြင်း)", "starred": false},
+      {"id": "flash_custom_249", "front": "魚", "back": "さかな (ငါး)", "starred": false},
+      {"id": "flash_custom_250", "front": "金魚", "back": "きんぎょ (ရွှေငါး)", "starred": false},
+      {"id": "flash_custom_251", "front": "人魚", "back": "にんぎょ (ရေသူမ)", "starred": false},
+      {"id": "flash_custom_252", "front": "貝", "back": "かい (ခရု)", "starred": false},
+      {"id": "flash_custom_253", "front": "貝がら", "back": "かいがら (ခရုခွံ)", "starred": false},
+      {"id": "flash_custom_254", "front": "雨", "back": "あめ (မိုး)", "starred": false},
+      {"id": "flash_custom_255", "front": "大雨", "back": "おおあめ (မိုးသည်းထန်စွာရွာခြင်း)", "starred": false},
+      {"id": "flash_custom_256", "front": "雨季", "back": "うき (မိုးရာသီ)", "starred": false},
+      {"id": "flash_custom_257", "front": "天気", "back": "てんき (မိုးလေဝသ)", "starred": false},
+      {"id": "flash_custom_258", "front": "天国", "back": "てんごく (နတ်ပြည်)", "starred": false},
+      {"id": "flash_custom_259", "front": "人気", "back": "にんき (လူကြိုက်များခြင်း)", "starred": false},
+      {"id": "flash_custom_260", "front": "気をつける", "back": "きをつける (ဂရုစိုက်သည်/သတိထားသည်)", "starred": false},
+      {"id": "flash_custom_261", "front": "気持ち", "back": "きもち (စိတ်ဓာတ်/စိတ်ခံစားမှု)", "starred": false},
+      {"id": "flash_custom_262", "front": "車", "back": "くるま (ကား)", "starred": false},
+      {"id": "flash_custom_263", "front": "電車", "back": "でんしゃ (လျှပ်စစ်ရထား)", "starred": false},
+      {"id": "flash_custom_264", "front": "門", "back": "もん (တံခါးပေါက်)", "starred": false},
+      {"id": "flash_custom_265", "front": "正門", "back": "せいもん (အဓိကအပေါက်)", "starred": false},
+      {"id": "flash_custom_266", "front": "専門", "back": "せんもん (အထူးပြုဘာသာရပ်)", "starred": false},
+      {"id": "flash_custom_267", "front": "午前", "back": "ごぜん (မနက်ပိုင်း)", "starred": false},
+      {"id": "flash_custom_268", "front": "午後", "back": "ごご (မွန်းလွဲပိုင်း)", "starred": false},
+      {"id": "flash_custom_269", "front": "正午", "back": "しょうご (မွန်းတည့်)", "starred": false},
+      {"id": "flash_custom_270", "front": "大きい", "back": "おおきい (ကြီးသော)", "starred": false},
+      {"id": "flash_custom_271", "front": "大学", "back": "だいがく (တက္ကသိုလ်)", "starred": false},
+      {"id": "flash_custom_272", "front": "大使館", "back": "たいしかん (သံရုံး)", "starred": false},
+      {"id": "flash_custom_273", "front": "大人", "back": "おとな (လူကြီး)", "starred": false},
+      {"id": "flash_custom_274", "front": "小さい", "back": "ちいさい (သေးသော)", "starred": false},
+      {"id": "flash_custom_275", "front": "小川", "back": "おがわ (ချောင်း)", "starred": false},
+      {"id": "flash_custom_276", "front": "小犬", "back": "こいぬ (ခွေးသိုးလေး/ခွေးကလေး)", "starred": false},
+      {"id": "flash_custom_277", "front": "小学校", "back": "しょうがっこう (မူလတန်းကျောင်း)", "starred": false},
+      {"id": "flash_custom_278", "front": "高い", "back": "たかい (မြင့်သော/စျေးကြီးသော)", "starred": false},
+      {"id": "flash_custom_279", "front": "円高", "back": "えんだか (ယန်းစျေးမြင့်တက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_280", "front": "高校生", "back": "こうこうせい (အထက်တန်းကျောင်းသား)", "starred": false},
+      {"id": "flash_custom_281", "front": "安い", "back": "やすい (စျေးသက်သာသော)", "starred": false},
+      {"id": "flash_custom_282", "front": "安心する", "back": "あんしんする (စိတ်အေးသည်/စိတ်သက်သာရာရသည်)", "starred": false},
+      {"id": "flash_custom_283", "front": "安全", "back": "あんぜん (လုံခြုံစိတ်ချရခြင်း/ဘေးကင်းခြင်း)", "starred": false},
+      {"id": "flash_custom_284", "front": "新しい", "back": "あたらしい (သစ်လွင်သော)", "starred": false},
+      {"id": "flash_custom_285", "front": "新聞", "back": "しんぶん (သတင်းစာ)", "starred": false},
+      {"id": "flash_custom_286", "front": "新年", "back": "しんねん (နှစ်သစ်)", "starred": false},
+      {"id": "flash_custom_287", "front": "新人", "back": "しんじん (လူသစ်)", "starred": false},
+      {"id": "flash_custom_288", "front": "古い", "back": "ふるい (ဟောင်းသော/ရှေးကျသော)", "starred": false},
+      {"id": "flash_custom_289", "front": "中古車", "back": "ちゅうこしゃ (တစ်ပတ်ရစ်ကား)", "starred": false},
+      {"id": "flash_custom_290", "front": "長い", "back": "ながい (ရှည်သော)", "starred": false},
+      {"id": "flash_custom_291", "front": "社長", "back": "しゃちょう (သူဌေး/ဥက္ကဌ)", "starred": false},
+      {"id": "flash_custom_292", "front": "校長", "back": "こうちょう (ကျောင်းအုပ်)", "starred": false},
+      {"id": "flash_custom_293", "front": "長女", "back": "ちょうじょ (သမီးကြီး)", "starred": false},
+      {"id": "flash_custom_294", "front": "長男", "back": "ちょうなん (သားကြီး)", "starred": false},
+      {"id": "flash_custom_295", "front": "多い", "back": "おおい (များသော)", "starred": false},
+      {"id": "flash_custom_296", "front": "多少", "back": "たしょう (အနည်းငယ်)", "starred": false},
+      {"id": "flash_custom_297", "front": "少ない", "back": "すくない (နည်းပါးသော)", "starred": false},
+      {"id": "flash_custom_298", "front": "少し", "back": "すこし (အနည်းငယ်)", "starred": false},
+      {"id": "flash_custom_299", "front": "少年", "back": "しょうねん (လူငယ်လေး)", "starred": false},
+      {"id": "flash_custom_300", "front": "少女", "back": "しょうじょ (မိန်းကလေးငယ်လေး)", "starred": false},
+      {"id": "flash_custom_301", "front": "早い", "back": "はやい (စောသော)", "starred": false},
+      {"id": "flash_custom_302", "front": "早朝", "back": "そうちょう (မနက်အစောကြီး)", "starred": false},
+      {"id": "flash_custom_303", "front": "行く", "back": "いく (သွားသည်)", "starred": false},
+      {"id": "flash_custom_304", "front": "行う", "back": "おこなう (ပြုလုပ်ဆောင်ရွက်သည်/ကျင်းပသည်)", "starred": false},
+      {"id": "flash_custom_305", "front": "銀行", "back": "ぎんこう (ဘဏ်)", "starred": false},
+      {"id": "flash_custom_306", "front": "三行目", "back": "さんぎょうめ (၃ကြောင်းမြောက်)", "starred": false},
+      {"id": "flash_custom_307", "front": "来る", "back": "くる (လာသည်)", "starred": false},
+      {"id": "flash_custom_308", "front": "来年", "back": "らいねん (လာမည့်နှစ်)", "starred": false},
+      {"id": "flash_custom_309", "front": "来月", "back": "らいげつ (လာမည့်လ)", "starred": false},
+      {"id": "flash_custom_310", "front": "将来", "back": "しょうらい (အနာဂတ်)", "starred": false},
+      {"id": "flash_custom_311", "front": "食べる", "back": "たべる (စားသည်)", "starred": false},
+      {"id": "flash_custom_312", "front": "食堂", "back": "しょくどう (စားသောက်ခန်း)", "starred": false},
+      {"id": "flash_custom_313", "front": "食事", "back": "しょくじ (စားသောက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_314", "front": "食料品", "back": "しょくりょうひん (စားသောက်ကုန်ပစ္စည်း)", "starred": false},
+      {"id": "flash_custom_315", "front": "見る", "back": "みる (ကြည့်သည်)", "starred": false},
+      {"id": "flash_custom_316", "front": "見せる", "back": "みせる (ပြသည်)", "starred": false},
+      {"id": "flash_custom_317", "front": "見学", "back": "けんがく (ကြည့်ရှုလေ့လာခြင်း)", "starred": false},
+      {"id": "flash_custom_318", "front": "意見", "back": "いけん (အမြင်/သဘောထား)", "starred": false},
+      {"id": "flash_custom_319", "front": "入る", "back": "はいる (ဝင်သည်)", "starred": false},
+      {"id": "flash_custom_320", "front": "入れる", "back": "いれる (ထည့်သည်)", "starred": false},
+      {"id": "flash_custom_321", "front": "入口", "back": "いりぐち (ဝင်ပေါက်)", "starred": false},
+      {"id": "flash_custom_322", "front": "入学する", "back": "にゅうがくする (ကျောင်းဝင်သည်)", "starred": false},
+      {"id": "flash_custom_323", "front": "出す", "back": "だす (ထုတ်သည်)", "starred": false},
+      {"id": "flash_custom_324", "front": "出る", "back": "でる (ထွက်သည်)", "starred": false},
+      {"id": "flash_custom_325", "front": "出口", "back": "でぐち (ထွက်ပေါက်)", "starred": false},
+      {"id": "flash_custom_326", "front": "輸出する", "back": "ゆしゅつする (တင်ပို့သည်)", "starred": false},
+      {"id": "flash_custom_327", "front": "出席する", "back": "しゅっせきする (တက်ရောက်သည်)", "starred": false},
+      {"id": "flash_custom_328", "front": "立つ", "back": "たつ (မတ်တပ်ရပ်သည်)", "starred": false},
+      {"id": "flash_custom_329", "front": "国立大学", "back": "こくりつだいがく (အစိုးရပိုင်တက္ကသိုလ်)", "starred": false},
+      {"id": "flash_custom_330", "front": "立食パーティー", "back": "りっしょくパーティー (ဘူဖေးပါတီ)", "starred": false},
+      {"id": "flash_custom_331", "front": "書く", "back": "かく (ရေးသည်)", "starred": false},
+      {"id": "flash_custom_332", "front": "葉書", "back": "はがき (ပို့စကတ်)", "starred": false},
+      {"id": "flash_custom_333", "front": "下書き", "back": "したがき (အကြမ်းရေးခြင်း)", "starred": false},
+      {"id": "flash_custom_334", "front": "辞書", "back": "じしょ (အဘိဓာန်)", "starred": false},
+      {"id": "flash_custom_335", "front": "図書館", "back": "としょかん (စာကြည့်တိုက်)", "starred": false},
+      {"id": "flash_custom_336", "front": "言う", "back": "いう (ပြောသည်)", "starred": false},
+      {"id": "flash_custom_337", "front": "言語", "back": "げんご (ဘာသာစကား)", "starred": false},
+      {"id": "flash_custom_338", "front": "伝言", "back": "でんごん (တဆင့်စကားပါးခြင်း)", "starred": false},
+      {"id": "flash_custom_339", "front": "飲む", "back": "のむ (သောက်သည်)", "starred": false},
+      {"id": "flash_custom_340", "front": "飲み物", "back": "のみもの (သောက်စရာ)", "starred": false},
+      {"id": "flash_custom_341", "front": "飲食店", "back": "いんしょくてん (စားသောက်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_342", "front": "話す", "back": "はなす (စကားပြောသည်)", "starred": false},
+      {"id": "flash_custom_343", "front": "話", "back": "はなし (စကား)", "starred": false},
+      {"id": "flash_custom_344", "front": "電話", "back": "でんわ (ဖုန်း)", "starred": false},
+      {"id": "flash_custom_345", "front": "会話", "back": "かいわ (စကားပြော)", "starred": false},
+      {"id": "flash_custom_346", "front": "読む", "back": "よむ (ဖတ်သည်)", "starred": false},
+      {"id": "flash_custom_347", "front": "読書", "back": "どくしょ (စာဖတ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_348", "front": "語る", "back": "かたる (ပြောပြသည်)", "starred": false},
+      {"id": "flash_custom_349", "front": "中国語", "back": "ちゅうごくご (တရုတ်ဘာသာစကား)", "starred": false},
+      {"id": "flash_custom_350", "front": "外国語", "back": "がいこくご (နိုင်ငံခြားဘာသာစကား)", "starred": false},
+      {"id": "flash_custom_351", "front": "日本語", "back": "にほんご (ဂျပန်ဘာသာစကား)", "starred": false},
+      {"id": "flash_custom_352", "front": "間", "back": "あいだ (အကြား)", "starred": false},
+      {"id": "flash_custom_353", "front": "間に合う", "back": "まにあう (အချိန်မှီသည်)", "starred": false},
+      {"id": "flash_custom_354", "front": "時間", "back": "じかん (အချိန်/ကြာချိန်)", "starred": false},
+      {"id": "flash_custom_355", "front": "一年間", "back": "いちねんかん (၁နှစ်ကြာ)", "starred": false},
+      {"id": "flash_custom_356", "front": "聞く", "back": "きく (နားထောင်သည်/မေးမြန်းသည်)", "starred": false},
+      {"id": "flash_custom_357", "front": "聞こえる", "back": "きこえる (ကြားသည်)", "starred": false},
+      {"id": "flash_custom_358", "front": "新聞", "back": "しんぶん (သတင်းစာ)", "starred": false},
+      {"id": "flash_custom_359", "front": "買う", "back": "かう (ဝယ်သည်)", "starred": false},
+      {"id": "flash_custom_360", "front": "買い物する", "back": "かいものする (စျေးဝယ်ထွက်သည်)", "starred": false},
+      {"id": "flash_custom_361", "front": "売買する", "back": "ばいばいする (အရောင်းအဝယ်လုပ်သည်)", "starred": false},
+      {"id": "flash_custom_362", "front": "休む", "back": "やすむ (အနားယူသည်)", "starred": false},
+      {"id": "flash_custom_363", "front": "休み", "back": "やすみ (အားလပ်ရက်/အားလပ်ချိန်)", "starred": false},
+      {"id": "flash_custom_364", "front": "休日", "back": "きゅうじつ (အားလပ်ရက်)", "starred": false},
+      {"id": "flash_custom_365", "front": "時", "back": "とき (အချိန်/အခါ)", "starred": false},
+      {"id": "flash_custom_366", "front": "時計", "back": "とけい (နာရီ)", "starred": false},
+      {"id": "flash_custom_367", "front": "時間", "back": "じかん (အချိန်/ကြာချိန်)", "starred": false},
+      {"id": "flash_custom_368", "front": "1時", "back": "いちじ (၁နာရီ)", "starred": false},
+      {"id": "flash_custom_369", "front": "1週間", "back": "いっしゅうかん (၁ပတ်ကြာ)", "starred": false},
+      {"id": "flash_custom_370", "front": "来週", "back": "らいしゅう (လာမည့်အပတ်)", "starred": false},
+      {"id": "flash_custom_371", "front": "先週", "back": "せんしゅう (ပြီးခဲ့သည့်အပတ်)", "starred": false},
+      {"id": "flash_custom_372", "front": "今週", "back": "こんしゅう (ဒီတစ်ပတ်)", "starred": false},
+      {"id": "flash_custom_373", "front": "道", "back": "みち (လမ်း)", "starred": false},
+      {"id": "flash_custom_374", "front": "車道", "back": "しゃどう (ကားလမ်း)", "starred": false},
+      {"id": "flash_custom_375", "front": "水道", "back": "すいどう (ရေပေးဝေရေး/ရေပိုက်)", "starred": false},
+      {"id": "flash_custom_376", "front": "書道", "back": "しょどう (စုတ်တံဖြင့်စာလုံးအလှရေးခြင်း)", "starred": false},
+      {"id": "flash_custom_377", "front": "今", "back": "いま (အခု)", "starred": false},
+      {"id": "flash_custom_378", "front": "今月", "back": "こんげつ (ဒီလ)", "starred": false},
+      {"id": "flash_custom_379", "front": "今年", "back": "ことし (ဒီနှစ်)", "starred": false},
+      {"id": "flash_custom_380", "front": "今日", "back": "きょう (ဒီနေ့)", "starred": false},
+      {"id": "flash_custom_381", "front": "会う", "back": "あう (တွေ့ဆုံသည်)", "starred": false},
+      {"id": "flash_custom_382", "front": "会話", "back": "かいわ (စကားပြော)", "starred": false},
+      {"id": "flash_custom_383", "front": "会議", "back": "かいぎ (အစည်းအဝေး)", "starred": false},
+      {"id": "flash_custom_384", "front": "新年会", "back": "しんねんかい (နှစ်သစ်ပါတီ)", "starred": false},
+      {"id": "flash_custom_385", "front": "会社", "back": "かいしゃ (ကုမ္ပဏီ)", "starred": false},
+      {"id": "flash_custom_386", "front": "社会", "back": "しゃかい (လူ့ဘောင်အဖွဲ့အစည်း)", "starred": false},
+      {"id": "flash_custom_387", "front": "社長", "back": "しゃちょう (သူဌေး/ဥက္ကဌ)", "starred": false},
+      {"id": "flash_custom_388", "front": "神社", "back": "じんじゃ (ရှင်တိုနတ်ဘုရားကျောင်း)", "starred": false},
+      {"id": "flash_custom_389", "front": "店", "back": "みせ (ဆိုင်)", "starred": false},
+      {"id": "flash_custom_390", "front": "店員", "back": "てんいん (ဆိုင်ဝန်ထမ်း)", "starred": false},
+      {"id": "flash_custom_391", "front": "売店", "back": "ばいてん (အရောင်းဆိုင်)", "starred": false},
+      {"id": "flash_custom_392", "front": "駅", "back": "えき (ဘူတာ)", "starred": false},
+      {"id": "flash_custom_393", "front": "花", "back": "はな (ပန်း)", "starred": false},
+      {"id": "flash_custom_394", "front": "花見", "back": "はなみ (ပန်းကြည့်ခြင်း)", "starred": false},
+      {"id": "flash_custom_395", "front": "花火", "back": "はなび (မီးပန်း)", "starred": false},
+      {"id": "flash_custom_396", "front": "花瓶", "back": "かびん (ပန်းအိုး)", "starred": false},
+      {"id": "flash_custom_397", "front": "国", "back": "くに (နိုင်ငံ)", "starred": false},
+      {"id": "flash_custom_398", "front": "外国", "back": "がいこく (နိုင်ငံခြား)", "starred": false},
+      {"id": "flash_custom_399", "front": "中国", "back": "ちゅうごく (တရုတ်)", "starred": false},
+      {"id": "flash_custom_400", "front": "白", "back": "しろ (အဖြူ)", "starred": false},
+      {"id": "flash_custom_401", "front": "白い", "back": "しろい (ဖြူသော)", "starred": false},
+      {"id": "flash_custom_402", "front": "白鳥", "back": "はくちょう (ငန်းဖြူ)", "starred": false},
+      {"id": "flash_custom_403", "front": "空", "back": "そら (ကောင်းကင်)", "starred": false},
+      {"id": "flash_custom_404", "front": "青空", "back": "あおぞら (ကောင်းကင်ပြာ)", "starred": false},
+      {"id": "flash_custom_405", "front": "空気", "back": "くうき (လေထု)", "starred": false},
+      {"id": "flash_custom_406", "front": "空港", "back": "くうこう (လေဆိပ်)", "starred": false},
+      {"id": "flash_custom_407", "front": "電気", "back": "でんき (လျှပ်စစ်)", "starred": false},
+      {"id": "flash_custom_408", "front": "電車", "back": "でんしゃ (လျှပ်စစ်ရထား)", "starred": false},
+      {"id": "flash_custom_409", "front": "電池", "back": "でんち (ဓာတ်ခဲ/ဘက်ထရီ)", "starred": false},
+      {"id": "flash_custom_410", "front": "電話", "back": "でんわ (ဖုန်း)", "starred": false},
+      {"id": "flash_custom_411", "front": "住む", "back": "すむ (နေထိုင်သည်)", "starred": false},
+      {"id": "flash_custom_412", "front": "住民", "back": "じゅうみん (ဒေသခံပြည်သူ)", "starred": false},
+      {"id": "flash_custom_413", "front": "所", "back": "ところ (နေရာ)", "starred": false},
+      {"id": "flash_custom_414", "front": "台所", "back": "だいどころ (မီးဖိုချောင်)", "starred": false},
+      {"id": "flash_custom_415", "front": "場所", "back": "ばしょ (နေရာဌာန)", "starred": false},
+      {"id": "flash_custom_416", "front": "住所", "back": "じゅうしょ (နေရပ်လိပ်စာ)", "starred": false},
+      {"id": "flash_custom_417", "front": "東京", "back": "とうきょう (တိုကျို)", "starred": false},
+      {"id": "flash_custom_418", "front": "都", "back": "みやこ (မြို့တော်)", "starred": false},
+      {"id": "flash_custom_419", "front": "首都", "back": "しゅと (မြို့တော်)", "starred": false},
+      {"id": "flash_custom_420", "front": "都合", "back": "つごう (အဆင်ပြေမှု/အခြေအနေ)", "starred": false},
+      {"id": "flash_custom_421", "front": "京都府", "back": "きょうとふ (ကျိုတိုစီရင်စု)", "starred": false},
+      {"id": "flash_custom_422", "front": "大阪府", "back": "おおさかふ (အိုဆာကာစီရင်စု)", "starred": false},
+      {"id": "flash_custom_423", "front": "政府", "back": "せいふ (အစိုးရ)", "starred": false},
+      {"id": "flash_custom_424", "front": "山口県", "back": "やまぐちけん (ယာမာဂူချီခရိုင်)", "starred": false},
+      {"id": "flash_custom_425", "front": "県知事", "back": "けんちじ (ခရိုင်အုပ်ချုပ်ရေးမှူး)", "starred": false},
+      {"id": "flash_custom_426", "front": "市", "back": "し (မြို့)", "starred": false},
+      {"id": "flash_custom_427", "front": "市長", "back": "しちょう (မြို့တော်ဝန်)", "starred": false},
+      {"id": "flash_custom_428", "front": "市場", "back": "いちば (စျေး)", "starred": false},
+      {"id": "flash_custom_429", "front": "区", "back": "く (မြို့နယ်/ရပ်ကွက်)", "starred": false},
+      {"id": "flash_custom_430", "front": "区長", "back": "くちょう (မြို့နယ်အုပ်ချုပ်ရေးမှူး)", "starred": false},
+      {"id": "flash_custom_431", "front": "町", "back": "まち (မြို့နယ်/ရွာ)", "starred": false},
+      {"id": "flash_custom_432", "front": "下町", "back": "したまち (မြို့လယ်ကောင်/လူစည်ကားရာအရပ်)", "starred": false},
+      {"id": "flash_custom_433", "front": "町長", "back": "ちょうちょう (မြို့နယ်အုပ်ချုပ်ရေးမှူး)", "starred": false},
+      {"id": "flash_custom_434", "front": "村", "back": "むら (ရွာ)", "starred": false},
+      {"id": "flash_custom_435", "front": "村人", "back": "むらびと (ရွာသား)", "starred": false},
+      {"id": "flash_custom_436", "front": "村長", "back": "そんちょう (ရွာလူကြီး)", "starred": false},
+      {"id": "flash_custom_437", "front": "明るい", "back": "あかるい (လင်းလက်သော/တောက်ပသော)", "starred": false},
+      {"id": "flash_custom_438", "front": "説明", "back": "せつめい (ရှင်းလင်းချက်)", "starred": false},
+      {"id": "flash_custom_439", "front": "発明", "back": "はつめい (တီထွင်မှု)", "starred": false},
+      {"id": "flash_custom_440", "front": "明日", "back": "あした (မနက်ဖြန်)", "starred": false},
+      {"id": "flash_custom_441", "front": "暗い", "back": "くらい (မှောင်သော)", "starred": false},
+      {"id": "flash_custom_442", "front": "暗号", "back": "あんごう (လျှို့ဝှက်ကုဒ်)", "starred": false},
+      {"id": "flash_custom_443", "front": "遠い", "back": "とおい (ဝေးသော)", "starred": false},
+      {"id": "flash_custom_444", "front": "遠足", "back": "えんそく (လေ့လာရေးခရီးထွက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_445", "front": "永遠", "back": "えいえん (ထာဝရ)", "starred": false},
+      {"id": "flash_custom_446", "front": "近い", "back": "ちかい (နီးသော)", "starred": false},
+      {"id": "flash_custom_447", "front": "近く", "back": "ちかく (အနီးအနား)", "starred": false},
+      {"id": "flash_custom_448", "front": "近所", "back": "きんじょ (အိမ်နီးနားချင်း/အနီးအနားပတ်ဝန်းကျင်)", "starred": false},
+      {"id": "flash_custom_449", "front": "最近", "back": "さいきん (လတ်တလော)", "starred": false},
+      {"id": "flash_custom_450", "front": "強い", "back": "つよい (သန်မာသော/အားကောင်းသော)", "starred": false},
+      {"id": "flash_custom_451", "front": "勉強する", "back": "べんきょうする (စာလေ့လာသည်)", "starred": false},
+      {"id": "flash_custom_452", "front": "強風", "back": "きょうふう (လေပြင်း)", "starred": false},
+      {"id": "flash_custom_453", "front": "弱い", "back": "よわい (အားနည်းသော)", "starred": false},
+      {"id": "flash_custom_454", "front": "弱点", "back": "じゃくてん (အားနည်းချက်)", "starred": false},
+      {"id": "flash_custom_455", "front": "強弱", "back": "きょうじゃく (အနုအကြမ်း/အပျော့အမာ)", "starred": false},
+      {"id": "flash_custom_456", "front": "重い", "back": "おもい (လေးသော)", "starred": false},
+      {"id": "flash_custom_457", "front": "重大な", "back": "じゅうだいな (အရေးကြီးသော/ကြီးလေးသော)", "starred": false},
+      {"id": "flash_custom_458", "front": "体重", "back": "たいじゅう (ကိုယ်အလေးချိန်)", "starred": false},
+      {"id": "flash_custom_459", "front": "軽い", "back": "かるい (ပေါ့ပါးသော)", "starred": false},
+      {"id": "flash_custom_460", "front": "軽食", "back": "けいしょく (အပေါ့စားစားစရာ)", "starred": false},
+      {"id": "flash_custom_461", "front": "太い", "back": "ふとい (တုတ်သော/ဝသော)", "starred": false},
+      {"id": "flash_custom_462", "front": "太陽", "back": "たいよう (နေမင်း)", "starred": false},
+      {"id": "flash_custom_463", "front": "細かい", "back": "こまかい (သေးငယ်သော/အသေးစိတ်ကျသော)", "starred": false},
+      {"id": "flash_custom_464", "front": "細い", "back": "ほそい (သေးသွယ်သော)", "starred": false},
+      {"id": "flash_custom_465", "front": "細工", "back": "さいく (လက်မှုအနုပညာ)", "starred": false},
+      {"id": "flash_custom_466", "front": "特に", "back": "とくに (အထူးသဖြင့်)", "starred": false},
+      {"id": "flash_custom_467", "front": "特別な", "back": "とくべつな (အထူးသီးသန့်ဖြစ်သော)", "starred": false},
+      {"id": "flash_custom_468", "front": "特急", "back": "とっきゅう (အမြန်ရထား)", "starred": false},
+      {"id": "flash_custom_469", "front": "別れる", "back": "わかれる (လမ်းခွဲသည်/ကွဲကွာသည်)", "starred": false},
+      {"id": "flash_custom_470", "front": "別々に", "back": "べつべつに (သီးခြားစီ)", "starred": false},
+      {"id": "flash_custom_471", "front": "区別する", "back": "くべつする (ခွဲခြားသတ်မှတ်သည်)", "starred": false},
+      {"id": "flash_custom_472", "front": "分別する", "back": "ぶんべつする (အမျိုးအစားအလိုက်ခွဲခြားသည်)", "starred": false},
+      {"id": "flash_custom_473", "front": "有る", "back": "ある (ရှိသည်)", "starred": false},
+      {"id": "flash_custom_474", "front": "有名な", "back": "ゆうめいな (နာမည်ကြီးသော)", "starred": false},
+      {"id": "flash_custom_475", "front": "有料", "back": "ゆうりょう (အခကြေးငွေပေးရသော)", "starred": false},
+      {"id": "flash_custom_476", "front": "便り", "back": "たより (သတင်းစကား/စာ)", "starred": false},
+      {"id": "flash_custom_477", "front": "郵便局", "back": "ゆうびんきょく (စာတိုက်)", "starred": false},
+      {"id": "flash_custom_478", "front": "便利な", "back": "べんりな (အဆင်ပြေချောမွေ့သော/အသုံးဝင်သော)", "starred": false},
+      {"id": "flash_custom_479", "front": "利用する", "back": "りようする (အသုံးပြုသည်)", "starred": false},
+      {"id": "flash_custom_480", "front": "利子", "back": "りし (အတိုးနှုန်း)", "starred": false},
+      {"id": "flash_custom_481", "front": "有利な", "back": "ゆうりな (အကျိုးအမြတ်ရှိသော/အခြေအနေကောင်းသော)", "starred": false},
+      {"id": "flash_custom_482", "front": "不便な", "back": "ふべんな (အဆင်မပြေသော)", "starred": false},
+      {"id": "flash_custom_483", "front": "不足する", "back": "ふそくする (လိုအပ်သည်/မလုံလောက်ဖြစ်သည်)", "starred": false},
+      {"id": "flash_custom_484", "front": "不安な", "back": "ふあんな (စိတ်မအေးရသော/စိုးရိမ်ရသော)", "starred": false},
+      {"id": "flash_custom_485", "front": "不運な", "back": "ふうんな (ကံမကောင်းသော)", "starred": false},
+      {"id": "flash_custom_486", "front": "切る", "back": "きる (ဖြတ်သည်/ညှပ်သည်)", "starred": false},
+      {"id": "flash_custom_487", "front": "切手", "back": "きって (တံဆိပ်ခေါင်း)", "starred": false},
+      {"id": "flash_custom_488", "front": "大切な", "back": "たいせつな (အရေးကြီးသော/တန်ဖိုးရှိသော)", "starred": false},
+      {"id": "flash_custom_489", "front": "親切な", "back": "しんせつな (ကြင်နာသော/ဖော်ရွေသော)", "starred": false},
+      {"id": "flash_custom_490", "front": "元", "back": "もと (မူလ)", "starred": false},
+      {"id": "flash_custom_491", "front": "元気な", "back": "げんきな (ကျန်းမာဖျတ်လတ်သော)", "starred": false},
+      {"id": "flash_custom_492", "front": "元日", "back": "がんじつ (နှစ်ဆန်းတစ်ရက်နေ့)", "starred": false},
+      {"id": "flash_custom_493", "front": "好きな", "back": "すきな (နှစ်သက်သော)", "starred": false},
+      {"id": "flash_custom_494", "front": "好意", "back": "こうい (စေတနာ/စိတ်ကောင်း)", "starred": false},
+      {"id": "flash_custom_495", "front": "好物", "back": "こうぶつ (ကြိုက်နှစ်သက်သောအစားအစာ)", "starred": false},
+      {"id": "flash_custom_496", "front": "急ぐ", "back": "いそぐ (လောသည်/အလျင်လိုသည်)", "starred": false},
+      {"id": "flash_custom_497", "front": "急に", "back": "きゅうに (ရုတ်တရက်)", "starred": false},
+      {"id": "flash_custom_498", "front": "急用", "back": "きゅうよう (အရေးကြီးကိစ္စ)", "starred": false}
+    ]
+  },
+  {
+    "id": "cat_n4_kanji",
+    "name": "N4 Kanji",
+    "themeColor": "#1E5631",
+    "fontColor": "#FFFFFF",
+    "font": "Noto Sans JP, sans-serif",
+    "type": "flashcard",
+    "fontSize": 24,
+    "cards": [
+      {"id": "flash_custom_001", "front": "低い", "back": "ひくい (နိမ့်သော)", "starred": false},
+      {"id": "flash_custom_002", "front": "低下する", "back": "ていかする (ကျဆင်းသည်)", "starred": false},
+      {"id": "flash_custom_003", "front": "低気圧", "back": "ていきあつ (လေဖိအားနည်းရပ်ဝန်း)", "starred": false},
+      {"id": "flash_custom_004", "front": "広い", "back": "ひろい (ကျယ်ပြန့်သော)", "starred": false},
+      {"id": "flash_custom_005", "front": "広場", "back": "ひろば (ကွင်းပြင်/ရင်ပြင်)", "starred": false},
+      {"id": "flash_custom_006", "front": "広大な", "back": "こうだいな (ကျယ်ပြောလှသော)", "starred": false},
+      {"id": "flash_custom_007", "front": "短い", "back": "みじかい (တိုသော)", "starred": false},
+      {"id": "flash_custom_008", "front": "短時間", "back": "たんじかん (အချိန်တို)", "starred": false},
+      {"id": "flash_custom_009", "front": "良い", "back": "よい (ကောင်းသော)", "starred": false},
+      {"id": "flash_custom_010", "front": "良心", "back": "りょうしん (သိက္ခာ/မနောတရား)", "starred": false},
+      {"id": "flash_custom_011", "front": "悪い", "back": "わるい (ဆိုးသော/မကောင်းသော)", "starred": false},
+      {"id": "flash_custom_012", "front": "悪人", "back": "あくにん (လူဆိုး)", "starred": false},
+      {"id": "flash_custom_013", "front": "正しい", "back": "ただしい (မှန်ကန်သော)", "starred": false},
+      {"id": "flash_custom_014", "front": "正月", "back": "しょうがつ (နှစ်ဆန်းတစ်ရက်နေ့/နှစ်သစ်ကူး)", "starred": false},
+      {"id": "flash_custom_015", "front": "正門", "back": "せいもん (အဓိကအပေါက်ကြီး)", "starred": false},
+      {"id": "flash_custom_016", "front": "変わる", "back": "かわる (ပြောင်းလဲသည်)", "starred": false},
+      {"id": "flash_custom_017", "front": "変える", "back": "かえる (ပြောင်းလဲပစ်သည်)", "starred": false},
+      {"id": "flash_custom_018", "front": "大変な", "back": "たいへんな (ပင်ပန်းဆင်းရဲသော/ကြီးမားသော)", "starred": false},
+      {"id": "flash_custom_019", "front": "変化する", "back": "へんかする (ပြောင်းလဲမှုဖြစ်ပေါ်သည်)", "starred": false},
+      {"id": "flash_custom_020", "front": "赤い", "back": "あかい (နီသော)", "starred": false},
+      {"id": "flash_custom_021", "front": "赤ちゃん", "back": "あかちゃん (ရင်ခွင်ပိုက်ကလေး)", "starred": false},
+      {"id": "flash_custom_022", "front": "赤信号", "back": "あかしんごう (မီးနီလက္ခဏာ)", "starred": false},
+      {"id": "flash_custom_023", "front": "赤道", "back": "せきどう (အီကွေတာ)", "starred": false},
+      {"id": "flash_custom_024", "front": "青い", "back": "あおい (ပြာသော)", "starred": false},
+      {"id": "flash_custom_025", "front": "青空", "back": "あおぞら (ကောင်းကင်ပြာ)", "starred": false},
+      {"id": "flash_custom_026", "front": "青春", "back": "せいしゅん (လူငယ်ဘဝ/အရွယ်ကောင်း)", "starred": false},
+      {"id": "flash_custom_027", "front": "黒い", "back": "くろい (မည်းသော)", "starred": false},
+      {"id": "flash_custom_028", "front": "真っ黒", "back": "まっくろ (မည်းမှောင်နေသော)", "starred": false},
+      {"id": "flash_custom_029", "front": "黒板", "back": "こくばん (ကျောက်သင်ပုန်း)", "starred": false},
+      {"id": "flash_custom_030", "front": "映す", "back": "うつす (ထိုးပြသည်/ပုံရိပ်ဖော်သည်)", "starred": false},
+      {"id": "flash_custom_031", "front": "映画", "back": "えいが (ရုပ်ရှင်)", "starred": false},
+      {"id": "flash_custom_032", "front": "映画館", "back": "えいがかん (ရုပ်ရှင်ရုံ)", "starred": false},
+      {"id": "flash_custom_033", "front": "写す", "back": "うつす (ကူးယူသည်/ဓာတ်ပုံရိုက်သည်)", "starred": false},
+      {"id": "flash_custom_034", "front": "写真", "back": "しゃしん (ဓာတ်ပုံ)", "starred": false},
+      {"id": "flash_custom_035", "front": "画家", "back": "がか (ပန်းချီဆရာ)", "starred": false},
+      {"id": "flash_custom_036", "front": "計画", "back": "けいかく (စီမံကိန်း)", "starred": false},
+      {"id": "flash_custom_037", "front": "音", "back": "おと (အသံ)", "starred": false},
+      {"id": "flash_custom_038", "front": "発音", "back": "はつおん (အသံထွက်)", "starred": false},
+      {"id": "flash_custom_039", "front": "高音", "back": "こうおん (အသံမြင့်)", "starred": false},
+      {"id": "flash_custom_040", "front": "楽しい", "back": "たのしい (ပျော်စရာကောင်းသော)", "starred": false},
+      {"id": "flash_custom_041", "front": "楽な", "back": "らくな (သက်တောင့်သက်သာရှိသော)", "starred": false},
+      {"id": "flash_custom_042", "front": "音楽", "back": "おんがく (ဂီတ)", "starred": false},
+      {"id": "flash_custom_043", "front": "歌", "back": "うた (သီချင်း)", "starred": false},
+      {"id": "flash_custom_044", "front": "歌う", "back": "うたう (သီချင်းဆိုသည်)", "starred": false},
+      {"id": "flash_custom_045", "front": "歌手", "back": "かしゅ (အဆိုတော်)", "starred": false},
+      {"id": "flash_custom_046", "front": "真っ白", "back": "まっしろ (ဖွေးဖွေးလှုပ်ဖြူသော)", "starred": false},
+      {"id": "flash_custom_047", "front": "真ん中", "back": "まんなか (အလယ်ဗဟို)", "starred": false},
+      {"id": "flash_custom_048", "front": "真実", "back": "しんじつ (အမှန်တရား)", "starred": false},
+      {"id": "flash_custom_049", "front": "旅", "back": "たび (ခရီးစဉ်)", "starred": false},
+      {"id": "flash_custom_050", "front": "旅館", "back": "りょかん (ဂျပန်ရိုးရာဟိုတယ်)", "starred": false},
+      {"id": "flash_custom_051", "front": "旅行", "back": "りょこう (ခရီးသွားခြင်း)", "starred": false},
+      {"id": "flash_custom_052", "front": "世の中", "back": "よのなか (လောကကြီး)", "starred": false},
+      {"id": "flash_custom_053", "front": "世話", "back": "せわ (ပြုစုစောင့်ရှောက်မှု)", "starred": false},
+      {"id": "flash_custom_054", "front": "世紀", "back": "せいき (ရာစုနှစ်)", "starred": false},
+      {"id": "flash_custom_055", "front": "世界", "back": "せかい (ကမ္ဘာလောက)", "starred": false},
+      {"id": "flash_custom_056", "front": "政界", "back": "せいかい (နိုင်ငံရေးလောက)", "starred": false},
+      {"id": "flash_custom_057", "front": "仕事", "back": "しごと (အလုပ်အကိုင်)", "starred": false},
+      {"id": "flash_custom_058", "front": "仕方がない", "back": "しかたがない (မတတ်နိုင်ဘူး/အကြောင်းမရှိဘူး)", "starred": false},
+      {"id": "flash_custom_059", "front": "事", "back": "こと (အကြောင်းအရာ)", "starred": false},
+      {"id": "flash_custom_060", "front": "用事", "back": "ようじ (ကိစ္စကိစ္စ)", "starred": false},
+      {"id": "flash_custom_061", "front": "大事な", "back": "だいじな (အရေးကြီးသော)", "starred": false},
+      {"id": "flash_custom_062", "front": "家事", "back": "かじ (အိမ်မှုကိစ္စ)", "starred": false},
+      {"id": "flash_custom_063", "front": "銀", "back": "ぎん (ငွေရောင်/ငွေ)", "starred": false},
+      {"id": "flash_custom_064", "front": "銀行", "back": "ぎんこう (ဘဏ်)", "starred": false},
+      {"id": "flash_custom_065", "front": "会社員", "back": "かいしゃいん (ကုမ္ပဏီဝန်ထမ်း)", "starred": false},
+      {"id": "flash_custom_066", "front": "店員", "back": "てんいん (ဆိုင်ဝန်ထမ်း)", "starred": false},
+      {"id": "flash_custom_067", "front": "会員", "back": "かいいん (အဖွဲ့ဝင်)", "starred": false},
+      {"id": "flash_custom_068", "front": "医者", "back": "いしゃ (ဆရာဝန်)", "starred": false},
+      {"id": "flash_custom_069", "front": "医学", "back": "いがく (ဆေးပညာ)", "starred": false},
+      {"id": "flash_custom_070", "front": "医院", "back": "いいん (ဆေးခန်း)", "starred": false},
+      {"id": "flash_custom_071", "front": "者", "back": "もの (လူ/ပုဂ္ဂိုလ်)", "starred": false},
+      {"id": "flash_custom_072", "front": "歯医者", "back": "はいしゃ (သွားဆရာဝန်)", "starred": false},
+      {"id": "flash_custom_073", "front": "学者", "back": "がくしゃ (ပညာရှင်)", "starred": false},
+      {"id": "flash_custom_074", "front": "作者", "back": "さくしゃ (စာရေးဆရာ/ဖန်တီးသူ)", "starred": false},
+      {"id": "flash_custom_075", "front": "働く", "back": "はたらく (အလုပ်လုပ်သည်)", "starred": false},
+      {"id": "flash_custom_076", "front": "労働者", "back": "ろうどうしゃ (အလုပ်သမား)", "starred": false},
+      {"id": "flash_custom_077", "front": "本屋", "back": "ほんや (စာအုပ်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_078", "front": "八百屋", "back": "やおや (ဟင်းသီးဟင်းရွက်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_079", "front": "部屋", "back": "へや (အခန်း)", "starred": false},
+      {"id": "flash_custom_080", "front": "屋上", "back": "おくじょう (အမိုးပေါ်ကုန်းပတ်/ဝရန်တာ)", "starred": false},
+      {"id": "flash_custom_081", "front": "産む", "back": "うむ (မွေးဖွားသည်)", "starred": false},
+      {"id": "flash_custom_082", "front": "生産する", "back": "せいさんする (ထုတ်လုပ်သည်)", "starred": false},
+      {"id": "flash_custom_083", "front": "財産", "back": "ざいさん (ပိုင်ဆိုင်မှု/ပစ္စည်းဥစ္စာ)", "starred": false},
+      {"id": "flash_custom_084", "front": "産業", "back": "さんぎょう (စက်မှုလက်မှုလုပ်ငန်း)", "starred": false},
+      {"id": "flash_custom_085", "front": "工業", "back": "こうぎょう (ကုန်ထုတ်စက်မှုလုပ်ငန်း)", "starred": false},
+      {"id": "flash_custom_086", "front": "授業", "back": "じゅぎょう (သင်ခန်းစာ/အတန်း)", "starred": false},
+      {"id": "flash_custom_087", "front": "本日休業", "back": "ほんじつきゅうぎょう (ယနေ့ဆိုင်ပိတ်သည်)", "starred": false},
+      {"id": "flash_custom_088", "front": "林", "back": "はやし (တောအုပ်ငယ်)", "starred": false},
+      {"id": "flash_custom_089", "front": "小林さん", "back": "こばやしさん (လူနာမည်)", "starred": false},
+      {"id": "flash_custom_090", "front": "林道", "back": "りんどう (တောလမ်း)", "starred": false},
+      {"id": "flash_custom_091", "front": "森", "back": "もり (တောအုပ်ကြီး)", "starred": false},
+      {"id": "flash_custom_092", "front": "森さん", "back": "もりさん (လူနာမည်)", "starred": false},
+      {"id": "flash_custom_093", "front": "森林", "back": "しんりん (သစ်တောကြီးများ)", "starred": false},
+      {"id": "flash_custom_094", "front": "地図", "back": "ちず (မြေပုံ)", "starred": false},
+      {"id": "flash_custom_095", "front": "地下鉄", "back": "ちかてつ (မြေအောက်ရထား)", "starred": false},
+      {"id": "flash_custom_096", "front": "土地", "back": "とち (မြေကွက်/မြေယာ)", "starred": false},
+      {"id": "flash_custom_097", "front": "地震", "back": "じしん (ငလျင်)", "starred": false},
+      {"id": "flash_custom_098", "front": "池", "back": "いけ (ရေကန်)", "starred": false},
+      {"id": "flash_custom_099", "front": "電池", "back": "でんち (ဓာတ်ခဲ)", "starred": false},
+      {"id": "flash_custom_100", "front": "海", "back": "うみ (ပင်လယ်)", "starred": false},
+      {"id": "flash_custom_101", "front": "海外", "back": "かいがい (ပြည်ပ/နိုင်ငံရပ်ခြား)", "starred": false},
+      {"id": "flash_custom_102", "front": "北海道", "back": "ほっかいどう (ဟော့ကိုင်းဒိုး)", "starred": false},
+      {"id": "flash_custom_103", "front": "西洋", "back": "せいよう (အနောက်တိုင်း)", "starred": false},
+      {"id": "flash_custom_104", "front": "東洋", "back": "とうよう (အရှေ့တိုင်း)", "starred": false},
+      {"id": "flash_custom_105", "front": "洋服", "back": "ようふく (အနောက်တိုင်းဝတ်စုံ)", "starred": false},
+      {"id": "flash_custom_106", "front": "大西洋", "back": "たいせいよう (အတ္တလန္တိတ်သမုဒ္ဒရာ)", "starred": false},
+      {"id": "flash_custom_107", "front": "雪", "back": "ゆき (နှင်း)", "starred": false},
+      {"id": "flash_custom_108", "front": "大雪", "back": "おおゆき (နှင်းသည်းထန်စွာကျခြင်း)", "starred": false},
+      {"id": "flash_custom_109", "front": "新雪", "back": "しんせつ (နှင်းသစ်)", "starred": false},
+      {"id": "flash_custom_110", "front": "光", "back": "ひかり (အလင်းရောင်)", "starred": false},
+      {"id": "flash_custom_111", "front": "光る", "back": "ひかる (လင်းလက်တောက်ပသည်)", "starred": false},
+      {"id": "flash_custom_112", "front": "日光", "back": "にっこう (နေရောင်ခြည်)", "starred": false},
+      {"id": "flash_custom_113", "front": "観光", "back": "かんこう (လေ့လာရေးခရီးလှည့်လည်ခြင်း)", "starred": false},
+      {"id": "flash_custom_114", "front": "台所", "back": "だいどころ (မီးဖိုချောင်)", "starred": false},
+      {"id": "flash_custom_115", "front": "土台", "back": "どだい (အခြေခံအုတ်မြစ်)", "starred": false},
+      {"id": "flash_custom_116", "front": "台風", "back": "たいふう (တိုင်ဖုန်းမုန်တိုင်း)", "starred": false},
+      {"id": "flash_custom_117", "front": "風", "back": "かぜ (လေ)", "starred": false},
+      {"id": "flash_custom_118", "front": "洋風", "back": "ようふう (အနောက်တိုင်းစတိုင်)", "starred": false},
+      {"id": "flash_custom_119", "front": "風景", "back": "ふうけい (ရှုခင်း)", "starred": false},
+      {"id": "flash_custom_120", "front": "季節", "back": "きせつ (ရာသီဥတု)", "starred": false},
+      {"id": "flash_custom_121", "front": "四季", "back": "しき (လေးရာသီ/ရာသီလေးခု)", "starred": false},
+      {"id": "flash_custom_122", "front": "節分", "back": "せつぶん (ဆဲဆွတ်ဘွန်းပွဲတော်)", "starred": false},
+      {"id": "flash_custom_123", "front": "春", "back": "はる (နွေဦးရာသီ)", "starred": false},
+      {"id": "flash_custom_124", "front": "青春", "back": "せいしゅん (လူငယ်ဘဝ)", "starred": false},
+      {"id": "flash_custom_125", "front": "夏", "back": "なつ (နွေရာသီ)", "starred": false},
+      {"id": "flash_custom_126", "front": "夏休み", "back": "なつやすみ (နွေရာသီကျောင်းပိတ်ရက်)", "starred": false},
+      {"id": "flash_custom_127", "front": "夏祭り", "back": "なつまつり (နွေရာသီပွဲတော်)", "starred": false},
+      {"id": "flash_custom_128", "front": "夏服", "back": "なつふく (နွေရာသီဝတ်စုံ)", "starred": false},
+      {"id": "flash_custom_129", "front": "秋", "back": "あき (ဆောင်းဦးရာသီ)", "starred": false},
+      {"id": "flash_custom_130", "front": "秋田県", "back": "あきたけん (အာကီတာစီရင်စု)", "starred": false},
+      {"id": "flash_custom_131", "front": "秋分の日", "back": "しゅうぶんのひ (ဆောင်းဦးနေ့ညညီမျှသောနေ့)", "starred": false},
+      {"id": "flash_custom_132", "front": "冬", "back": "ふゆ (ဆောင်းရာသီ)", "starred": false},
+      {"id": "flash_custom_133", "front": "冬休み", "back": "ふゆやすみ (ဆောင်းရာသီပိတ်ရက်)", "starred": false},
+      {"id": "flash_custom_134", "front": "春夏秋冬", "back": "しゅんかしゅうとう (နွေဦး နွေ ဆောင်းဦး ဆောင်း)", "starred": false},
+      {"id": "flash_custom_135", "front": "暑い", "back": "あつい (ပူသော - ရာသီဥတု)", "starred": false},
+      {"id": "flash_custom_136", "front": "残暑", "back": "ざんしょ (နွေနှောင်းအပူရှိန်)", "starred": false},
+      {"id": "flash_custom_137", "front": "寒い", "back": "さむい (အေးသော - ရာသီဥတု)", "starred": false},
+      {"id": "flash_custom_138", "front": "寒波", "back": "かんぱ (အအေးလှိုင်း)", "starred": false},
+      {"id": "flash_custom_139", "front": "暖かい", "back": "あたたかい (နွေးထွေးသော)", "starred": false},
+      {"id": "flash_custom_140", "front": "暖冬", "back": "だんとう (နွေးထွေးသောဆောင်းရာသီ)", "starred": false},
+      {"id": "flash_custom_141", "front": "暖房", "back": "だんぼう (အပူပေးစက်)", "starred": false},
+      {"id": "flash_custom_142", "front": "温暖化", "back": "おんだんか (ကမ္ဘာကြီးပူနွေးလာမှု)", "starred": false},
+      {"id": "flash_custom_143", "front": "涼しい", "back": "すずしい (အေးမြသော/လေတဖြူးဖြူးရှိသော)", "starred": false},
+      {"id": "flash_custom_144", "front": "涼風", "back": "りょうふう (လေအေး)", "starred": false},
+      {"id": "flash_custom_145", "front": "体", "back": "からだ (ခန္ဓာကိုယ်)", "starred": false},
+      {"id": "flash_custom_146", "front": "体力", "back": "たいりょく (ခန္ဓာကိုယ်ခွန်အား)", "starred": false},
+      {"id": "flash_custom_147", "front": "体重", "back": "たいじゅう (ကိုယ်အလေးချိန်)", "starred": false},
+      {"id": "flash_custom_148", "front": "頭", "back": "あたま (ဦးခေါင်း)", "starred": false},
+      {"id": "flash_custom_149", "front": "頭痛", "back": "ずつう (ခေါင်းကိုက်ခြင်း)", "starred": false},
+      {"id": "flash_custom_150", "front": "顔", "back": "かお (မျက်နှာ)", "starred": false},
+      {"id": "flash_custom_151", "front": "顔色", "back": "かおいろ (မျက်နှာအမူအရာ/မျက်နှာသွင်ပြင်)", "starred": false},
+      {"id": "flash_custom_152", "front": "首", "back": "くび (လည်ပင်း)", "starred": false},
+      {"id": "flash_custom_153", "front": "手首", "back": "てくび (လက်ကောက်ဝတ်)", "starred": false},
+      {"id": "flash_custom_154", "front": "首都", "back": "しゅと (မြို့တော်)", "starred": false},
+      {"id": "flash_custom_155", "front": "首相", "back": "しゅしょう (ဝန်ကြီးချုပ်)", "starred": false},
+      {"id": "flash_custom_156", "front": "心", "back": "こころ (နှလုံးသား/စိတ်)", "starred": false},
+      {"id": "flash_custom_157", "front": "心配", "back": "しんぱい (စိုးရိမ်ပူပန်မှု)", "starred": false},
+      {"id": "flash_custom_158", "front": "安心", "back": "あんしん (စိတ်အေးရခြင်း)", "starred": false},
+      {"id": "flash_custom_159", "front": "中心", "back": "ちゅうしん (ဗဟိုချက်)", "starred": false},
+      {"id": "flash_custom_160", "front": "声", "back": "こえ (အသံ - လူ သတ္တဝါ)", "starred": false},
+      {"id": "flash_custom_161", "front": "大声", "back": "おおごえ (အသံကျယ်ကြီး)", "starred": false},
+      {"id": "flash_custom_162", "front": "病気", "back": "びょうき (ရောဂါဝေဒနာ)", "starred": false},
+      {"id": "flash_custom_163", "front": "病院", "back": "びょういん (ဆေးရုံ)", "starred": false},
+      {"id": "flash_custom_164", "front": "病人", "back": "びょうにん (လူနာ)", "starred": false},
+      {"id": "flash_custom_165", "front": "急病", "back": "きゅうびょう (ရုတ်တရက်ဖျားနာခြင်း)", "starred": false},
+      {"id": "flash_custom_166", "front": "薬", "back": "くすり (ဆေး)", "starred": false},
+      {"id": "flash_custom_167", "front": "目薬", "back": "めぐすり (မျက်စဉ်းဆေး)", "starred": false},
+      {"id": "flash_custom_168", "front": "薬品", "back": "やくひん (ဆေးဝါးပစ္စည်းများ)", "starred": false},
+      {"id": "flash_custom_169", "front": "科学", "back": "かがく (သိပ္ပံပညာ)", "starred": false},
+      {"id": "flash_custom_170", "front": "教科書", "back": "きょうかしょ (ကျောင်းသုံးပြဋ္ဌာန်းစာအုပ်)", "starred": false},
+      {"id": "flash_custom_171", "front": "外科", "back": "げか (ခွဲစိတ်ကုသမှုအထူးကု)", "starred": false},
+      {"id": "flash_custom_172", "front": "内側", "back": "うちがわ (အတွင်းဘက်)", "starred": false},
+      {"id": "flash_custom_173", "front": "内科", "back": "ないか (ဆေးကုသမှုဌာန/အတွင်းလူနာဌာန)", "starred": false},
+      {"id": "flash_custom_174", "front": "社内", "back": "しゃない (ကုမ္ပဏီတွင်း)", "starred": false},
+      {"id": "flash_custom_175", "front": "案内する", "back": "あんないする (လမ်းညွှန်ပြသသည်)", "starred": false},
+      {"id": "flash_custom_176", "front": "朝", "back": "あさ (မနက်ခင်း)", "starred": false},
+      {"id": "flash_custom_177", "front": "朝日", "back": "あさひ (မနက်ခင်းနေခြည်)", "starred": false},
+      {"id": "flash_custom_178", "front": "朝食", "back": "ちょうしょく (မနက်စာ)", "starred": false},
+      {"id": "flash_custom_179", "front": "早朝", "back": "そうちょう (မနက်အစောကြီး)", "starred": false},
+      {"id": "flash_custom_180", "front": "今朝", "back": "けさ (ဒီမနက်)", "starred": false},
+      {"id": "flash_custom_181", "front": "昼", "back": "ひる (နေ့လည်)", "starred": false},
+      {"id": "flash_custom_182", "front": "昼休み", "back": "ひるやすみ (နေ့လည်ခင်းအနားယူချိန်)", "starred": false},
+      {"id": "flash_custom_183", "front": "昼ごはん", "back": "ひるごはん (နေ့လည်စာ)", "starred": false},
+      {"id": "flash_custom_184", "front": "昼食", "back": "ちゅうしょく (နေ့လည်စာ)", "starred": false},
+      {"id": "flash_custom_185", "front": "夜", "back": "よる (ည)", "starred": false},
+      {"id": "flash_custom_186", "front": "夜空", "back": "よぞら (ညကောင်းကင်ယံ)", "starred": false},
+      {"id": "flash_custom_187", "front": "夜店", "back": "よみせ (ညစျေးဆိုင်)", "starred": false},
+      {"id": "flash_custom_188", "front": "今夜", "back": "こんや (ဒီည)", "starred": false},
+      {"id": "flash_custom_189", "front": "夕日", "back": "ゆうひ (ညနေဆည်းဆာနေမင်း)", "starred": false},
+      {"id": "flash_custom_190", "front": "夕食", "back": "ゆうしょく (ညစာ)", "starred": false},
+      {"id": "flash_custom_191", "front": "七夕", "back": "たなばた (တာနာဘာတာပွဲတော်)", "starred": false},
+      {"id": "flash_custom_192", "front": "読み方", "back": "よみかた (ဖတ်နည်း)", "starred": false},
+      {"id": "flash_custom_193", "front": "あの方", "back": "あのかた (ဟိုပုဂ္ဂိုလ်/ဟိုလူ)", "starred": false},
+      {"id": "flash_custom_194", "front": "夕方", "back": "ゆうがた (ညနေစောင်း)", "starred": false},
+      {"id": "flash_custom_195", "front": "方法", "back": "ほうほう (နည်းလမ်း)", "starred": false},
+      {"id": "flash_custom_196", "front": "今晩", "back": "こんばん (ဒီညနေ/ဒီည)", "starred": false},
+      {"id": "flash_custom_197", "front": "毎晩", "back": "まいばん (တိုင်းပြည်တိုင်းည)", "starred": false},
+      {"id": "flash_custom_198", "front": "晩ごはん", "back": "ばんごはん (ညစာ)", "starred": false},
+      {"id": "flash_custom_199", "front": "計る", "back": "はかる (တိုင်းတာသည်)", "starred": false},
+      {"id": "flash_custom_200", "front": "時計", "back": "とけい (နာရီ)", "starred": false},
+      {"id": "flash_custom_201", "front": "合計", "back": "ごうけい (စုစုပေါင်း)", "starred": false},
+      {"id": "flash_custom_202", "front": "計画", "back": "けいかく (စီမံကိန်း)", "starred": false},
+      {"id": "flash_custom_203", "front": "日曜日", "back": "にちようび (တနင်္ဂနွေနေ့)", "starred": false},
+      {"id": "flash_custom_204", "front": "何曜日", "back": "なんようび (ဘယ်နေ့ရက်လဲ)", "starred": false},
+      {"id": "flash_custom_205", "front": "以外", "back": "いがい (မှလွဲ၍/မပါဘဲ)", "starred": false},
+      {"id": "flash_custom_206", "front": "以下", "back": "いか (အောက်/အောက်ခြေ)", "starred": false},
+      {"id": "flash_custom_207", "front": "以上", "back": "いじょう (အထက်/ထို့ထက်မက)", "starred": false},
+      {"id": "flash_custom_208", "front": "以前", "back": "いぜん (ယခင်က)", "starred": false},
+      {"id": "flash_custom_209", "front": "一度", "back": "いちど (တစ်ကြိမ်/တစ်ခေါက်)", "starred": false},
+      {"id": "flash_custom_210", "front": "今度", "back": "こんど (ဒီတစ်ခေါက်/နောက်တစ်ကြိမ်)", "starred": false},
+      {"id": "flash_custom_211", "front": "２５度", "back": "にじゅうごど (၂၅ ဒီဂရီ)", "starred": false},
+      {"id": "flash_custom_212", "front": "温度", "back": "おんど (အပူချိန်)", "starred": false},
+      {"id": "flash_custom_213", "front": "止まる", "back": "とまる (ရပ်တန့်သည်)", "starred": false},
+      {"id": "flash_custom_214", "front": "中止", "back": "ちゅうし (ရပ်ဆိုင်းခြင်း/ဖျက်သိမ်းခြင်း)", "starred": false},
+      {"id": "flash_custom_215", "front": "一時停止", "back": "いちじていし (ခေတ္တရပ်တန့်ခြင်း)", "starred": false},
+      {"id": "flash_custom_216", "front": "歩く", "back": "あるく (လမ်းလျှောက်သည်)", "starred": false},
+      {"id": "flash_custom_217", "front": "散歩する", "back": "さんぽする (လမ်းလျှောက်အပန်းဖြေသည်)", "starred": false},
+      {"id": "flash_custom_218", "front": "進歩する", "back": "しんぽする (တိုးတက်မှုရှိသည်)", "starred": false},
+      {"id": "flash_custom_219", "front": "歩道", "back": "ほどう (လူသွားလမ်း)", "starred": false},
+      {"id": "flash_custom_220", "front": "横断歩道", "back": "おうだんほどう (လူကူးမျဉ်းကျား)", "starred": false},
+      {"id": "flash_custom_221", "front": "走る", "back": "はしる (ပြေးသည်)", "starred": false},
+      {"id": "flash_custom_222", "front": "力走する", "back": "りきそうする (အစွမ်းကုန်အင်တိုက်အားတိုက်ပြေးသည်)", "starred": false},
+      {"id": "flash_custom_223", "front": "競走", "back": "きょうそう (အပြေးပြိုင်ပွဲ)", "starred": false},
+      {"id": "flash_custom_224", "front": "起きる", "back": "おきる (နိုးထသည်/ထသည်)", "starred": false},
+      {"id": "flash_custom_225", "front": "起こす", "back": "おこす (နှိုးသည်/ဖြစ်ပွားစေသည်)", "starred": false},
+      {"id": "flash_custom_226", "front": "起業家", "back": "きぎょうか (လုပ်ငန်းရှင်/တီထွင်သူ)", "starred": false},
+      {"id": "flash_custom_227", "front": "持つ", "back": "もつ (ကိုင်ဆောင်သည်/ပိုင်ဆိုင်သည်)", "starred": false},
+      {"id": "flash_custom_228", "front": "気持ち", "back": "きもち (စိတ်ခံစားမှု)", "starred": false},
+      {"id": "flash_custom_229", "front": "持ち物", "back": "もちもの (ကိုယ်ပိုင်ပစ္စည်း)", "starred": false},
+      {"id": "flash_custom_230", "front": "支持する", "back": "しじする (ထောက်ခံအားပေးသည်)", "starred": false},
+      {"id": "flash_custom_231", "front": "待つ", "back": "まつ (စောင့်ဆိုင်းသည်)", "starred": false},
+      {"id": "flash_custom_232", "front": "待ち合わせ", "back": "まちあわせ (ချိန်းဆိုတွေ့ဆုံခြင်း)", "starred": false},
+      {"id": "flash_custom_233", "front": "招待する", "back": "しょうたいする (ဖိတ်ကြားသည်)", "starred": false},
+      {"id": "flash_custom_234", "front": "期待する", "back": "きたいする (မျှော်လင့်သည်)", "starred": false},
+      {"id": "flash_custom_235", "front": "借りる", "back": "かりる (ငှားရမ်းသည် - ကိုယ်ကယူ)", "starred": false},
+      {"id": "flash_custom_236", "front": "借金", "back": "しゃっきん (အကြွေး/ချေးငွေ)", "starred": false},
+      {"id": "flash_custom_237", "front": "貸す", "back": "かす (ငှားရမ်းပေးသည် - ကိုယ်ကပေး)", "starred": false},
+      {"id": "flash_custom_238", "front": "貸家", "back": "かしや (ငှားရန်အိမ်)", "starred": false},
+      {"id": "flash_custom_239", "front": "賃貸", "back": "ちんたい (အငှားချထားခြင်း)", "starred": false},
+      {"id": "flash_custom_240", "front": "始める", "back": "はじめる (စတင်သည် - အကံပြု)", "starred": false},
+      {"id": "flash_custom_241", "front": "始まる", "back": "はじまる (စတင်သည် - အလိုလို)", "starred": false},
+      {"id": "flash_custom_242", "front": "始発", "back": "しはつ (ပထမဆုံးထွက်သောရထား)", "starred": false},
+      {"id": "flash_custom_243", "front": "終わる", "back": "おわる (ပြီးဆုံးသည်)", "starred": false},
+      {"id": "flash_custom_244", "front": "終電", "back": "しゅうでん (နောက်ဆုံးရထား)", "starred": false},
+      {"id": "flash_custom_245", "front": "最終回", "back": "さいしゅうかい (နောက်ဆုံးဇာတ်သိမ်းပိုင်း)", "starred": false},
+      {"id": "flash_custom_246", "front": "家", "back": "いえ (အိမ်)", "starred": false},
+      {"id": "flash_custom_247", "front": "貸家", "back": "かしや (ငှားရန်အိမ်)", "starred": false},
+      {"id": "flash_custom_248", "front": "家内", "back": "かない (ဇနီး - ကိုယ့်ဇနီး)", "starred": false},
+      {"id": "flash_custom_249", "front": "家庭", "back": "かてい (မိသားစုအိမ်ထောင်စု)", "starred": false},
+      {"id": "flash_custom_250", "front": "家族", "back": "かぞく (မိသားစု)", "starred": false},
+      {"id": "flash_custom_251", "front": "民族", "back": "みんぞく (လူမျိုး)", "starred": false},
+      {"id": "flash_custom_252", "front": "水族館", "back": "すいぞくかん (ငါးပြတိုက်)", "starred": false},
+      {"id": "flash_custom_253", "front": "両手", "back": "りょうて (လက်နှစ်ဖက်စလုံး)", "starred": false},
+      {"id": "flash_custom_254", "front": "両替え", "back": "りょうがえ (ပိုက်ဆံလဲလှယ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_255", "front": "兄", "back": "あに (အစ်ကို - ကိုယ့်အစ်ကို)", "starred": false},
+      {"id": "flash_custom_256", "front": "お兄さん", "back": "おにいさん (အစ်ကို - သူတပါးအစ်ကို)", "starred": false},
+      {"id": "flash_custom_257", "front": "弟", "back": "おとうと (မောင်/ညီ)", "starred": false},
+      {"id": "flash_custom_258", "front": "私", "back": "わたし (ကျွန်တော်/ကျွန်မ)", "starred": false},
+      {"id": "flash_custom_259", "front": "私立大学", "back": "しりつだいがく (ပုဂ္ဂလိကတက္ကသိုလ်)", "starred": false},
+      {"id": "flash_custom_260", "front": "私生活", "back": "しせいかつ (ကိုယ်ရေးကိုယ်တာဘဝ)", "starred": false},
+      {"id": "flash_custom_261", "front": "自分", "back": "じぶん (မိမိကိုယ်တိုင်)", "starred": false},
+      {"id": "flash_custom_262", "front": "自動", "back": "じどう (အလိုအလျောက်)", "starred": false},
+      {"id": "flash_custom_263", "front": "自由", "back": "じゆう (လွတ်လပ်မှု)", "starred": false},
+      {"id": "flash_custom_264", "front": "自然", "back": "しぜん (သဘာဝတရား)", "starred": false},
+      {"id": "flash_custom_265", "front": "兄弟", "back": "きょうだい (ညီအစ်ကိုမောင်နှမ)", "starred": false},
+      {"id": "flash_custom_266", "front": "姉", "back": "あね (အစ်မ - ကိုယ့်အစ်မ)", "starred": false},
+      {"id": "flash_custom_267", "front": "姉妹", "back": "しまい (ညီအစ်မ)", "starred": false},
+      {"id": "flash_custom_268", "front": "お姉さん", "back": "おねえさん (အစ်မ - သူတပါးအစ်မ)", "starred": false},
+      {"id": "flash_custom_269", "front": "妹", "back": "いもうと (ညီမ)", "starred": false},
+      {"id": "flash_custom_270", "front": "親", "back": "おや (မိဘ)", "starred": false},
+      {"id": "flash_custom_271", "front": "父親", "back": "ちちおや (ဖခင်)", "starred": false},
+      {"id": "flash_custom_272", "front": "母親", "back": "ははおや (မိခင်)", "starred": false},
+      {"id": "flash_custom_273", "front": "親しい", "back": "したしい (ရင်းနှီးသော)", "starred": false},
+      {"id": "flash_custom_274", "front": "親切な", "back": "しんせつな (ကြင်နာဖော်ရွေသော)", "starred": false},
+      {"id": "flash_custom_275", "front": "両親", "back": "りょうしん (မိဘနှစ်ပါး)", "starred": false},
+      {"id": "flash_custom_276", "front": "両方", "back": "りょうほう (နှစ်ဖက်စလုံး)", "starred": false},
+      {"id": "flash_custom_277", "front": "姉妹都市", "back": "しまいとし (ချစ်ကြည်ရေးမြို့တော်)", "starred": false},
+      {"id": "flash_custom_278", "front": "生活", "back": "せいかつ (နေထိုင်မှုဘဝ)", "starred": false},
+      {"id": "flash_custom_279", "front": "活動", "back": "かつどう (လှုပ်ရှားမှု)", "starred": false},
+      {"id": "flash_custom_280", "front": "活発な", "back": "かっぱつな (တက်ကြွဖျတ်လတ်သော)", "starred": false},
+      {"id": "flash_custom_281", "front": "回る", "back": "まわる (လည်ပတ်သည်)", "starred": false},
+      {"id": "flash_custom_282", "front": "回す", "back": "まわす (လှည့်ပတ်စေသည်)", "starred": false},
+      {"id": "flash_custom_283", "front": "前回", "back": "ぜんかい (ပြီးခဲ့သည့်အကြိမ်)", "starred": false},
+      {"id": "flash_custom_284", "front": "回転", "back": "かいてん (လည်ပတ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_285", "front": "主な", "back": "おもな (အဓိကကျသော)", "starred": false},
+      {"id": "flash_custom_286", "front": "持ち主", "back": "もちぬし (ပိုင်ရှင်)", "starred": false},
+      {"id": "flash_custom_287", "front": "主人", "back": "しゅじん (လင်ယောက်ျား/အိမ်ထောင်ဦးစီး)", "starred": false},
+      {"id": "flash_custom_288", "front": "主食", "back": "しゅしょく (အဓိကအစားအစာ)", "starred": false},
+      {"id": "flash_custom_289", "front": "色", "back": "いろ (အရောင်)", "starred": false},
+      {"id": "flash_custom_290", "front": "茶色", "back": "ちゃいろ (အညိုရောင်)", "starred": false},
+      {"id": "flash_custom_291", "front": "特色", "back": "とくしょく (ထူးခြားချက်/ဝိသေသ)", "starred": false},
+      {"id": "flash_custom_292", "front": "景色", "back": "けしき (ရှုခင်း)", "starred": false},
+      {"id": "flash_custom_293", "front": "形", "back": "かたち (ပုံသဏ္ဍာန်)", "starred": false},
+      {"id": "flash_custom_294", "front": "正方形", "back": "せいほうけい (စတုရန်းပုံ)", "starred": false},
+      {"id": "flash_custom_295", "front": "図形", "back": "ずけい (ပုံရိပ်ဂျီဩမေတြီပုံ)", "starred": false},
+      {"id": "flash_custom_296", "front": "人形", "back": "にんぎょう (အရုပ်)", "starred": false},
+      {"id": "flash_custom_297", "front": "品物", "back": "しなもの (ပစ္စည်း)", "starred": false},
+      {"id": "flash_custom_298", "front": "電気製品", "back": "でんきせいひん (လျှပ်စစ်ပစ္စည်းများ)", "starred": false},
+      {"id": "flash_custom_299", "front": "作品", "back": "さくひん (ဖန်တီးမှုလက်ရာ)", "starred": false},
+      {"id": "flash_custom_300", "front": "国民", "back": "こくみん (နိုင်ငံသား)", "starred": false},
+      {"id": "flash_custom_301", "front": "市民", "back": "しみん (မြို့ပြပြည်သူ)", "starred": false},
+      {"id": "flash_custom_302", "front": "民主主義", "back": "みんしゅしゅぎ (ဒီမိုကရေစီ)", "starred": false},
+      {"id": "flash_custom_303", "front": "服", "back": "ふく (အဝတ်အထည်)", "starred": false},
+      {"id": "flash_custom_304", "front": "和服", "back": "わふく (ဂျပန်ရိုးရာဝတ်စုံ)", "starred": false},
+      {"id": "flash_custom_305", "front": "制服", "back": "せいふく (ယူနီဖောင်း)", "starred": false},
+      {"id": "flash_custom_306", "front": "犬", "back": "いぬ (ခွေး)", "starred": false},
+      {"id": "flash_custom_307", "front": "子犬", "back": "こいぬ (ခွေးကလေး)", "starred": false},
+      {"id": "flash_custom_308", "front": "番犬", "back": "ばんけん (အိမ်စောင့်ခွေး)", "starred": false},
+      {"id": "flash_custom_309", "front": "同じ", "back": "おなじ (တူညီသော)", "starred": false},
+      {"id": "flash_custom_310", "front": "同時に", "back": "どうじに (တစ်ချိန်တည်းတွင်)", "starred": false},
+      {"id": "flash_custom_311", "front": "同級生", "back": "どうきゅうせい (အတန်းဖော်)", "starred": false},
+      {"id": "flash_custom_312", "front": "米", "back": "こめ (ဆန်)", "starred": false},
+      {"id": "flash_custom_313", "front": "白米", "back": "はくまい (ဆန်ဖြူ)", "starred": false},
+      {"id": "flash_custom_314", "front": "米国", "back": "べいこく (အမေရိကန်နိုင်ငံ)", "starred": false},
+      {"id": "flash_custom_315", "front": "材料", "back": "ざいりょう (ကုန်ကြမ်း/ပါဝင်ပစ္စည်း)", "starred": false},
+      {"id": "flash_custom_316", "front": "食料品", "back": "しょくりょうひん (စားသောက်ကုန်)", "starred": false},
+      {"id": "flash_custom_317", "front": "資料", "back": "しりょう (အချက်အလက်/စာရွက်စာတမ်း)", "starred": false},
+      {"id": "flash_custom_318", "front": "料金", "back": "りょうきん (အခကြေးငွေ/ဂိတ်ခ)", "starred": false},
+      {"id": "flash_custom_319", "front": "料理", "back": "りょうり (ဟင်းလျာ/ချက်ပြုတ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_320", "front": "地理", "back": "ちり (ပထဝီဝင်)", "starred": false},
+      {"id": "flash_custom_321", "front": "無理な", "back": "むりな (မဖြစ်နိုင်သော/အတင်းအကြပ်ဖြစ်သော)", "starred": false},
+      {"id": "flash_custom_322", "front": "理由", "back": "りゆう (အကြောင်းပြချက်)", "starred": false},
+      {"id": "flash_custom_323", "front": "肉", "back": "にく (အသား)", "starred": false},
+      {"id": "flash_custom_324", "front": "牛肉", "back": "ぎゅうにく (အမဲသား)", "starred": false},
+      {"id": "flash_custom_325", "front": "肉屋", "back": "にくや (အသားဆိုင်)", "starred": false},
+      {"id": "flash_custom_326", "front": "筋肉", "back": "きんにく (ကြွက်သား)", "starred": false},
+      {"id": "flash_custom_327", "front": "鳥", "back": "とり (ငှက်)", "starred": false},
+      {"id": "flash_custom_328", "front": "小鳥", "back": "ことり (ငှက်ကလေး)", "starred": false},
+      {"id": "flash_custom_329", "front": "白鳥", "back": "はくちょう (ငန်းအုပ်/ငန်းဖြူ)", "starred": false},
+      {"id": "flash_custom_330", "front": "野原", "back": "のはら (ကွင်းပြင်/မြက်ခင်းပြင်)", "starred": false},
+      {"id": "flash_custom_331", "front": "野鳥", "back": "やちょう (တောငှက်/ငှက်ရိုင်း)", "starred": false},
+      {"id": "flash_custom_332", "front": "分野", "back": "ぶんや (နယ်ပယ်/ကဏ္ဍ)", "starred": false},
+      {"id": "flash_custom_333", "front": "青菜", "back": "あおな (ဟင်းသီးဟင်းရွက်စိမ်း)", "starred": false},
+      {"id": "flash_custom_334", "front": "野菜", "back": "やさい (ဟင်းသီးဟင်းရွက်)", "starred": false},
+      {"id": "flash_custom_335", "front": "菜食", "back": "さいしょく (သက်သတ်လွတ်စားခြင်း)", "starred": false},
+      {"id": "flash_custom_336", "front": "お茶", "back": "おちゃ (ရေနွေးကြမ်း/လက်ဖက်ရည်)", "starred": false},
+      {"id": "flash_custom_337", "front": "茶色", "back": "ちゃいろ (အညိုရောင်)", "starred": false},
+      {"id": "flash_custom_338", "front": "紅茶", "back": "こうちゃ (လက်ဖက်ရည်ကြမ်းနီ)", "starred": false},
+      {"id": "flash_custom_339", "front": "喫茶店", "back": "きっさてん (ကော်ဖီဆိုင်/လက်ဖက်ရည်ဆိုင်)", "starred": false},
+      {"id": "flash_custom_340", "front": "昼飯", "back": "ひるめし (နေ့လည်စာ)", "starred": false},
+      {"id": "flash_custom_341", "front": "昼ご飯", "back": "ひるごはん (နေ့လည်စာ)", "starred": false},
+      {"id": "flash_custom_342", "front": "夕飯", "back": "ゆうめし (ညစာ)", "starred": false},
+      {"id": "flash_custom_343", "front": "味", "back": "あじ (အရသာ)", "starred": false},
+      {"id": "flash_custom_344", "front": "意味", "back": "いみ (အဓိပ္ပာယ်)", "starred": false},
+      {"id": "flash_custom_345", "front": "趣味", "back": "しゅみ (ဝါသနာ)", "starred": false},
+      {"id": "flash_custom_346", "front": "興味", "back": "きょうみ (စိတ်ဝင်စားမှု)", "starred": false},
+      {"id": "flash_custom_347", "front": "代わる", "back": "かわる (အစားထိုးသည်/ပြောင်းလဲသည်)", "starred": false},
+      {"id": "flash_custom_348", "front": "代える", "back": "かえる (အစားထိုးလဲလှယ်သည်)", "starred": false},
+      {"id": "flash_custom_349", "front": "時代", "back": "じだい (ခေတ်ကာလ)", "starred": false},
+      {"id": "flash_custom_350", "front": "ガス代", "back": "ガスだい (ဂတ်စ်ဖိုး)", "starred": false},
+      {"id": "flash_custom_351", "front": "使う", "back": "つかう (အသုံးပြုသည်)", "starred": false},
+      {"id": "flash_custom_352", "front": "使用中", "back": "しようちゅう (အသုံးပြုနေဆဲ)", "starred": false},
+      {"id": "flash_custom_353", "front": "大使館", "back": "たいしかん (သံရုံး)", "starred": false},
+      {"id": "flash_custom_354", "front": "作る", "back": "つくる (ပြုလုပ်သည်)", "starred": false},
+      {"id": "flash_custom_355", "front": "作品", "back": "さくひん (ဖန်တီးမှုလက်ရာ)", "starred": false},
+      {"id": "flash_custom_356", "front": "作家", "back": "さっか (စာရေးဆရာ)", "starred": false},
+      {"id": "flash_custom_357", "front": "作業", "back": "さぎょう (လုပ်ငန်းခွင်အလုပ်)", "starred": false},
+      {"id": "flash_custom_358", "front": "変化", "back": "へんか (ပြောင်းလဲခြင်း)", "starred": false},
+      {"id": "flash_custom_359", "front": "文化", "back": "ぶんか (ယဉ်ကျေးမှု)", "starred": false},
+      {"id": "flash_custom_360", "front": "化学", "back": "かがく (ဓာတုဗေဒ)", "starred": false},
+      {"id": "flash_custom_361", "front": "映画化", "back": "えいがか (ရုပ်ရှင်အဖြစ်ရိုက်ကူးခြင်း)", "starred": false},
+      {"id": "flash_custom_362", "front": "信じる", "back": "しんじる (ယုံကြည်သည်)", "starred": false},
+      {"id": "flash_custom_363", "front": "信用", "back": "しんよう (ယုံကြည်စိတ်ချရမှု)", "starred": false},
+      {"id": "flash_custom_364", "front": "信号", "back": "しんごう (မီးပွိုင့်/အချက်ပြမီး)", "starred": false},
+      {"id": "flash_custom_365", "front": "自信", "back": "じしん (မိမိကိုယ်ကိုယုံကြည်မှု)", "starred": false},
+      {"id": "flash_custom_366", "front": "通信", "back": "つうしん (ဆက်သွယ်ရေး)", "starred": false},
+      {"id": "flash_custom_367", "front": "進む", "back": "すすむ (ရှေ့သို့တိုးသည်)", "starred": false},
+      {"id": "flash_custom_368", "front": "進める", "back": "すすめる (ရှေ့သို့တိုးမြှင့်သည်)", "starred": false},
+      {"id": "flash_custom_369", "front": "進歩", "back": "しんぽ (တိုးတက်မှု)", "starred": false},
+      {"id": "flash_custom_370", "front": "先進国", "back": "せんしんこく (ဖွံ့ဖြိုးပြီးနိုင်ငံ)", "starred": false},
+      {"id": "flash_custom_371", "front": "送る", "back": "おくる (ပေးပို့သည်)", "starred": false},
+      {"id": "flash_custom_372", "front": "送金", "back": "そうきん (ငွေလွှဲခြင်း)", "starred": false},
+      {"id": "flash_custom_373", "front": "放送", "back": "ほうそう (အသံလွှင့်ခြင်း/ထုတ်လွှင့်ခြင်း)", "starred": false},
+      {"id": "flash_custom_374", "front": "送信", "back": "そうしん (စာ/ဒေတာ ပို့လွှတ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_375", "front": "返す", "back": "かえす (ပြန်ပေးသည်)", "starred": false},
+      {"id": "flash_custom_376", "front": "繰り返す", "back": "くりかえす (ထပ်ခါတလဲလဲလုပ်သည်)", "starred": false},
+      {"id": "flash_custom_377", "front": "返事", "back": "へんじ (အကြောင်းပြန်စာ/စကား)", "starred": false},
+      {"id": "flash_custom_378", "front": "返信", "back": "へんしん (ပြန်ကြားစာပို့ခြင်း)", "starred": false},
+      {"id": "flash_custom_379", "front": "洗う", "back": "あらう (ဆေးကြောသည်)", "starred": false},
+      {"id": "flash_custom_380", "front": "手洗い", "back": "てあらい (လက်ဆေးခြင်း/အိမ်သာ)", "starred": false},
+      {"id": "flash_custom_381", "front": "お手洗い", "back": "おてあらい (အိမ်သာ)", "starred": false},
+      {"id": "flash_custom_382", "front": "洗濯", "back": "せんたく (အဝတ်လျှော်ခြင်း)", "starred": false},
+      {"id": "flash_custom_383", "front": "注ぐ", "back": "そそぐ (လောင်းထည့်သည်/စီးဝင်သည်)", "starred": false},
+      {"id": "flash_custom_384", "front": "注文", "back": "ちゅうもん (မှာယူခြင်း)", "starred": false},
+      {"id": "flash_custom_385", "front": "注意", "back": "ちゅうい (သတိထားခြင်း)", "starred": false},
+      {"id": "flash_custom_386", "front": "注射", "back": "ちゅうしゃ (ဆေးထိုးခြင်း)", "starred": false},
+      {"id": "flash_custom_387", "front": "場所", "back": "ばしょ (နေရာ)", "starred": false},
+      {"id": "flash_custom_388", "front": "広場", "back": "ひろば (ကွင်းပြင်)", "starred": false},
+      {"id": "flash_custom_389", "front": "工場", "back": "こうじょう (စက်ရုံ)", "starred": false},
+      {"id": "flash_custom_390", "front": "運動場", "back": "うんどうじょう (ကစားကွင်း/အားကစားကွင်း)", "starred": false},
+      {"id": "flash_custom_391", "front": "建てる", "back": "たてる (ဆောက်လုပ်သည်)", "starred": false},
+      {"id": "flash_custom_392", "front": "建物", "back": "たてもの (အဆောက်အဦး)", "starred": false},
+      {"id": "flash_custom_393", "front": "建築", "back": "けんちく (ဗိသုကာအတတ်ပညာ)", "starred": false},
+      {"id": "flash_custom_394", "front": "物", "back": "もの (ပစ္စည်းဥစ္စာ)", "starred": false},
+      {"id": "flash_custom_395", "front": "買い物", "back": "かいもの (ဈေးဝယ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_396", "front": "動物", "back": "どうぶつ (တိရစ္ဆာန်)", "starred": false},
+      {"id": "flash_custom_397", "front": "荷物", "back": "にもつ (အထုပ်အပိုး/အိတ်ဇာတ်)", "starred": false},
+      {"id": "flash_custom_398", "front": "入院する", "back": "にゅういんする (ဆေးရုံတက်သည်)", "starred": false},
+      {"id": "flash_custom_399", "front": "図書館", "back": "としょかん (စာကြည့်တိုက်)", "starred": false},
+      {"id": "flash_custom_400", "front": "大使館", "back": "たいしかん (သံရုံး)", "starred": false},
+      {"id": "flash_custom_401", "front": "旅館", "back": "りょかん (ဂျပန်ရိုးရာဟိုတယ်)", "starred": false},
+      {"id": "flash_custom_402", "front": "映画館", "back": "えいがかん (ရုပ်ရှင်ရုံ)", "starred": false},
+      {"id": "flash_custom_403", "front": "美術館", "back": "びじゅつかん (ပန်းချီပြတိုက်/အနုပညာပြတိုက်)", "starred": false},
+      {"id": "flash_custom_404", "front": "講堂", "back": "こうどう (ဟောပြောပွဲခန်းမ)", "starred": false},
+      {"id": "flash_custom_405", "front": "教室", "back": "きょうしつ (စာသင်ခန်း)", "starred": false},
+      {"id": "flash_custom_406", "front": "地下室", "back": "ちかしつ (မြေအောက်ခန်း)", "starred": false},
+      {"id": "flash_custom_407", "front": "待合室", "back": "まちあいしつ (စောင့်ဆိုင်းခန်း)", "starred": false},
+      {"id": "flash_custom_408", "front": "事務室", "back": "じむしつ (ရုံးခန်း)", "starred": false},
+      {"id": "flash_custom_409", "front": "工事", "back": "こうじ (လမ်း/အဆောက်အဦး ပြင်ဆင်မှုလုပ်ငန်း)", "starred": false},
+      {"id": "flash_custom_410", "front": "工作", "back": "こうさく (လက်မှုလုပ်ငန်း/တီထွင်မှု)", "starred": false},
+      {"id": "flash_custom_411", "front": "地図", "back": "ちず (မြေပုံ)", "starred": false},
+      {"id": "flash_custom_412", "front": "合図", "back": "あいず (အချက်ပြခြင်း)", "starred": false},
+      {"id": "flash_custom_413", "front": "電話番号", "back": "でんわばんごう (ဖုန်းနံပါတ်)", "starred": false},
+      {"id": "flash_custom_414", "front": "３号室", "back": "さんごうしつ (အခန်းနံပါတ် ၃)", "starred": false},
+      {"id": "flash_custom_415", "front": "号令", "back": "ごうれい (အမိန့်ပေးသံ/အချက်ပြသံ)", "starred": false},
+      {"id": "flash_custom_416", "front": "交通", "back": "こうつう (သယ်ယူပို့ဆောင်ရေး/ယာဉ်ကြော)", "starred": false},
+      {"id": "flash_custom_417", "front": "交差点", "back": "こうさてん (လမ်းဆုံ)", "starred": false},
+      {"id": "flash_custom_418", "front": "交番", "back": "こうばん (ရဲကင်း)", "starred": false},
+      {"id": "flash_custom_419", "front": "交代", "back": "こうたい (လူလဲခြင်း/အလှည့်ကျလုပ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_420", "front": "通う", "back": "かよう (ပုံမှန်သွားရလာရသည်)", "starred": false},
+      {"id": "flash_custom_421", "front": "通る", "back": "とおる (ဖြတ်သန်းသွားသည်)", "starred": false},
+      {"id": "flash_custom_422", "front": "大通り", "back": "おおどおり (လမ်းမကြီး)", "starred": false},
+      {"id": "flash_custom_423", "front": "通学", "back": "つうがく (ကျောင်းတက်ကျောင်းဆင်းလမ်းကြောင်း)", "starred": false},
+      {"id": "flash_custom_424", "front": "通勤", "back": "つうきん (ရုံးတက်ရုံးဆင်းလမ်းကြောင်း)", "starred": false},
+      {"id": "flash_custom_425", "front": "動く", "back": "うごく (လှုပ်ရှားသည်)", "starred": false},
+      {"id": "flash_custom_426", "front": "自動車", "back": "じどうしゃ (မော်တော်ကား)", "starred": false},
+      {"id": "flash_custom_427", "front": "運動", "back": "うんどう (ကိုယ်လက်လှုပ်ရှားမှု/အားကစား)", "starred": false},
+      {"id": "flash_custom_428", "front": "乗る", "back": "のる (စီးနင်းသည်)", "starred": false},
+      {"id": "flash_custom_429", "front": "乗り場", "back": "のりば (ကားဂိတ်/ယာဉ်စီးရမည့်နေရာ)", "starred": false},
+      {"id": "flash_custom_430", "front": "乗車券", "back": "じょうしゃけん (ယာဉ်စီးလက်မှတ်)", "starred": false},
+      {"id": "flash_custom_431", "front": "降りる", "back": "おりる (ယာဉ်ပေါ်မှဆင်းသည်)", "starred": false},
+      {"id": "flash_custom_432", "front": "降る", "back": "ふる (မိုး/နှင်း ကျသည်)", "starred": false},
+      {"id": "flash_custom_433", "front": "乗り降り", "back": "のりおり (အတက်အဆင်းပြုလုပ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_434", "front": "降車口", "back": "こうしゃぐち (ယာဉ်ဆင်းပေါက်)", "starred": false},
+      {"id": "flash_custom_435", "front": "降雨量", "back": "こううりょう (မိုးရေချိန်)", "starred": false},
+      {"id": "flash_custom_436", "front": "運ぶ", "back": "はこぶ (သယ်ဆောင်သည်)", "starred": false},
+      {"id": "flash_custom_437", "front": "運", "back": "うん (ကံတရား)", "starred": false},
+      {"id": "flash_custom_438", "front": "運賃", "back": "うんちん (သယ်ယူပို့ဆောင်ခ/ကားခ)", "starred": false},
+      {"id": "flash_custom_439", "front": "転がる", "back": "ころがる (လိမ့်သည်)", "starred": false},
+      {"id": "flash_custom_440", "front": "運転する", "back": "うんてんする (မောင်းနှင်သည်)", "starred": false},
+      {"id": "flash_custom_441", "front": "自転車", "back": "じてんしゃ (စက်ဘီး)", "starred": false},
+      {"id": "flash_custom_442", "front": "回転", "back": "かいてん (လည်ပတ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_443", "front": "転勤", "back": "てんきん (အလုပ်နေရာပြောင်းရွှေ့ခြင်း)", "starred": false},
+      {"id": "flash_custom_444", "front": "帰る", "back": "かえる (ပြန်သည်)", "starred": false},
+      {"id": "flash_custom_445", "front": "お帰りなさい", "back": "おかえりなさい (ပြန်လာတာကြိုဆိုပါတယ်)", "starred": false},
+      {"id": "flash_custom_446", "front": "帰国する", "back": "きこくする (မိမိနိုင်ငံသို့ပြန်သည်)", "starred": false},
+      {"id": "flash_custom_447", "front": "発明する", "back": "はつめいする (တီထွင်သည်)", "starred": false},
+      {"id": "flash_custom_448", "front": "発車", "back": "はっしゃ (ရထား/ကား ထွက်ခွာခြင်း)", "starred": false},
+      {"id": "flash_custom_449", "front": "発見", "back": "はっけん (ရှာဖွေတွေ့ရှိမှု)", "starred": false},
+      {"id": "flash_custom_450", "front": "出発", "back": "しゅっぱつ (ထွက်ခွာခြင်း)", "starred": false},
+      {"id": "flash_custom_451", "front": "着く", "back": "つく (ဆိုက်ရောက်သည်)", "starred": false},
+      {"id": "flash_custom_452", "front": "着る", "back": "きる (ဝတ်ဆင်သည်)", "starred": false},
+      {"id": "flash_custom_453", "front": "着物", "back": "きもの (ကီမိုနိုဝတ်စုံ)", "starred": false},
+      {"id": "flash_custom_454", "front": "到着する", "back": "とうちゃくする (ဆိုက်ရောက်သည်)", "starred": false},
+      {"id": "flash_custom_455", "front": "着信メール", "back": "ちゃくしんメール (ဝင်စာ/မက်ဆေ့ခ်ျ)", "starred": false},
+      {"id": "flash_custom_456", "front": "漢字", "back": "かんじ (ကန်ဂျီစာလုံး)", "starred": false},
+      {"id": "flash_custom_457", "front": "漢方薬", "back": "かんぽうやく (တရုတ်တိုင်းရင်းဆေး)", "starred": false},
+      {"id": "flash_custom_458", "front": "字", "back": "じ (စာလုံး)", "starred": false},
+      {"id": "flash_custom_459", "front": "活字", "back": "かつじ (ပုံနှိပ်စာလုံး)", "starred": false},
+      {"id": "flash_custom_460", "front": "習字", "back": "しゅうじ (စုတ်တံအလှရေးနည်း)", "starred": false},
+      {"id": "flash_custom_461", "front": "恋文", "back": "こいぶみ (အချစ်စာလွှာ)", "starred": false},
+      {"id": "flash_custom_462", "front": "文", "back": "ぶん (စာကြောင်း)", "starred": false},
+      {"id": "flash_custom_463", "front": "文学", "back": "ぶんがく (စာပေ)", "starred": false},
+      {"id": "flash_custom_464", "front": "注文する", "back": "ちゅうもんする (မှာယူသည်)", "starred": false},
+      {"id": "flash_custom_465", "front": "文字", "back": "もじ (စာလုံး/အက္ခရာ)", "starred": false},
+      {"id": "flash_custom_466", "front": "教える", "back": "おしえる (သင်ကြားပြသသည်)", "starred": false},
+      {"id": "flash_custom_467", "front": "教会", "back": "きょうかい (ခရစ်ယာန်ဘုရားကျောင်း)", "starred": false},
+      {"id": "flash_custom_468", "front": "習う", "back": "ならう (သင်ယူလေ့လာသည်)", "starred": false},
+      {"id": "flash_custom_469", "front": "習慣", "back": "しゅうかん (အလေ့အထ/ဓလေ့ထုံးတမ်း)", "starred": false},
+      {"id": "flash_custom_470", "front": "練習する", "back": "れんしゅうする (လေ့ကျင့်သည်)", "starred": false},
+      {"id": "flash_custom_471", "front": "復習する", "back": "ふくしゅうする (စာပြန်နွှေးသည်)", "starred": false},
+      {"id": "flash_custom_472", "front": "英語", "back": "えいご (အင်္ဂလိပ်ဘာသာ)", "starred": false},
+      {"id": "flash_custom_473", "front": "英国", "back": "えいこく (ဗြိတိန်နိုင်ငံ)", "starred": false},
+      {"id": "flash_custom_474", "front": "英雄", "back": "えいゆう (သူရဲကောင်း)", "starred": false},
+      {"id": "flash_custom_475", "front": "考える", "back": "かんがえる (စဉ်းစားတွေးတောသည်)", "starred": false},
+      {"id": "flash_custom_476", "front": "考古学", "back": "こうこがく (ရှေးဟောင်းသုတေသနပညာ)", "starred": false},
+      {"id": "flash_custom_477", "front": "参考書", "back": "さんこうしょ (ကိုးကားရမည့်စာအုပ်)", "starred": false},
+      {"id": "flash_custom_478", "front": "研ぐ", "back": "とぐ (ဓားသွေးသည်/ဆန်ဆေးသည်)", "starred": false},
+      {"id": "flash_custom_479", "front": "研究する", "back": "けんきゅうする (သုတေသနပြုသည်)", "starred": false},
+      {"id": "flash_custom_480", "front": "研究室", "back": "けんきゅうしつ (သုတေသနဓာတ်ခွဲခန်း)", "starred": false},
+      {"id": "flash_custom_481", "front": "問う", "back": "とう (မေးမြန်းစုံစမ်းသည်)", "starred": false},
+      {"id": "flash_custom_482", "front": "問題", "back": "もんだい (ပုစ္ဆာ/ပြဿနာ)", "starred": false},
+      {"id": "flash_custom_483", "front": "質問する", "back": "しつもんする (မေးခွန်းမေးသည်)", "starred": false},
+      {"id": "flash_custom_484", "front": "題名", "back": "だいめい (ခေါင်းစဉ်နာမည်)", "starred": false},
+      {"id": "flash_custom_485", "front": "宿題", "back": "しゅくだい (အိမ်စာ)", "starred": false},
+      {"id": "flash_custom_486", "front": "話題", "back": "わだい (ပြောစမှတ်ဖြစ်စရာခေါင်းစဉ်)", "starred": false},
+      {"id": "flash_custom_487", "front": "試す", "back": "ためす (စမ်းသပ်ကြည့်သည်)", "starred": false},
+      {"id": "flash_custom_488", "front": "試験", "back": "しけん (စာမေးပွဲ)", "starred": false},
+      {"id": "flash_custom_489", "front": "入試", "back": "にゅうし (ကျောင်းဝင်စာမေးပွဲ)", "starred": false},
+      {"id": "flash_custom_490", "front": "試合", "back": "しあい (ပြိုင်ပွဲ)", "starred": false},
+      {"id": "flash_custom_491", "front": "実験", "back": "じっけん (ဓာတ်ခွဲစမ်းသပ်မှု)", "starred": false},
+      {"id": "flash_custom_492", "front": "経験", "back": "けいけん (အတွေ့အကြုံ)", "starred": false},
+      {"id": "flash_custom_493", "front": "受験する", "back": "じゅけんする (စာမေးပွဲဝင်ဖြေသည်)", "starred": false},
+      {"id": "flash_custom_494", "front": "品質", "back": "ひんしつ (ပစ္စည်းအရည်အသွေး)", "starred": false},
+      {"id": "flash_custom_495", "front": "合う", "back": "あう (ကိုက်ညီသည်)", "starred": false},
+      {"id": "flash_custom_496", "front": "場合", "back": "ばあい (အခြေအနေ/ကိစ္စ)", "starred": false},
+      {"id": "flash_custom_497", "front": "答える", "back": "こたえる (အဖြေပေးသည်)", "starred": false},
+      {"id": "flash_custom_498", "front": "答え", "back": "こたえ (အဖြေ)", "starred": false},
+      {"id": "flash_custom_499", "front": "回答", "back": "かいとう (အကြောင်းပြန်ချက်/အဖြေလွှာ)", "starred": false},
+      {"id": "flash_custom_500", "front": "用いる", "back": "もちいる (အသုံးပြုသည်)", "starred": false},
+      {"id": "flash_custom_501", "front": "使用禁止", "back": "しようきんし (အသုံးပြုခြင်းမပြုရန်တားမြစ်ချက်)", "starred": false},
+      {"id": "flash_custom_502", "front": "子供用", "back": "こどもよう (ကလေးများအတွက်)", "starred": false},
+      {"id": "flash_custom_503", "front": "紙", "back": "かみ (စက္ကူ)", "starred": false},
+      {"id": "flash_custom_504", "front": "手紙", "back": "てがみ (စာ)", "starred": false},
+      {"id": "flash_custom_505", "front": "コピー用紙", "back": "コピーようし (မိတ္တူကူးစက္ကူ)", "starred": false},
+      {"id": "flash_custom_506", "front": "新聞紙", "back": "しんぶんし (သတင်းစာစက္ကူ)", "starred": false},
+      {"id": "flash_custom_507", "front": "用意する", "back": "よういする (ပြင်ဆင်သည်)", "starred": false},
+      {"id": "flash_custom_508", "front": "引く", "back": "ひく (ဆွဲသည်)", "starred": false},
+      {"id": "flash_custom_509", "front": "引き出し", "back": "ひきだし (အံဆွဲ)", "starred": false},
+      {"id": "flash_custom_510", "front": "引力", "back": "いんりょく (ကမ္ဘာမြေဆွဲအား)", "starred": false},
+      {"id": "flash_custom_511", "front": "開ける", "back": "あける (ဖွင့်သည် - ကိုယ်တိုင်ဖွင့်)", "starred": false},
+      {"id": "flash_custom_512", "front": "開く", "back": "ひらく (ပွင့်သည်/ဖွင့်လှစ်သည်)", "starred": false},
+      {"id": "flash_custom_513", "front": "開店", "back": "かいてん (ဆိုင်ဖွင့်ခြင်း)", "starred": false},
+      {"id": "flash_custom_514", "front": "開始する", "back": "かいしする (စတင်သည်)", "starred": false},
+      {"id": "flash_custom_515", "front": "閉まる", "back": "しまる (ပိတ်သည် - အလိုလို)", "starred": false},
+      {"id": "flash_custom_516", "front": "閉める", "back": "しめる (ပိတ်သည် - ကိုယ်တိုင်ပိတ်)", "starred": false},
+      {"id": "flash_custom_517", "front": "閉じる", "back": "とじる (စာအုပ်/မျက်စိ ပိတ်သည်)", "starred": false},
+      {"id": "flash_custom_518", "front": "閉館する", "back": "へいかんする (ခန်းမ/ပြတိုက် ပိတ်သည်)", "starred": false},
+      {"id": "flash_custom_519", "front": "閉会式", "back": "へいかいしき (ပိတ်ပွဲအခမ်းအနား)", "starred": false},
+      {"id": "flash_custom_520", "front": "去年", "back": "きょねん (မနှစ်က)", "starred": false},
+      {"id": "flash_custom_521", "front": "消去", "back": "しょうきょ (ပယ်ဖျက်ခြင်း/ဖျက်ပစ်ခြင်း)", "starred": false},
+      {"id": "flash_custom_522", "front": "過去", "back": "かこ (အတိတ်ကာလ)", "starred": false},
+      {"id": "flash_custom_523", "front": "死ぬ", "back": "しぬ (သေဆုံးသည်)", "starred": false},
+      {"id": "flash_custom_524", "front": "死者", "back": "ししゃ (သေဆုံးသူ)", "starred": false},
+      {"id": "flash_custom_525", "front": "急死", "back": "きゅうし (ရုတ်တရက်သေဆုံးခြင်း)", "starred": false},
+      {"id": "flash_custom_526", "front": "病死", "back": "びょうし (ရောဂါဖြင့်သေဆုံးခြင်း)", "starred": false},
+      {"id": "flash_custom_527", "front": "集まる", "back": "あつまる (စုဝေးကြသည်)", "starred": false},
+      {"id": "flash_custom_528", "front": "集める", "back": "あつめる (စုဆောင်းသည်)", "starred": false},
+      {"id": "flash_custom_529", "front": "文集", "back": "ぶんしゅう (စာစီစာကုံးပေါင်းချုပ်)", "starred": false},
+      {"id": "flash_custom_530", "front": "集合する", "back": "しゅうごうする (လူစုရုံးကြသည်)", "starred": false},
+      {"id": "flash_custom_531", "front": "集中する", "back": "しゅうちゅうする (အာရုံစိုက်သည်/စုစည်းသည်)", "starred": false},
+      {"id": "flash_custom_532", "front": "知る", "back": "しる (သိရှိသည်)", "starred": false},
+      {"id": "flash_custom_533", "front": "知り合い", "back": "しりあい (အသိမိတ်ဆွေ)", "starred": false},
+      {"id": "flash_custom_534", "front": "通知", "back": "つうち (အကြောင်းကြားစာ/အသိပေးချက်)", "starred": false},
+      {"id": "flash_custom_535", "front": "知識", "back": "ちしき (ဗဟုသုတ/ပညာ)", "starred": false},
+      {"id": "flash_custom_536", "front": "売る", "back": "うる (ရောင်းချသည်)", "starred": false},
+      {"id": "flash_custom_537", "front": "売り場", "back": "うりば (အရောင်းကောင်တာ)", "starred": false},
+      {"id": "flash_custom_538", "front": "売店", "back": "ばいてん (အရောင်းဆိုင်ငယ်)", "starred": false},
+      {"id": "flash_custom_539", "front": "自動販売機", "back": "じどうはんばいき (အလိုအလျောက်အရောင်းစက်)", "starred": false},
+      {"id": "flash_custom_540", "front": "説明する", "back": "せつめいする (ရှင်းလင်းပြောကြားသည်)", "starred": false},
+      {"id": "flash_custom_541", "front": "小説", "back": "しょうせつ (ဝတ္ထု)", "starred": false},
+      {"id": "flash_custom_542", "front": "思う", "back": "おもう (ထင်သည်/စဉ်းစားသည်)", "starred": false},
+      {"id": "flash_custom_543", "front": "思い出す", "back": "おもいだす (ပြန်လည်အမှတ်ရသည်)", "starred": false},
+      {"id": "flash_custom_544", "front": "思い出", "back": "おもいで (အမှတ်တရ)", "starred": false},
+      {"id": "flash_custom_545", "front": "思想", "back": "しそう (အတွေးအခေါ်/ဝါဒ)", "starred": false}
+    ]
+  }
+]
