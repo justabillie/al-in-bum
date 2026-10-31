@@ -213,6 +213,317 @@
     "fontSize": 20
   },
   {
+    "id": "cat_1781075255199_8o1jgp",
+    "name": "Kana Vocabulary (50 Words)",
+    "themeColor": "#d6bc85",
+    "fontColor": "#724608",
+    "font": "Inter, sans-serif",
+    "type": "flashcard",
+    "cards": [
+      {
+        "id": "flash_1781085000001_v1",
+        "front": "コーヒー",
+        "back": "koohii",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000002_v2",
+        "front": "がっこう",
+        "back": "gakkou",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000003_v3",
+        "front": "きっぷ",
+        "back": "kippu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000004_v4",
+        "front": "ケーキ",
+        "back": "keeki",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000005_v5",
+        "front": "ざっし",
+        "back": "zasshi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000006_v6",
+        "front": "ノート",
+        "back": "nooto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000007_v7",
+        "front": "ぼうし",
+        "back": "boushi",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000008_v8",
+        "front": "タクシー",
+        "back": "takushii",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000009_v9",
+        "front": "おとうさん",
+        "back": "otousan",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000010_v10",
+        "front": "おかあさん",
+        "back": "okaasan",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000011_v11",
+        "front": "きっさてん",
+        "back": "kissaten",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000012_v12",
+        "front": "ジュース",
+        "back": "juusu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000013_v13",
+        "front": "おっと",
+        "back": "otto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000014_v14",
+        "front": "スカート",
+        "back": "sukaato",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000015_v15",
+        "front": "しんぶん",
+        "back": "shinbun",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000016_v16",
+        "front": "ボールペン",
+        "back": "boorupen",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000017_v17",
+        "front": "ねこ",
+        "back": "neko",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000018_v18",
+        "front": "いぬ",
+        "back": "inu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000019_v19",
+        "front": "ちけっと",
+        "back": "chiketto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000020_v20",
+        "front": "チーズ",
+        "back": "chiizu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000021_v21",
+        "front": "こうえん",
+        "back": "kouen",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000022_v22",
+        "front": "せっけん",
+        "back": "sekken",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000023_v23",
+        "front": "プール",
+        "back": "puuru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000024_v24",
+        "front": "びょういん",
+        "back": "byouin",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000025_v25",
+        "front": "ビール",
+        "back": "biiru",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000026_v26",
+        "front": "コップ",
+        "back": "koppu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000027_v27",
+        "front": "しゅくだい",
+        "back": "shukudai",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000028_v28",
+        "front": "エレベーター",
+        "back": "erebeetaa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000029_v29",
+        "front": "きって",
+        "back": "kitte",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000030_v30",
+        "front": "アイスクリーム",
+        "back": "aisukuriimu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000031_v31",
+        "front": "スーパー",
+        "back": "suupaa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000032_v32",
+        "front": "ゆっくり",
+        "back": "yukkuri",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000033_v33",
+        "front": "きょう",
+        "back": "kyou",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000034_v34",
+        "front": "ベッド",
+        "back": "beddo",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000035_v35",
+        "front": "りょこう",
+        "back": "ryokou",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000036_v36",
+        "front": "ギター",
+        "back": "gitaa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000037_v37",
+        "front": "しっぽ",
+        "back": "shippo",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000038_v38",
+        "front": "シャワー",
+        "back": "shawaa",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000039_v39",
+        "front": "とうきょう",
+        "back": "toukyou",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000040_v40",
+        "front": "トラック",
+        "back": "torakku",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000041_v41",
+        "front": "おばあさん",
+        "back": "obaasan",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000042_v42",
+        "front": "おじいさん",
+        "back": "ojiisan",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000043_v43",
+        "front": "カップ",
+        "back": "kappu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000044_v44",
+        "front": "しょうゆ",
+        "back": "shouyu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000045_v45",
+        "front": "スポーツ",
+        "back": "supootsu",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000046_v46",
+        "front": "ちょっと",
+        "back": "chotto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000047_v47",
+        "front": "スプーン",
+        "back": "supuun",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000048_v48",
+        "front": "フォーク",
+        "back": "fooku",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000049_v49",
+        "front": "もっと",
+        "back": "motto",
+        "starred": false
+      },
+      {
+        "id": "flash_1781085000050_v50",
+        "front": "ポケット",
+        "back": "poketto",
+        "starred": false
+      }
+    ],
+    "fontSize": 60
+  },
+  {
     "id": "cat_peace",
     "name": "Inner Peace",
     "themeColor": "#1ABC9C",
@@ -1840,37 +2151,37 @@
         "id": "flash_custom_001",
         "front": "しゅくだい",
         "back": "shukudai",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_002",
         "front": "びょういん",
         "back": "byouin",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_003",
         "front": "じょしゅ",
         "back": "joshu",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_004",
         "front": "きゅうり",
         "back": "kyuuri",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_005",
         "front": "しょうゆ",
         "back": "shouyu",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_006",
         "front": "ちょうちょ",
         "back": "choucho",
-        "starred": true
+        "starred": false
       },
       {
         "id": "flash_custom_007",
@@ -1921,75 +2232,9 @@
         "starred": false
       },
       {
-        "id": "flash_custom_015",
-        "front": "かっき",
-        "back": "kakki",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_016",
-        "front": "きって",
-        "back": "kitte",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_017",
-        "front": "ざっし",
-        "back": "zasshi",
-        "starred": false
-      },
-      {
         "id": "flash_custom_018",
         "front": "おととい",
         "back": "ototoi",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_019",
-        "front": "しゅっぱつ",
-        "back": "shuppatsu",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_020",
-        "front": "びっくり",
-        "back": "bikkuri",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_021",
-        "front": "はっぱ",
-        "back": "happa",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_022",
-        "front": "けっちゃく",
-        "back": "kecchaku",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_023",
-        "front": "そっちょく",
-        "back": "socchoku",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_024",
-        "front": "じゅっくり",
-        "back": "jukkuri",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_025",
-        "front": "ひゃっかてん",
-        "back": "hyakkaten",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_026",
-        "front": "がっこう",
-        "back": "gakkou",
         "starred": false
       },
       {
@@ -2050,18 +2295,6 @@
         "id": "flash_custom_036",
         "front": "しゅみ",
         "back": "shumi",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_037",
-        "front": "しょうがっこう",
-        "back": "shougakkou",
-        "starred": false
-      },
-      {
-        "id": "flash_custom_038",
-        "front": "ちゅうがっこう",
-        "back": "chuugakkou",
         "starred": false
       },
       {
